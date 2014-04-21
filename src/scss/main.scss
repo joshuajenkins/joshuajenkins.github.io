@@ -23,8 +23,7 @@ a:hover {
 }
 
 #wrapper {
-	width: 90%;
-	max-width: 1000px;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -35,12 +34,14 @@ header {
 h1 {
 	font-weight: 100;
 	font-size: $font-medium;
+	text-align: center;
 }
 
 article {
 	h2 {
 		font-weight: 100;
 		font-size: $font-large;
+		text-align: center;
 	}
 
 	p {
@@ -49,15 +50,18 @@ article {
 		color: $black;
 		line-height: 1.7em;
 		max-width: 50em;
-		margin: 0 0 1.7em 0;
+		margin: 0 auto 1.7em auto;
+		padding: 0 2em;
 	}
 
 	.image {
+		width: 100%;
 		max-width: 100%;
-		margin: 0 0 1em 0;
+		padding: 0;
+		margin: 0 auto 1em auto;
 	}
 
 	.image img {
-		max-width: 100%;
+		width: 100%;
 	}
 }

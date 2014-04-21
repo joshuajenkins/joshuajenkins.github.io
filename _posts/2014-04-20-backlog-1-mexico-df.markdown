@@ -28,7 +28,7 @@ The apartment was confusingly on the border Hipodromo and Contessa, both borough
 ![Neighborhood](/img/df/04.jpg "Neighborhood")
 {: .image}
 
-Most of the D.F. that I saw looked something like the above. Somewhat cheaply built 2 - 6 story buildings, intermixed with bright colors, some newer construction, lots of trees, and strees in moderate repair. Also, bike lanes. Mexico City appears to be appreciate the bicycle, though I can't imagine it's particularly enjoyable cycling at 7,000 feet with awful air quality.
+Most of the D.F. that I saw looked something like the above. Somewhat cheaply built 2 - 6 story buildings, intermixed with bright colors, some newer construction, lots of trees, and street surfaces in moderate repair. Also, bike lanes. Mexico City appears to be appreciate the bicycle, though I can't imagine it's particularly enjoyable cycling at 7,000 feet with awful air quality.
 
 ![Green](/img/df/05.jpg "Green")
 {: .image}
