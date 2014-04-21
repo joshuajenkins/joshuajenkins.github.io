@@ -1,0 +1,4 @@
+name: Joshua Jenkins
+markdown: redcarpet
+pygments: true
+permalink: /:year/:title
