@@ -24,6 +24,7 @@ a:hover {
 
 #wrapper {
 	width: 100%;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -54,7 +55,8 @@ article {
 		padding: 0 2em;
 	}
 
-	.image {
+	.image,
+	.images {
 		width: 100%;
 		max-width: 100%;
 		padding: 0;
@@ -63,5 +65,12 @@ article {
 
 	.image img {
 		width: 100%;
+	}
+
+	.images-2x2 img {
+		box-sizing: border-box;
+		padding: 2px;
+		width: 50%;
+		float: left;
 	}
 }

@@ -11,7 +11,7 @@ I traveled to Mexico City in December 2013 for five nights. I originally wanted 
 ![Flying over Mexico, D.F.](/img/df/01.jpg "Flying over DF")
 {: .image}
 
-If you multiplied the above image by ten million you'd get a reasonable idea of the size of Mexico City. The city is huge. Wikipedia tells me that it might be larger, by population, than New York City. Apparently there's some sort of global pissing match for largest city, but suffice it say, this city is pretty not small.
+If you multiplied the above image by ten million you'd get a reasonable idea of the size of Mexico City. The city is huge. Wikipedia tells me that it might be larger, by population, than New York City. Apparently there's some sort of global pissing match for largest city, but suffice it to say, this city is pretty not small.
 
 ![Airbnb](/img/df/02.jpg "Airbnb")
 {: .image}
@@ -21,7 +21,7 @@ This is the Airbnb we stayed in. It was 40 pesos per "noche" which is something 
 ![Real Airbnb](/img/df/03.jpg "Real Airbnb")
 {: .image}
 
-Alright so that's the real Airbnb. It was much more hipster than I anticipated. Our host was an architect named Chimi and he was great. He hung a huge map of the neighborhood on one wall and labeled all of his favorite places. They were all good. If you see Chimi, do something aggressively American to express your appreciation to him in a culturally insensitive way (don't though).
+Alright so that's the real Airbnb. It was nicer than I anticipated. Our host was an architect named Chimi and he was great. He hung a huge map of the neighborhood on one wall and labeled all of his favorite places. They were all good. If you see Chimi, do something aggressively American to express your appreciation to him in a culturally insensitive way (don't though).
 
 The apartment was confusingly on the border Hipodromo and Contessa, both borough-level neighborhoods. Contessa is the Mission of Mexico City if you trust the Google. It's not a horrible analogy, it's vaguely hipster with a lot of bars and young, affluentish Turd Furgesons.
 
@@ -34,3 +34,11 @@ Most of the D.F. that I saw looked something like the above. Somewhat cheaply bu
 {: .image}
 
 Despite the less-than-great air quality, green is everywhere. The greenscape (is that a thing) is dry and crunchy, while still being lush. It's a funny dichotomy, everything looks greener than it feels. Still, it's beautiful.
+
+![Food](/img/df/06-s.jpg "Food")
+![Food](/img/df/06-s.jpg "Food")
+![Food](/img/df/06-s.jpg "Food")
+![Food](/img/df/06-s.jpg "Food")
+{: .images .images-2x2}
+
+Some food words!
