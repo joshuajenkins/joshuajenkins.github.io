@@ -1,4 +1,5 @@
 name: Joshua Jenkins
-markdown: redcarpet
+markdown: kramdown
 pygments: true
 permalink: /:year/:title
+exclude: [src, node_modules, gulpfile.js, package.json]

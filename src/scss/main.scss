@@ -1,2 +1,63 @@
 @import 'normalize';
 
+/* Colors */
+$black: #444;
+$highlight: #808996;
+
+/* Typography */
+$font-small: 13px;
+$font-regular: 16px;
+$font-medium: 20px;
+$font-large: 30px;
+
+body {
+	font-family: "jaf-facitweb", sans-serif;
+}
+
+a:link, a:visited {
+	color: $highlight;
+	text-decoration: none;
+}
+a:hover {
+	color: darken($highlight, 5%);
+}
+
+#wrapper {
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+header {
+	margin: 3em 0;
+}
+
+h1 {
+	font-weight: 100;
+	font-size: $font-medium;
+}
+
+article {
+	h2 {
+		font-weight: 100;
+		font-size: $font-large;
+	}
+
+	p {
+		font-weight: 400;
+		font-size: $font-regular;
+		color: $black;
+		line-height: 1.7em;
+		max-width: 50em;
+		margin: 0 0 1.7em 0;
+	}
+
+	.image {
+		max-width: 100%;
+		margin: 0 0 1em 0;
+	}
+
+	.image img {
+		max-width: 100%;
+	}
+}
