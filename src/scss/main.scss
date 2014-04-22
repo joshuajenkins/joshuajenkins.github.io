@@ -6,26 +6,35 @@ $black: #444;
 $highlight: #808996;
 
 /* Typography */
-$font-small: 13px;
-$font-regular: 20px;
+$font-small: 15px;
+$font-regular: 18px;
 $font-medium: 20px;
 $font-large: 30px;
 
+/* Widths */
+$width-paragraph: 630px;
+$width-image: 780px;
+$page-padding: 16px;
+
+* {
+	text-rendering: optimizeLegibility;
+}
+
 body {
-	font-family: "jaf-facitweb", sans-serif;
+	font-family: "ff-meta-serif-web-pro", serif;
 }
 
 a:link, a:visited {
-	color: $highlight;
+	color: $black;
 	text-decoration: none;
 }
 a:hover {
-	color: darken($highlight, 5%);
+	color: darken($black, 5%);
 }
 
 #wrapper {
 	width: 100%;
-	max-width: 1100px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -36,48 +45,54 @@ header {
 h1 {
 	font-weight: 300;
 	font-size: $font-small;
-	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-}
-
-.avatar {
-	display: block;
+	width: $width-paragraph;
 	margin: 0 auto;
-	width: 80px;
 }
 
 article {
 
 	h2 {
-		font-weight: 400;
+		font-weight: 600;
 		font-size: $font-large;
-		text-align: center;
+		width: $width-paragraph;
+		margin: 0 auto 0.5em auto;
+		padding: 0 $page-padding;
 	}
 
 	p {
-		font-family: "minion-pro", serif;
+		//font-family: "chaparral-pro", serif;
 		font-size: $font-regular;
 		color: $black;
-		line-height: 1.6em;
-		max-width: 40em;
-		margin: 0 auto 1.6em auto;
-		padding: 0 2em;
+		line-height: 1.5em;
+		max-width: $width-paragraph;
+		margin: 0 auto 1.5em auto;
+		padding: 0 $page-padding;
 	}
 
 	.image,
+	.big-image,
 	.images {
 		width: 100%;
 		max-width: 100%;
 		padding: 0;
-		margin: 0 auto 1em auto;
+		margin: 2em auto 2em auto;
 
 		@extend %clearfix;
 	}
 
 	.image img {
+		display: block;
 		width: 100%;
-		margin: 0;
+		max-width: $width-image;
+		padding: 0 0 0 ($width-image - $width-paragraph);
+		margin: 0 auto;
+	}
+
+	.big-image img {
+		width: 100%;
+		margin: 0 auto;
 	}
 
 	.images-2x2 img {
@@ -87,12 +102,32 @@ article {
 		float: left;
 		margin: 0;
 	}
+
+	.images-3x1 img {
+		box-sizing: border-box;
+		padding: 2px;
+		width: 33.3%;
+		float: left;
+		margin: 0;
+	}
 }
 
 @media screen and (max-width: 500px) {
-	article .images-2x2 img {
+	
+	article .image img {
+		padding: 0;
+	}
+
+	article .images-2x2 img,
+	article .images-3x1 img {
 		width: 100%;
 		float: none;
 		padding: 0;
-	}		
+	}
+}
+
+@media screen and (max-width: 920px) {
+	article .image img {
+		padding: 0;
+	}
 }

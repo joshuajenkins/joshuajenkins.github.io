@@ -8,8 +8,10 @@ categories: travel
 
 I traveled to Mexico City in December 2013 for five nights. I originally wanted to create something phyiscal like a book or a zine to commemorate the trip, but that is hard so here we go.
 
-![Flying over Mexico, D.F.](/img/df/01.jpg "Flying over DF")
-{: .image}
+![Flying over Mexico, D.F.](/img/df/01-01-s.jpg "Flying over DF")
+![Flying over Mexico, D.F.](/img/df/01-02-s.jpg "Flying over DF")
+![Flying over Mexico, D.F.](/img/df/01-03-s.jpg "Flying over DF")
+{: .images .images-3x1}
 
 If you multiplied the above image by ten million you'd get a reasonable idea of the size of Mexico City. The city is huge. Wikipedia tells me that it might be larger, by population, than New York City. Apparently there's some sort of global pissing match for largest city, but suffice it to say, this city is pretty not small.
 
@@ -19,7 +21,7 @@ If you multiplied the above image by ten million you'd get a reasonable idea of 
 This is the Airbnb we stayed in. It was 40 pesos per "noche" which is something like 40 U.S. dollars per noche. Whoops no in fact, shit, this was actually at the anthropology museum which was huge and awesome and had the worst food in the city. Pictured is a traditional dwelling from some distant, pre-columbian time (probably, I didn't write down any notes).
 
 ![Real Airbnb](/img/df/03.jpg "Real Airbnb")
-{: .image}
+{: .big-image}
 
 Alright so that's the real Airbnb. It was nicer than I anticipated. Our host was an architect named Chimi and he was great. He hung a huge map of the neighborhood on one wall and labeled all of his favorite places. They were all good. If you see Chimi, do something aggressively American to express your appreciation to him in a culturally insensitive way (don't though).
 
