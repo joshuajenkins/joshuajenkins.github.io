@@ -19,6 +19,7 @@ $width-image: 780px;
 $page-padding: 16px;
 
 $font-display: 'Surveyor SSm A', 'Surveyor SSm B', serif;
+$font-sans: 'Ideal Sans SSm A', 'Ideal Sans SSm B';
 
 * {
 	text-rendering: optimizeLegibility;
@@ -44,7 +45,7 @@ a:hover {
 }
 
 header {
-	width: $width-paragraph;
+	max-width: $width-paragraph;
 	padding: 0 $page-padding;
 	margin: ($baseline * 2) auto;
 
@@ -94,7 +95,7 @@ article {
 
 	h2 {
 		font-family: $font-display;
-		font-weight: 400;
+		font-weight: 300;
 		font-size: $font-medium;
 		max-width: $width-paragraph;
 		margin: 0 auto $baseline auto;
@@ -103,7 +104,6 @@ article {
 	}
 
 	p {
-		//font-family: "chaparral-pro", serif;
 		font-size: $font-regular;
 		color: $black;
 		line-height: $baseline;

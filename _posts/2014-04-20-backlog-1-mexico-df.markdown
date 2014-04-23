@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Backlog 1: Mexico, D.F."
+title:  "Backlog: Mexico, D.F."
 date:   2014-04-20 20:17:32
 permalink: /2014/mexico-df/
 categories: travel
