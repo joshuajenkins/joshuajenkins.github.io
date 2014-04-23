@@ -13,12 +13,7 @@ I traveled to Mexico City in December 2013 for five nights. I originally wanted 
 ![Flying over Mexico, D.F.](/img/df/01-03-s.jpg "Flying over DF")
 {: .images .images-3x1}
 
-If you multiplied the above image by ten million you'd get a reasonable idea of the size of Mexico City. The city is huge. Wikipedia tells me that it might be larger, by population, than New York City. Apparently there's some sort of global pissing match for largest city, but suffice it to say, this city is pretty not small.
-
-![Airbnb](/img/df/02.jpg "Airbnb")
-{: .image}
-
-This is the Airbnb we stayed in. It was 40 pesos per "noche" which is something like 40 U.S. dollars per noche. Whoops no in fact, shit, this was actually at the anthropology museum which was huge and awesome and had the worst food in the city. Pictured is a traditional dwelling from some distant, pre-columbian time (probably, I didn't write down any notes).
+Mexico City is big. Wikipedia says that it might be larger, by population, than New York City. Whoever the global pissing match for city sizes deems the winner aside, D.F. is big, and it has the air quality to match. It ranged from slightly visible to something you could taste on a daily basis.
 
 ![Real Airbnb](/img/df/03.jpg "Real Airbnb")
 {: .big-image}
