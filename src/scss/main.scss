@@ -7,23 +7,24 @@ $highlight: #808996;
 
 /* Typography */
 $font-small: 15px;
-$font-regular: 18px;
+$font-regular: 16px;
 $font-medium: 20px;
-$font-large: 36px;
+$font-large: 24px;
+$baseline: 24px;
 
 /* Widths */
 $width-paragraph: 630px;
 $width-image: 780px;
 $page-padding: 16px;
 
-$font-display: 'Surveyor Display A', 'Surveyor Display B', serif;
+$font-display: 'Surveyor SSm A', 'Surveyor SSm B', serif;
 
 * {
 	text-rendering: optimizeLegibility;
 }
 
 body {
-	font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B';
+	font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B', sans-serif;
 	font-weight: 300;
 }
 
@@ -59,13 +60,12 @@ article {
 
 	h2 {
 		font-family: $font-display;
-		font-weight: 700;
+		font-weight: 800;
 		font-size: $font-large;
-		font-style: normal;
-		text-transform: uppercase;
-		letter-spacing: 0.05em;
+		//font-style: italic;
+		//text-transform: uppercase;
 		width: $width-paragraph;
-		margin: 0 auto 0.5em auto;
+		margin: 0 auto $baseline auto;
 		padding: 0 $page-padding;
 	}
 
@@ -73,9 +73,9 @@ article {
 		//font-family: "chaparral-pro", serif;
 		font-size: $font-regular;
 		color: $black;
-		line-height: 1.5em;
+		line-height: $baseline;
 		max-width: $width-paragraph;
-		margin: 0 auto 1.5em auto;
+		margin: 0 auto $baseline auto;
 		padding: 0 $page-padding;
 	}
 
