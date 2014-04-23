@@ -56,7 +56,7 @@ h1 {
 	font-size: $font-regular;
 	font-family: $font-display;
 	line-height: $baseline;
-	margin: 0 ($baseline) 0 0;
+	margin: 0 ($baseline * 1.5) 0 0;
 	padding: 0;
 	float: left;
 }
@@ -74,7 +74,7 @@ h1 {
 		padding: 2px 0 0 0; // Push it down to the baseline grid
 		display: block;
 		font-weight: 500;
-		margin: 0 ($baseline / 4);
+		margin: 0 ($baseline / 2) 0 0;
 		font-size: $font-small;
 		line-height: $baseline;
 		text-transform: uppercase;
@@ -88,11 +88,10 @@ article {
 		font-family: $font-display;
 		font-weight: 800;
 		font-size: $font-medium;
-		//font-style: italic;
-		//text-transform: uppercase;
-		width: $width-paragraph;
+		max-width: $width-paragraph;
 		margin: 0 auto $baseline auto;
 		padding: 0 $page-padding;
+		word-wrap: normal;
 	}
 
 	p {
@@ -147,6 +146,13 @@ article {
 }
 
 @media screen and (max-width: 500px) {
+
+	header h1,
+	#nav {
+		float: none;
+	}
+
+	#nav { margin-top: $baseline/2; }
 	
 	article .image img {
 		padding: 0;
