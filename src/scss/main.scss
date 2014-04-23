@@ -84,9 +84,10 @@ h1 {
 
 header a:link, header a:visited {
 	color: $accent;
+	transition: color 0.4s ease-in-out;
 }
 header a:hover {
-	color: darken($accent, 10%);
+	color: #a34323;
 }
 
 article {
@@ -141,6 +142,9 @@ article {
 		width: 50%;
 		float: left;
 		margin: 0;
+
+		&:nth-child(odd) { padding-left: 0; }
+		&:nth-child(even) { padding-right: 0; }
 	}
 
 	.images-3x1 img {
@@ -149,6 +153,9 @@ article {
 		width: 33.3%;
 		float: left;
 		margin: 0;
+
+		&:first-child { padding-left: 0; }
+		&:last-child { padding-right: 0; }
 	}
 }
 
