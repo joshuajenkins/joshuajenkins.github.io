@@ -3,7 +3,7 @@
 
 /* Colors */
 $black: #444;
-$highlight: #808996;
+$accent: #e34a35;
 
 /* Typography */
 // http://modularscale.com/scale/?px1=16&px2=24&ra1=1.618&ra2=0
@@ -82,11 +82,18 @@ h1 {
 	}
 }
 
+header a:link, header a:visited {
+	color: $accent;
+}
+header a:hover {
+	color: darken($accent, 10%);
+}
+
 article {
 
 	h2 {
 		font-family: $font-display;
-		font-weight: 800;
+		font-weight: 400;
 		font-size: $font-medium;
 		max-width: $width-paragraph;
 		margin: 0 auto $baseline auto;
