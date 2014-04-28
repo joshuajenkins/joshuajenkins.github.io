@@ -2,8 +2,11 @@
 @import 'helpers';
 
 /* Colors */
-$black: #444;
-$accent: #e34a35;
+$black: #666;
+$accent: #2c8649;
+$gold: #f2c200;
+$blue: #3db5f3;
+$red: #d64128;
 
 /* Typography */
 // http://modularscale.com/scale/?px1=16&px2=24&ra1=1.618&ra2=0
@@ -18,7 +21,7 @@ $width-paragraph: 630px;
 $width-image: 780px;
 $page-padding: 16px;
 
-$font-display: 'Surveyor SSm A', 'Surveyor SSm B', serif;
+$font-display: 'Ideal Sans SSm A', 'Ideal Sans SSm B';
 $font-sans: 'Ideal Sans SSm A', 'Ideal Sans SSm B';
 
 * {
@@ -53,13 +56,22 @@ header {
 }
 
 h1 {
-	font-weight: 400;
+	font-weight: 700;
+	font-style: italic;
 	font-size: $font-regular;
 	font-family: $font-display;
 	line-height: $baseline;
 	margin: 0 ($baseline * 1.5) 0 0;
 	padding: 0;
 	float: left;
+}
+
+h3 {
+	max-width: $width-paragraph;
+	line-height: $baseline;
+	font-size: $font-regular;
+	font-weight: 600;
+	margin: 0 auto ($baseline/2) auto;
 }
 
 #nav {
@@ -83,19 +95,22 @@ h1 {
 	}
 }
 
-header a:link, header a:visited {
-	color: $accent;
-	transition: color 0.4s ease-in-out;
+header a:link,
+header a:visited {
+	color: $black;
+	transition: border-color 0.4s ease-out;
+	border-bottom: 1px solid transparent;
 }
 header a:hover {
-	color: #a34323;
+	border-color: $gold;
 }
 
 article {
 
 	h2 {
 		font-family: $font-display;
-		font-weight: 300;
+		font-weight: 700;
+		font-style: italic;
 		font-size: $font-medium;
 		max-width: $width-paragraph;
 		margin: 0 auto $baseline auto;
@@ -160,15 +175,7 @@ article {
 }
 
 footer {
-	width: 100%;
-	height: $baseline * 6;
-	background: rgb(255,255,255);
-	background: -moz-linear-gradient(top, rgba(126,186,209, 0) 0%, rgba(126,186,209, 0.5) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(126,186,209, 0)), color-stop(100%,rgba(126,186,209, 0.5)));
-	background: -webkit-linear-gradient(top, rgba(126,186,209, 0) 0%,rgba(126,186,209, 0.5) 100%);
-	background: -o-linear-gradient(top, rgba(126,186,209, 0) 0%,rgba(126,186,209, 0.5) 100%);
-	background: -ms-linear-gradient(top, rgba(126,186,209, 0) 0%,rgba(126,186,209, 0.5) 100%);
-	background: linear-gradient(to bottom, rgba(126,186,209, 0) 0%,rgba(126,186,209, 0.5) 100%);
+	height: $baseline*8;
 }
 
 @media screen and (max-width: 500px) {
