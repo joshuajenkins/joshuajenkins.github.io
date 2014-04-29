@@ -50,6 +50,7 @@ h3 {
 	max-width: $width-paragraph;
 	line-height: $baseline;
 	font-size: $font-regular;
+	padding: 0 $page-padding;
 	color: $black;
 	font-weight: 500;
 	margin: 0 auto ($baseline/2) auto;
@@ -144,6 +145,21 @@ article {
 
 		&:first-child { padding-left: 0; }
 		&:last-child { padding-right: 0; }
+	}
+
+	ul {
+		max-width: $width-paragraph;
+		margin: 0 auto;
+		padding: 0;
+		list-style: circle;
+		
+		li {
+			margin-left: 0px;
+			margin-bottom: $baseline/2;
+
+			font-size: $font-small;
+			line-height: $baseline;
+		}
 	}
 }
 
