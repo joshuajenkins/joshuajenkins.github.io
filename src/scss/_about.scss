@@ -1,0 +1,24 @@
+@import 'helpers';
+@import 'vars';
+
+#about {
+	
+}
+
+#about .photo {
+	max-width: $width-paragraph;
+	padding: 0 $page-padding;
+	margin: 0 auto ($baseline * 2) auto;
+	
+	@extend %clearfix;
+
+	img {
+		max-width: 66.6%;
+		margin: 0 $baseline 0 0;
+		float: left;
+	}
+
+	p {
+		font-size: $font-small;
+	}
+}

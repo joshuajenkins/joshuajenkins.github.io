@@ -2,7 +2,7 @@
 layout: post
 title:  "Mexico DF: Blanket Statements"
 date:   2014-04-20 20:17:32
-permalink: /2014/mexico-df/
+permalink: 2014/mexico-df/
 categories: travel
 ---
 

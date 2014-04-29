@@ -1,28 +1,8 @@
+@import 'vars';
 @import 'normalize';
 @import 'helpers';
-
-/* Colors */
-$black: #666;
-$accent: #2c8649;
-$gold: #f2c200;
-$blue: #3db5f3;
-$red: #d64128;
-
-/* Typography */
-// http://modularscale.com/scale/?px1=16&px2=24&ra1=1.618&ra2=0
-$font-small: 11px; // Divergent from scale
-$font-regular: 16px;
-$font-medium: 24px;
-$font-large: 38px;
-$baseline: 24px;
-
-/* Widths */
-$width-paragraph: 630px;
-$width-image: 780px;
-$page-padding: 16px;
-
-$font-display: 'Ideal Sans SSm A', 'Ideal Sans SSm B';
-$font-sans: 'Ideal Sans SSm A', 'Ideal Sans SSm B';
+@import 'projects';
+@import 'about';
 
 * {
 	text-rendering: optimizeLegibility;
@@ -33,13 +13,17 @@ body {
 	font-weight: 300;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
 	color: $black;
 	text-decoration: none;
+	transition: border-color 0.4s ease-out;
+	border-bottom: 2px solid transparent;
 }
 a:hover {
-	color: darken($black, 5%);
+	border-color: $gold;
 }
+
 
 #wrapper {
 	width: 100%;
@@ -51,66 +35,59 @@ header {
 	max-width: $width-paragraph;
 	padding: 0 $page-padding;
 	margin: ($baseline * 2) auto;
-
-	@extend %clearfix;
 }
 
 h1 {
-	font-weight: 700;
-	font-style: italic;
+	font-weight: 200;
 	font-size: $font-regular;
 	font-family: $font-display;
 	line-height: $baseline;
-	margin: 0 ($baseline * 1.5) 0 0;
+	margin: 0 0 $baseline 0;
 	padding: 0;
-	float: left;
 }
 
 h3 {
 	max-width: $width-paragraph;
 	line-height: $baseline;
 	font-size: $font-regular;
-	font-weight: 600;
+	color: $black;
+	font-weight: 500;
 	margin: 0 auto ($baseline/2) auto;
 }
 
 #nav {
+	display: block;
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	float: left;
-	height: $baseline;
-
-	@extend %clearfix;
 
 	li {
-		padding: 2px 0 0 0; // Push it down to the baseline grid
+		padding: 0;
 		display: block;
-		font-weight: 500;
-		margin: 0 ($baseline / 2) 0 0;
+		font-weight: 300;
+		margin: 0;
 		font-size: $font-small;
 		line-height: $baseline;
-		text-transform: uppercase;
-		float: left;
 	}
 }
 
-header a:link,
-header a:visited {
+p {
+	font-size: $font-regular;
 	color: $black;
-	transition: border-color 0.4s ease-out;
-	border-bottom: 1px solid transparent;
-}
-header a:hover {
-	border-color: $gold;
+	line-height: $baseline;
+	max-width: $width-paragraph;
+	margin: 0 auto $baseline auto;
+
+	a {
+		font-style: italic;
+	}
 }
 
 article {
 
 	h2 {
 		font-family: $font-display;
-		font-weight: 700;
-		font-style: italic;
+		font-weight: 300;
 		font-size: $font-medium;
 		max-width: $width-paragraph;
 		margin: 0 auto $baseline auto;
@@ -119,11 +96,6 @@ article {
 	}
 
 	p {
-		font-size: $font-regular;
-		color: $black;
-		line-height: $baseline;
-		max-width: $width-paragraph;
-		margin: 0 auto $baseline auto;
 		padding: 0 $page-padding;
 	}
 
@@ -179,13 +151,6 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-
-	header h1,
-	#nav {
-		float: none;
-	}
-
-	#nav { margin-top: $baseline/2; }
 	
 	article .image img {
 		padding: 0;
