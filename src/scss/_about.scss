@@ -15,12 +15,15 @@
 	img {
 		max-width: 66.6%;
 		margin: 0 $baseline 0 0;
-		float: left;
 	}
 
 	p {
+		margin: $baseline 0 0 0;
+		max-width: 66.6%;
 		padding: 0;
 		font-size: $font-small;
+		color: $grey;
+		font-style: italic;
 	}
 }
 
@@ -31,8 +34,7 @@
 		max-width: 100%;
 	}
 
-	p {
-		padding: 0;
-		padding-top: $baseline/2;
+	#about .photo p {
+		max-width: 100%;	
 	}
 }
