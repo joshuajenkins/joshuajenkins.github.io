@@ -14,14 +14,16 @@ body {
 	font-weight: 300;
 }
 
+a { border: none; }
+
 a:link,
 a:visited {
 	color: $black;
 	text-decoration: none;
-	transition: border-color 0.4s ease-out;
 	border-bottom: 2px solid transparent;
 }
 a:hover {
+	transition: border-color 0.4s ease-out;
 	border-color: $gold;
 }
 
