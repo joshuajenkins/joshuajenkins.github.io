@@ -5,9 +5,9 @@ var processResults = function(birthdate) {
   var formattedDate = b.add('days', delta).format('MMMM Do, YYYY');
 
   if (delta > 0) {
-    $('#module-10k .results').html('<p>Your 10,000th day is on ' + formattedDate + '.<br>Only ' + delta + ' days to go.</p>');
+    $('#module-10k .results').html('<p>Your 10,000th day: ' + formattedDate + '.<br>Only ' + delta + ' days to go.</p>');
   } else if (delta < 0) {
-    $('#module-10k .results').html('<p>Your 10,000th day was on ' + formattedDate + '.</p>');
+    $('#module-10k .results').html('<p>Your 10,000th day was: ' + formattedDate + '.</p>');
   } else {
     $('#module-10k .results').html('<p>Your 10,000th day is today!<br>You should probably reflect.</p>');
   }
