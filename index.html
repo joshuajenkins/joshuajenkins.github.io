@@ -2,12 +2,3 @@
 layout: default
 title:
 ---
-
-<section id="home">
-  {% for post in site.posts %}
-	<article>
-		<h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
-		{{ post.content }}
-	</article>
-  {% endfor %}
-</section>

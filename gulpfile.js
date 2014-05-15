@@ -17,10 +17,6 @@ gulp.task('10k', function() {
   .pipe(uglify())
   .pipe(gulp.dest('static/10k/'));
 
-  gulp.src(['components/pikaday/css/pikaday.css'])
-  .pipe(minifyCSS({'keepSpecialComments': 0}))
-  .pipe(gulp.dest('static/10k/'));
-
   gulp.src(['src/scss/10k/10k.scss'])
   .pipe(sass())
   .pipe(minifyCSS({'keepSpecialComments': 0}))
@@ -34,7 +30,6 @@ gulp.task('watch', function() {
   // 10k
   gulp.watch(['components/moment/moment.js',
     'components/pikaday/pikaday.js',
-    'components/pikaday/css/pikaday.css',
     'src/scss/10k/*.scss'],
   ['10k']);
 });

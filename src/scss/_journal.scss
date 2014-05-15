@@ -1,0 +1,25 @@
+#journal {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: 0;
+    padding: 0;
+
+    p {
+      margin: 0;
+    }
+
+    .title {
+      font-size: $font-medium;
+      line-height: $baseline*2;
+    }
+
+    .date {
+      font-size: $font-small;
+      color: $grey;
+      line-height: $baseline;
+    }
+  }
+}

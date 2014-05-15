@@ -3,6 +3,7 @@
 @import 'helpers';
 @import 'projects';
 @import 'about';
+@import 'journal';
 
 * {
 	text-rendering: optimizeLegibility;
@@ -89,7 +90,7 @@ article {
 
 	h2 {
 		font-family: $font-display;
-		font-weight: 300;
+		font-weight: 500;
 		font-size: $font-medium;
 		max-width: $width-paragraph;
 		margin: 0 auto $baseline auto;
@@ -155,7 +156,7 @@ article {
 	ul {
 		max-width: $width-paragraph;
 		margin: 0 auto;
-		padding: 0;
+		padding: 0 0 0 33px;
 		list-style: circle;
 		
 		li {
@@ -166,10 +167,22 @@ article {
 			line-height: $baseline;
 		}
 	}
+
+	.notes {
+		margin: $baseline*2 auto 0 auto;
+		max-width: $width-paragraph;
+		padding: 0 $page-padding;
+
+		p {
+			font-size: $font-small;
+			padding: 0;
+			color: $grey;
+		}
+	}
 }
 
 footer {
-	height: $baseline*8;
+	height: $baseline*4;
 }
 
 @media screen and (max-width: 500px) {

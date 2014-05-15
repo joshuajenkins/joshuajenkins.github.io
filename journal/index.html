@@ -1,0 +1,14 @@
+---
+layout: projects
+title:  "Journal"
+date:   2014-04-20 20:17:32
+---
+
+<ul id="journal">
+  {% for post in site.posts %}
+    <li>
+      <p class="title"><a href="{{ post.permalink }}">{{ post.title }}</a></p>
+      <p class="date">{{ post.date | date: "%B %-d, %Y" }}</p>
+    </li>
+  {% endfor %}
+</ul>
