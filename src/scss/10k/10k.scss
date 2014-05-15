@@ -87,16 +87,16 @@
     position: relative;
     z-index: 9999;
     overflow: hidden;
-    margin: 0;
-    padding: 5px 3px 0 3px;
+    padding: 3px 5px 0 5px;
     font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
     background-color: #fff;
-    border-bottom: 1px solid $grey;
-
+    border: 1px solid $grey;
+    border-radius: 2px;
+    margin: 0 2px;
     &:hover {
-      color: $gold;
+      background-color: lighten($grey, 30%);
     }
 }
 .pika-title select {
