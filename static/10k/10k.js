@@ -2,7 +2,7 @@ var processResults = function(birthdate) {
   var a = birthdate.add('days', 10000);
   var b = moment();
   var delta = parseInt(a.diff(b, 'days')) + 1;
-  var formattedDate = b.add('days', delta).format('MMMM Do, YYYY');
+  var formattedDate = b.add('days', delta).format('MMM Do, YYYY');
 
   if (delta > 0) {
     $('#module-10k .results').html('<p>Your 10,000th day: ' + formattedDate + '.<br>Only ' + delta + ' days to go.</p>');
