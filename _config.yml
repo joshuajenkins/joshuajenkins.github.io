@@ -2,4 +2,4 @@ name: Joshua Jenkins
 markdown: kramdown
 pygments: false
 permalink: /:year/:title
-exclude: [src, node_modules, gulpfile.js, package.json]
+exclude: [src, node_modules, gulpfile.js, package.json, components]

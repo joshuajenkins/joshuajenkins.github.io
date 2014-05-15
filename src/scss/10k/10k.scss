@@ -1,0 +1,32 @@
+@import '../_vars.scss';
+
+.module {
+
+  .inside {
+    border-left: 6px solid $gold;
+    padding-left: 12px;
+    max-width: 360px;
+  }
+
+  input {
+    -webkit-appearance: none;
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid $grey;
+    background-color: transparent;
+    font-size: $font-regular;
+    padding: $baseline/2 0;
+    width: 100%;
+
+    &:focus {
+      border-color: $gold;
+    }
+  }
+
+  .results p {
+      font-size: $font-small;
+      color: $grey;
+      padding: 0;
+      margin: $baseline/2 0 $baseline 0;
+  }
+}

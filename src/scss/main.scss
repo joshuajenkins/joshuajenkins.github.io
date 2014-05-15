@@ -101,6 +101,11 @@ article {
 		padding: 0 $page-padding;
 	}
 
+	.module {
+		max-width: $width-paragraph;
+		margin: 0 auto $baseline auto;
+	}
+
 	.image,
 	.big-image,
 	.images {

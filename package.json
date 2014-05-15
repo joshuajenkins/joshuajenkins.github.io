@@ -8,9 +8,11 @@
   },
   "author": "",
   "license": "ISC",
-    "dependencies": {
+  "dependencies": {
     "gulp": "^3.6.0",
     "gulp-sass": "^0.7.1",
-    "gulp-minify-css": "^0.3.1"
+    "gulp-minify-css": "^0.3.1",
+    "gulp-uglify": "^0.3.0",
+    "gulp-concat": "^2.2.0"
   }
 }
