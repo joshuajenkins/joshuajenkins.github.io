@@ -18,6 +18,7 @@ $(document).ready(function() {
     field: $('#datepicker')[0],
     minDate: moment("1900", "YYYY").toDate(),
     maxDate: moment().toDate(),
+    defaultDate: moment([1986, 11, 28]).toDate(),
     yearRange: 100,
     format: 'MMMM Do, YYYY',
     position: 'bottom',
