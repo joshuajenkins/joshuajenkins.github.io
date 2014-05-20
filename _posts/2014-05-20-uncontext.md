@@ -15,7 +15,7 @@ Fast-forward past the remainder of puberty, me abandoning most things artistic, 
 [![Data and visualization.](/img/uncontext/uncontext.gif "Data and visualization")](http://uncontext.com)
 {: .image }
 
-Uncontext, to me, has the same spirit of those oldschool Flash experiments, excepts it adds this interesting dimension that is a single live stream of seemingly random data that every collaborator builds against. So whatever crazy thing you build is going to be completely in sync and will react with the same rhythm as what everyone else has made for that session. There's something beautiful about that, everyone exploring his or her own personal artistic expression while implicitly working as part of a group, creating a body of work.
+Uncontext, to me, has the same spirit of those oldschool Flash experiments, except it adds this interesting dimension that is a single live stream of seemingly random data that every collaborator builds against. So whatever crazy thing you build is going to be completely in sync and will react with the same rhythm as what everyone else has made for that session. There's something beautiful about that, everyone exploring his or her own personal artistic expression while implicitly working as part of a group, creating a body of work.
 
 The data source is also interesting. John's been a bit coy about this so far, but the basic idea is that the data just *looks* random. It's actually pulled from some source and modified to look random. At the end of each session (session 1 is "Literature") the datasource will be revealed. Neat.
 
