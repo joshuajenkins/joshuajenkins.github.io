@@ -123,8 +123,9 @@ article {
 	.image img {
 		display: block;
 		width: 100%;
-		max-width: $width-image;
-		padding: 0 0 0 ($width-image - $width-paragraph);
+		// max-width: $width-image;
+		max-width: $width-paragraph;
+		// padding: 0 0 0 ($width-image - $width-paragraph);
 		margin: 0 auto;
 	}
 
