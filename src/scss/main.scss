@@ -10,7 +10,7 @@
 }
 
 body {
-	font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B', sans-serif;
+	font-family: $font-sans, sans-serif;
 	font-weight: 300;
 }
 
@@ -38,15 +38,23 @@ header {
 	max-width: $width-paragraph;
 	padding: 0 $page-padding;
 	margin: ($baseline * 2) auto;
+	@extend %clearfix;
 }
 
 h1 {
 	font-weight: 200;
 	font-size: $font-regular;
-	font-family: $font-display;
+	font-family: $font-sans;
 	line-height: $baseline;
 	margin: 0 0 $baseline 0;
 	padding: 0;
+	width: 40%;
+	float: left;
+
+	a:link,
+	a:visited {
+		color: $grey;
+	}
 }
 
 h3 {
@@ -60,23 +68,34 @@ h3 {
 }
 
 #nav {
+	@extend %clearfix;
 	display: block;
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	width: 50%;
+	float: right;
+	text-align: right;
 
 	li {
 		padding: 0;
-		display: block;
+		display: inline-block;
 		font-weight: 300;
 		margin: 0;
 		font-size: $font-small;
 		line-height: $baseline;
 		font-style: italic;
+		margin-left: 2em;
+
+		a:link,
+		a:visited {
+			color: $grey;
+		}
 	}
 }
 
 p {
+	font-family: $font-text;
 	font-size: $font-regular;
 	color: $black;
 	line-height: $baseline;
@@ -86,12 +105,18 @@ p {
 	a {
 		font-style: italic;
 	}
+
+	&.note {
+		color: lighten($black, 25%);
+		font-size: $font-small;
+		font-style: italic;
+	}
 }
 
 article {
 
 	h2 {
-		font-family: $font-display;
+		font-family: $font-sans;
 		font-weight: 500;
 		font-size: $font-medium;
 		max-width: $width-paragraph;
