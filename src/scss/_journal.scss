@@ -14,12 +14,131 @@
     .title {
       font-size: $font-medium;
       line-height: $baseline*2;
+      text-align: center;
     }
 
     .date {
       font-size: $font-small;
       color: $grey;
       line-height: $baseline;
+      text-align: center;
     }
+  }
+}
+
+article {
+
+  h2 {
+    font-family: $font-sans;
+    font-weight: 500;
+    font-size: $font-medium;
+    max-width: $width-paragraph;
+    margin: 0 auto $baseline*2 auto;
+    padding: 0 $page-padding;
+    text-align: center;
+    word-wrap: normal;
+  }
+
+  p {
+    padding: 0 $page-padding;
+  }
+
+  .module {
+    max-width: $width-paragraph;
+    margin: 0 auto $baseline auto;
+  }
+
+  .image,
+  .big-image,
+  .images {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 2em auto 2em auto;
+
+    @extend %clearfix;
+  }
+
+  .image img {
+    display: block;
+    width: 100%;
+    // max-width: $width-image;
+    max-width: $width-paragraph;
+    // padding: 0 0 0 ($width-image - $width-paragraph);
+    margin: 0 auto;
+  }
+
+  .big-image img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .images-2x2 img {
+    box-sizing: border-box;
+    padding: 2px;
+    width: 50%;
+    float: left;
+    margin: 0;
+
+    &:nth-child(odd) { padding-left: 0; }
+    &:nth-child(even) { padding-right: 0; }
+  }
+
+  .images-3x1 img {
+    box-sizing: border-box;
+    padding: 2px;
+    width: 33.3%;
+    float: left;
+    margin: 0;
+
+    &:first-child { padding-left: 0; }
+    &:last-child { padding-right: 0; }
+  }
+
+  ul {
+    max-width: $width-paragraph;
+    margin: 0 auto;
+    padding: 0 0 0 33px;
+    list-style: circle;
+    
+    li {
+      margin-left: 0px;
+      margin-bottom: $baseline/2;
+
+      font-size: $font-small;
+      line-height: $baseline;
+    }
+  }
+
+  .notes {
+    margin: $baseline*2 auto 0 auto;
+    max-width: $width-paragraph;
+    padding: 0 $page-padding;
+
+    p {
+      font-size: $font-small;
+      padding: 0;
+      color: $grey;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  
+  article .image img {
+    padding: 0;
+  }
+
+  article .images-2x2 img,
+  article .images-3x1 img {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  article .image img {
+    padding: 0;
   }
 }
