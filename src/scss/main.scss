@@ -47,9 +47,8 @@ h1 {
 	font-family: $font-sans;
 	line-height: $baseline;
 	margin: 0 0 $baseline 0;
+	text-align: center;
 	padding: 0;
-	width: 40%;
-	float: left;
 
 	a:link,
 	a:visited {
@@ -73,9 +72,7 @@ h3 {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	width: 50%;
-	float: right;
-	text-align: right;
+	text-align: center;
 
 	li {
 		padding: 0;
@@ -84,7 +81,7 @@ h3 {
 		margin: 0;
 		font-size: $font-small;
 		line-height: $baseline;
-		margin-left: 1.618em;
+		margin: 0 0.814em;
 
 		a:link,
 		a:visited {
