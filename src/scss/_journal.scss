@@ -121,6 +121,20 @@ article {
       color: $grey;
     }
   }
+
+  a:link,
+  a:visited {
+    border-bottom: 1px solid #ddd;
+  }
+  a:hover {
+    border-color: #ccc;
+  }
+
+  &.note {
+    color: lighten($black, 25%);
+    font-size: $font-small;
+    font-style: italic;
+  }
 }
 
 @media screen and (max-width: 500px) {

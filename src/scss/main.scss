@@ -90,27 +90,13 @@ h3 {
 	}
 }
 
-article p {
+p {
 	font-family: $font-text;
 	font-size: $font-regular;
 	color: $black;
 	line-height: $baseline;
 	max-width: $width-paragraph;
 	margin: 0 auto $baseline auto;
-
-	a:link,
-	a:visited {
-		border-bottom: 1px solid #ddd;
-	}
-	a:hover {
-		border-color: #ccc;
-	}
-
-	&.note {
-		color: lighten($black, 25%);
-		font-size: $font-small;
-		font-style: italic;
-	}
 }
 
 footer {
