@@ -22,6 +22,18 @@
         {% if page.preview_image %}
         <meta propery="og:image" content="http://joshuajenkins.com{{ page.preview_image }}" />
         {% endif %}
+
+        <meta name="twitter:url" content="http://joshuajenkins.com{{permalink}}">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@joshuajenkinsyo">
+        <meta name="twitter:creator" content="@joshuajenkinsyo">
+        <meta name="twitter:title" content="Joshua Jenkins{% if page.title %}—{{ page.title }}{% endif %}">
+        {% if page.description %}
+        <meta name="twitter:description" content="{{ page.description }}">
+        {% endif %}
+        {% if page.preview_image %}
+        <meta name="twitter:image" content="http://joshuajenkins.com{{ page.preview_image }}">
+        {% endif %}
     </head>
     <body>
 
