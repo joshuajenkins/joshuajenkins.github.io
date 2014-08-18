@@ -8,7 +8,7 @@
 #about .photo {
 	max-width: $width-paragraph;
 	padding: 0 $page-padding;
-	margin: 0 auto ($baseline * 4) auto;
+	margin: $baseline*2 auto $baseline*2 auto;
 
 	img {
 		display: block;
