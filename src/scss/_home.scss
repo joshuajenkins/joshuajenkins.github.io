@@ -59,3 +59,9 @@
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  .home .journal li .title {
+    font-size: $baseline;
+  }
+}
