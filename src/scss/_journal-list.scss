@@ -1,0 +1,95 @@
+.journal-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+
+  li {
+    box-sizing: border-box;
+    max-width: $width-paragraph;
+    margin: 0 auto;
+    padding: 0;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgba($gold, 0.8);
+    border: 2px solid black;
+    border-bottom: 0;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    &:last-child {
+      border-bottom: 2px solid black;
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      height: 300px;
+    }
+
+    .background {
+      position: relative;
+      width: 120%;
+      left: -10%;
+      top: -5%;
+
+      transition: top 0.4s ease;
+    }
+
+    .title {
+      box-sizing: border-box;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      padding: 0 1em;
+      width: 100%;
+      line-height: 1.2em;
+      font-weight: 600;
+      font-size: $baseline*2;
+      color: white;
+
+      text-decoration: underline;
+
+      transition: padding-top 0.2s ease;
+    }
+
+    .date {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+
+      font-size: 0.8em;
+      font-weight: 600;
+      color: white;
+    }
+
+    &:hover {
+      background-color: $gold;
+
+      .background { 
+        top: -10%;
+      }
+
+      .title {
+        padding-top: 0.2em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .journal-list li,
+  .journal-list li a {
+    height: 200px;
+  }
+
+  .journal-list li .title {
+    font-size: $baseline*1.5;
+  }
+}
