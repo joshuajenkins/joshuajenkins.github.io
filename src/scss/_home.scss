@@ -61,7 +61,12 @@
 }
 
 @media screen and (max-width: 500px) {
+  .home .journal li,
+  .home .journal a {
+    height: 200px;
+  }
+  
   .home .journal li .title {
-    font-size: $baseline;
+    font-size: $baseline*1.5;
   }
 }
