@@ -33,7 +33,11 @@
 
     .background {
       position: relative;
-      width: 100%;
+      width: 120%;
+      left: -10%;
+      top: -5%;
+
+      transition: top 0.4s ease;
     }
 
     .title {
@@ -50,6 +54,8 @@
       color: white;
 
       text-decoration: underline;
+
+      transition: padding-top 0.2s ease;
     }
 
     .date {
@@ -65,9 +71,13 @@
 
     &:hover {
       background-color: $gold;
-      
+
       .background { 
-        opacity: 0.8;
+        top: -10%;
+      }
+
+      .title {
+        padding-top: 0.2em;
       }
     }
   }
