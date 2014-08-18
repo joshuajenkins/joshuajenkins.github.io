@@ -10,6 +10,7 @@
     height: 300px;
     overflow: hidden;
     position: relative;
+    background-color: $gold;
 
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
@@ -43,8 +44,6 @@
     }
 
     &:hover {
-      background-color: $gold;
-
       .background { 
         opacity: 0.8;
       }

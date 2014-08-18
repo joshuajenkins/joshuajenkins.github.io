@@ -7,8 +7,13 @@ date:   2014-04-20 20:17:32
 <ul id="journal">
   {% for post in site.posts %}
     <li>
-      <p class="title"><a href="{{ post.permalink }}" title="{{ post.title }}">{{ post.title }}</a></p>
-      <p class="date">{{ post.date | date: "%B %-d, %Y" }}</p>
+      <a href="{{ post.permalink }}/">
+        {% if post.preview_image %}
+        <img class="background" src="{{ post.preview_image }}">
+        {% endif %}
+        <p class="title">{{ post.title }}</p>
+        <p class="date">{{ post.date | date: "%B %-d, %Y" }}</p>
+      </a>
     </li>
   {% endfor %}
 </ul>
