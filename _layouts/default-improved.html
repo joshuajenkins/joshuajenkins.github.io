@@ -11,8 +11,10 @@
         {% for css in page.extra_css %}
             <link rel="stylesheet" href="{{ css }}" />
         {% endfor %}
+        <link rel="canonical" href="http://joshuajenkins.com{{ page.permalink }}/" />
+        
         <meta property="og:site_name" content="Joshua Jenkins" />
-        <meta property="og:url" content="http://joshuajenkins.com{{ page.permalink }}" />
+        <meta property="og:url" content="http://joshuajenkins.com{{ page.permalink }}/" />
         <meta property="og:title" content="Joshua Jenkins{% if page.title %}—{{ page.title }}{% endif %}" />
         {% if page.description %}
         <meta propery="og:description" content="{{ page.description }}" />
@@ -21,7 +23,7 @@
         <meta propery="og:image" content="http://joshuajenkins.com{{ page.preview_image }}" />
         {% endif %}
 
-        <meta name="twitter:url" content="http://joshuajenkins.com{{ page.permalink }}">
+        <meta name="twitter:url" content="http://joshuajenkins.com{{ page.permalink }}/">
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@joshuajenkinsyo">
         <meta name="twitter:creator" content="@joshuajenkinsyo">
