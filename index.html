@@ -2,3 +2,17 @@
 layout: default
 title:
 ---
+
+<section class="home">
+  <h2>Recently</h2>
+  <ul class="journal">
+  {% for post in site.posts limit:3 %}
+    <li>
+      <a href="{{ post.permalink }}/">
+        <img class="background" src="{{ post.preview_image }}">
+        <p class="title">{{ post.title }}</p>
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
