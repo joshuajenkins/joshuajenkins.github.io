@@ -2,8 +2,9 @@ article {
 
   h2 {
     font-family: $font-display;
+    text-decoration: underline;
     font-weight: 800;
-    font-size: $font-medium;
+    font-size: $font-large;
     max-width: $width-paragraph;
     margin: 0 auto $baseline*2 auto;
     padding: 0 $page-padding;
@@ -13,6 +14,12 @@ article {
 
   p {
     padding: 0 $page-padding;
+  }
+
+  p.date {
+    text-align: center;
+    color: #aaa;
+    font-size: $font-small;
   }
 
   .module {
