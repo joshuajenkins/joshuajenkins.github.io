@@ -17,9 +17,22 @@ h1 {
   float: left;
   width: 30%;
 
+  .full {
+    display: none;
+  }
+
   a:link,
   a:visited {
-    color: #666;
+    color: black;
+  }
+
+  &:hover {
+    .short {
+      display: none;
+    }
+    .full {
+      display: inline;
+    }
   }
 }
 
@@ -56,6 +69,13 @@ h1 {
     float: none;
     width: 100%;
     text-align: center;
+
+    .full {
+      display: inline;
+    }
+    .short {
+      display: none;
+    }
   }
 
   #nav {
