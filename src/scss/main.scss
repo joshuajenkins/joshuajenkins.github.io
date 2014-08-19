@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'normalize';
 @import 'helpers';
+@import 'header';
 @import 'journal-list';
 @import 'projects';
 @import 'about';
@@ -22,7 +23,7 @@ a:link,
 a:visited {
 	color: $black;
 	text-decoration: none;
-	border-bottom: 2px solid transparent;
+	border-bottom: 1px solid transparent;
 }
 a:hover {
 	transition: border-color 0.4s ease-out;
@@ -36,28 +37,6 @@ a:hover {
 	margin: 0 auto;
 }
 
-header {
-	max-width: $width-paragraph;
-	padding: 0 $page-padding;
-	margin: ($baseline * 2) auto;
-	@extend %clearfix;
-}
-
-h1 {
-	font-weight: 200;
-	font-size: $font-regular;
-	font-family: $font-sans;
-	line-height: $baseline;
-	margin: 0 0 $baseline 0;
-	text-align: center;
-	padding: 0;
-
-	a:link,
-	a:visited {
-		color: $grey;
-	}
-}
-
 h3 {
 	max-width: $width-paragraph;
 	line-height: $baseline;
@@ -66,30 +45,6 @@ h3 {
 	color: $black;
 	font-weight: 500;
 	margin: 0 auto ($baseline/2) auto;
-}
-
-#nav {
-	@extend %clearfix;
-	display: block;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	text-align: center;
-
-	li {
-		padding: 0;
-		display: inline-block;
-		font-weight: 300;
-		margin: 0;
-		font-size: $font-small;
-		line-height: $baseline;
-		margin: 0 0.814em;
-
-		a:link,
-		a:visited {
-			color: $grey;
-		}
-	}
 }
 
 p {

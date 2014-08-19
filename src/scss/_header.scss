@@ -1,0 +1,71 @@
+header {
+  @extend %clearfix;
+
+  max-width: $width-paragraph;
+  padding: 0;
+  margin: $baseline*2 auto;
+
+}
+
+h1 {
+  font-weight: 200;
+  font-size: $font-regular;
+  font-family: $font-display;
+  line-height: $baseline;
+  margin: 0 0 $baseline 0;
+  padding: 0;
+  float: left;
+  width: 30%;
+
+  a:link,
+  a:visited {
+    color: #666;
+  }
+}
+
+#nav {
+  @extend %clearfix;
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+  float: left;
+  margin-left: 10%;
+  width: 60%;
+
+  li {
+    padding: 0;
+    display: block;
+    font-weight: 300;
+    font-size: $font-small;
+    line-height: $baseline;
+    margin: 0 0 0 1.614em;
+    display: inline-block;
+
+    a:link,
+    a:visited {
+      color: $grey;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  h1 {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  #nav {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+
+    li {
+      margin: 0 1.614em/2;
+    }
+  }
+
+}
