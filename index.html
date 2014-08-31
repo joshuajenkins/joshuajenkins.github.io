@@ -9,9 +9,10 @@ title:
     <li>
       <a href="{{ post.permalink }}/">
         {% if post.preview_image %}
-        <img class="entry-image" src="{{ post.preview_image }}">
+        <p class="title image-title" style="background-image: url({{ post.preview_image }});">{{ post.title }}</p>
+        {% else %}
+        <p class="title">{{ post.title }}</p>
         {% endif %}
-        <p class="title" style="background-image: url({{ post.preview_image }});">{{ post.title }}</p>
         <p class="date">{{ post.date | date: "%B %-d, %Y" }}</p>
       </a>
     </li>
