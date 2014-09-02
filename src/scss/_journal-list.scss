@@ -13,35 +13,14 @@
       border: none;
     }
 
-    .entry-image {
-      width: 100px;
-      height: 100px;
-      border-radius: 50px;
-      margin: 0 auto 20px auto;
-      display: none;
-    }
-
     .title {
-      color: $gold;
+      color: rgb(0,0,0);
       line-height: 1.2em;
       font-weight: 800;
       font-family: $font-display;
       font-size: $font-large;
 
-      transition: background-position 0.7s cubic-bezier(0.770, 0.000, 0.175, 1.000),
-                  transform 0.7s cubic-bezier(0.770, 0.000, 0.175, 1.000);
-    }
-
-    .image-title {
-      background-position: center center;
-      background-size: 80%;
-      -webkit-text-fill-color: transparent;
-          -moz-text-fill-color: transparent;
-               text-fill-color: transparent;
-
-      -webkit-background-clip: text;
-         -moz-background-clip: text;
-              background-clip: text;
+      transition: transform 0.3s cubic-bezier(0.770, 0.000, 0.175, 1.000);
     }
 
     .date {
@@ -50,12 +29,8 @@
       color: #aaa;
     }
 
-    &:hover {
-
-      .title {
-        background-position: center right;
-        transform: rotateY(-10deg);
-      }
+    &:hover .title {
+      transform: rotateY(-15deg);
     }
   }
 }
