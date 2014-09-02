@@ -4,12 +4,14 @@
   font-family: $font-display;
   font-size: $font-large;
   text-align: center;
+  padding: 0 $page-padding;
 }
 
 .subtitle {
   text-align: center;
   font-weight: 300;
   margin: -$baseline/2 0 $baseline*3 0;
+  padding: 0 $page-padding;
 }
 
 // For titles that will appear multiple times in one page
@@ -22,6 +24,10 @@
 
 .description {
   margin-top: $baseline;
+}
+
+p {
+  padding: 0 $page-padding;
 }
 
 .left {
