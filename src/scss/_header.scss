@@ -3,8 +3,7 @@ header {
 
   max-width: $width-paragraph;
   padding: 0;
-  margin: $baseline*2 auto;
-
+  margin: $baseline*2 auto $baseline*4 auto;
 }
 
 h1 {
@@ -52,7 +51,8 @@ h1 {
 
 // Overwrites for goldness
 .gold #nav li a:link,
-.gold #nav li a:visited {
+.gold #nav li a:visited,
+.gold h1 a {
   color: rgb(255,255,255);
 }
 
