@@ -1,27 +1,18 @@
-@import 'vars';
-
-#projects {
-	margin: 0 auto;
-	max-width: $width-paragraph;
-	padding: 0 $page-padding;
-}
-
 .project {
-	margin: 0 0 ($baseline*2) 0;
-
-	h2 {
-		text-align: center;
-		font-weight: 500;
-		font-size: $font-regular;
-		margin: 0;
-		padding: 0;
-	}
+	margin: 0 0 $baseline*2 0;
 
 	p {
 		color: $grey;
 		font-size: $font-small;
-		margin: $baseline auto 0 auto;
-		text-align: center;
-		max-width: 400px;
+		padding: 0;
+		margin: 0 auto;
+	}
+
+	h4 {
+		font-family: $font-display;
+		font-size: $font-regular;
+		line-height: $baseline;
+		padding: 0;
+		margin: 0 0 $baseline/2 0;
 	}
 }

@@ -23,3 +23,37 @@
 .description {
   margin-top: $baseline;
 }
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.left-half,
+.right-half {
+  box-sizing: border-box;
+  width: 45%;
+}
+
+.left-half {
+  margin-right: 5%;
+}
+
+.right-half {
+  margin-left: 5%;
+}
+
+@media screen and (max-width: 600px) {
+  .left,
+  .right,
+  .left-half,
+  .right-half {
+    box-sizing: border-box;
+    padding: 0 $page-padding;
+    float: none;
+    width: 100%;
+  }
+}

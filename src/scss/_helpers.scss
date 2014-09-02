@@ -6,6 +6,12 @@
   }
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 %inner {
   max-width: $width-paragraph;
   margin: 0 auto;
