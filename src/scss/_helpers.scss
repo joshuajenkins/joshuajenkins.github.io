@@ -5,3 +5,8 @@
     clear: both;
   }
 }
+
+%inner {
+  max-width: $width-paragraph;
+  margin: 0 auto;
+}

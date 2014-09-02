@@ -1,0 +1,26 @@
+// Sub-page stuff should slowly move here
+
+.section h2 {
+  font-family: $font-display;
+  font-size: $font-large;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: -$baseline/2 0 $baseline*3 0;
+}
+
+// For titles that will appear multiple times in one page
+.inline-title {
+  text-align: center;
+  font-family: $font-display;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+.description {
+  margin-top: $baseline;
+}

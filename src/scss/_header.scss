@@ -63,6 +63,16 @@ h1 {
   }
 }
 
+// Overwrites for goldness
+.gold #nav li a:link,
+.gold #nav li a:visited {
+  color: rgb(255,255,255);
+}
+
+.gold #nav li a:hover {
+  border-color: rgb(255,255,255);
+}
+
 @media screen and (max-width: 700px) {
 
   h1 {

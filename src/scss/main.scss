@@ -7,6 +7,7 @@
 @import 'about';
 @import 'journal';
 @import 'home';
+@import 'section';
 
 * {
 	text-rendering: optimizeLegibility;
@@ -15,6 +16,10 @@
 body {
 	font-family: $font-sans, sans-serif;
 	font-weight: 300;
+}
+
+body.gold {
+	background-color: $gold;
 }
 
 a { border: none; }
@@ -31,17 +36,22 @@ a:hover {
 }
 
 
-#wrapper {
+#wrapper,
+.wrapper {
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
+}
+
+.section {
+	@extend %inner;
 }
 
 h3 {
 	max-width: $width-paragraph;
 	line-height: $baseline;
 	font-size: $font-regular;
-	padding: 0 $page-padding;
+	padding: 0;
 	color: $black;
 	font-weight: 500;
 	margin: 0 auto ($baseline/2) auto;
@@ -54,4 +64,8 @@ p {
 	line-height: $baseline;
 	max-width: $width-paragraph;
 	margin: 0 auto $baseline auto;
+}
+
+.inline {
+	max-width: 100%;
 }
