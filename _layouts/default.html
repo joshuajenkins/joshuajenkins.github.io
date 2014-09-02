@@ -12,7 +12,11 @@
             <link rel="stylesheet" href="{{ css }}" />
         {% endfor %}
     </head>
+    {% if page.special_page_class %}
+    <body class="{{ page.special_page_class }}">
+    {% else %}
     <body>
+    {% endif %}
 
         <section id="wrapper">
             <header>
