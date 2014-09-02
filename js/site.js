@@ -3,11 +3,11 @@ function beTrashy() {
   var text = el.innerText;
   var rando = Math.floor(Math.random() * text.length);
 
-  if (rando == 1 || rando == 12) {
+  if (rando == 2 || rando == 13) {
     var newChar = (text.charAt(rando) == '$') ? 's' : '$';
-  } else if (rando == 6) {
+  } else if (rando == 0 || rando == 7) {
     var newChar = (text.charAt(rando) == '¥' ? 'J' : '¥');
-  } else if (rando == 7) {
+  } else if (rando == 8) {
     var newChar = (text.charAt(rando) == '€' ? 'e' : '€');
   }
 
