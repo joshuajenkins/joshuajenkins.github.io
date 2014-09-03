@@ -60,6 +60,54 @@ h1 {
   border-color: rgb(255,255,255);
 }
 
+// Might as well put footer in here
+
+.footer {
+  margin-top: $baseline*2;
+}
+
+.footer .inside {
+  border-top: 1px solid $lightgrey;
+  max-width: $width-paragraph;
+  margin: 0 auto;
+  padding: $baseline*2 $page-padding;
+  text-align: center;
+}
+
+.twitter-cta {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: $font-regular;
+  font-weight: 600;
+  text-align: center;
+
+  &:link,
+  &:visited {
+    color: rgb(120,120,120);
+  }
+
+  &:hover {
+    color: rgb(0,0,0);
+    border: none;
+  }
+}
+
+.twitter-cta .block {
+  display: block;
+  margin: 0 0 0.25em 0;
+
+  span {
+    border-bottom: 2px solid $gold;
+    padding: 0.25em 0 0 0;
+  }
+}
+
+.gold .footer .inside {
+  border-color: rgb(0,0,0);
+}
+
 @media screen and (max-width: 700px) {
 
   h1 {

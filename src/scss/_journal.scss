@@ -125,20 +125,6 @@ article {
   }
 }
 
-#journal-footer {
-  .inside {
-    max-width: $width-paragraph;
-    margin: $baseline*4 auto;
-    padding: $baseline*4 0 0 0;
-    text-align: center;
-    border-top: 1px solid $lightgrey;
-  }
-}
-
-.gold #journal-footer .inside {
-  border-color: rgb(0,0,0);
-}
-
 @media screen and (max-width: 500px) {
   
   article .image img {
