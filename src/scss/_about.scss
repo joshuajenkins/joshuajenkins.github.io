@@ -1,24 +1,5 @@
-@import 'helpers';
-@import 'vars';
-
-#about p {
-	padding: 0 $page-padding;
-}
-
-#about .sassypants {
+.inline-photo {
 	float: left;
-	width: 80px;
-	margin: 0.4em 1em 0 0;
-}
-
-@media screen and (max-width: 500px) {
-	
-	#about .photo img {
-		float: none;
-		max-width: 100%;
-	}
-
-	#about .photo p {
-		max-width: 100%;	
-	}
+	width: $baseline*4.5;
+	margin: $baseline/4 $baseline $baseline/2 0;
 }
