@@ -1,6 +1,6 @@
 .journal-list {
   list-style: none;
-  margin: 0;
+  margin: $baseline*4 0 0 0;
   padding: 0;
 
   text-align: center;
@@ -18,7 +18,7 @@
       line-height: 1.2em;
       font-weight: 800;
       font-family: $font-display;
-      font-size: $font-large;
+      font-size: $font-medium;
 
       transition: transform 0.3s cubic-bezier(0.770, 0.000, 0.175, 1.000);
     }
