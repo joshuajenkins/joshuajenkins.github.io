@@ -3,7 +3,7 @@ header {
 
   max-width: $width-paragraph;
   padding: 0;
-  margin: $baseline*2 auto $baseline*4 auto;
+  margin: $baseline*2 auto $baseline auto;
 }
 
 h1 {
@@ -18,7 +18,7 @@ h1 {
 
   a:link,
   a:visited {
-    color: rgb(155,155,155);
+    color: rgb(180,180,180);
   }
 }
 
@@ -44,7 +44,7 @@ h1 {
 
     a:link,
     a:visited {
-      color: $grey;
+      color: rgb(180,180,180);
     }
   }
 }
