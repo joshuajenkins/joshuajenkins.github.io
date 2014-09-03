@@ -4,6 +4,7 @@ article {
   }
 
   p.date {
+    margin: $baseline*4 auto 0 auto;
     text-align: center;
     color: #aaa;
     font-size: $font-small;
