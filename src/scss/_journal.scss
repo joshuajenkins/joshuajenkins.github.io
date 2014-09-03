@@ -1,17 +1,4 @@
 article {
-
-  h2 {
-    font-family: $font-display;
-    text-decoration: underline;
-    font-weight: 800;
-    font-size: $font-large;
-    max-width: $width-paragraph;
-    margin: 0 auto $baseline*2 auto;
-    padding: 0 $page-padding;
-    text-align: center;
-    word-wrap: normal;
-  }
-
   p {
     padding: 0 $page-padding;
   }

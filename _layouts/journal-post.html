@@ -3,6 +3,7 @@ layout: journal-post-base
 ---
 <article>
   <p class="date"><span>{{ page.date | date: "%B, %Y" }}</span></p>
-  <h2>{{ page.title }}</h2>
+  <h2 class="page-title">{{ page.title }}</h2>
+  <span class="header-divider"></span>
   {{ content }}
 </article>

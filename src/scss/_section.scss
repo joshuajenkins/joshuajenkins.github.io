@@ -1,38 +1,7 @@
 // Sub-page stuff should slowly move here
 
-.section h2 {
-  max-width: $width-paragraph;
 
-  margin: $baseline*3 0 $baseline 0;
-
-  color: rgb(0,0,0);
-
-  font-family: $font-display;
-  font-size: $font-large;
-  font-weight: 300;
-  text-align: center;
-}
-
-.divider {
-  display: block;
-  width: $baseline*4;
-  margin: 0 auto $baseline*4 auto;
-  height: 1px;
-  border-bottom: 2px solid $gold;
-}
-
-.gold .divider {
-  border-color: rgb(255,255,255);
-}
-
-// For titles that will appear multiple times in one page
-.inline-title {
-  text-align: center;
-  font-family: $font-display;
-  font-weight: 300;
-  text-decoration: underline;
-}
-
+// Terrible name
 .description {
   margin-top: $baseline;
 }
@@ -64,12 +33,6 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-  .section h2,
-  .divider {
-    padding-left: $page-padding;
-    padding-right: $page-padding;
-  }
-
   .left,
   .right,
   .left-half,
