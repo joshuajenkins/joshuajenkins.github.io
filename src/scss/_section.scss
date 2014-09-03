@@ -64,6 +64,15 @@ p {
 }
 
 @media screen and (max-width: 600px) {
+  .section h2,
+  .divider {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $page-padding;
+    padding-right: $page-padding;
+  }
+
   .left,
   .right,
   .left-half,
