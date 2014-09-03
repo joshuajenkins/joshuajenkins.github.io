@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: journal-post
 title:  "A bit more about Uncontext"
 date:   2014-05-20
 permalink: /journal/uncontext
