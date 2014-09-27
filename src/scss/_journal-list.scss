@@ -15,22 +15,17 @@
 
     .title {
       color: rgb(0,0,0);
-      line-height: 1.2em;
+      line-height: 1em;
       font-weight: 800;
       font-family: $font-display;
       font-size: $font-medium;
-
-      transition: transform 0.3s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+      margin-bottom: $baseline/2;
     }
 
     .date {
       font-size: $font-small;
       font-weight: 300;
       color: #aaa;
-    }
-
-    &:hover .title {
-      transform: rotateY(-15deg);
     }
   }
 }
