@@ -74,38 +74,43 @@ h1 {
   text-align: center;
 }
 
-.twitter-cta {
-  display: inline-block;
-  border: none;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: $font-regular;
-  font-weight: 600;
-  text-align: center;
-
-  &:link,
-  &:visited {
-    color: rgb(120,120,120);
-  }
-
-  &:hover {
-    color: rgb(0,0,0);
-    border: none;
-  }
+.footer .twitter-container {
+  width: 30px;
+  margin: 0 auto;
 }
 
-.twitter-cta .block {
+.footer svg {
   display: block;
-  margin: 0 0 0.25em 0;
+  width: 30px;
 
-  span {
-    border-bottom: 2px solid $gold;
-    padding: 0.25em 0 0 0;
-  }
+  -webkit-transform: translateY(0) scale(1);
+          transform: translateY(0) scale(1);
+
+  -webkit-transition: -webkit-transform 0.2s linear;
+          transition: transform 0.2s linear;
+}
+
+.footer svg path {
+  fill: rgb(220,220,220);
+
+  transition: transform 0.2s linear;
+}
+
+.footer .twitter-container:hover svg {
+  -webkit-transform: translateY(-2px) scale(1.05);
+          transform: translateY(-2px) scale(1.05);
+}
+.footer .twitter-container:hover svg path {
+  fill: $gold;
 }
 
 .gold .footer .inside {
   border-color: rgb(0,0,0);
+}
+
+.gold .footer svg path,
+.gold .footer .twitter-container:hover svg path {
+  fill: rgb(255,255,255);
 }
 
 @media screen and (max-width: 700px) {
