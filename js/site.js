@@ -20,3 +20,12 @@ function beTrashy() {
 document.addEventListener("DOMContentLoaded", function() {
   window.setInterval(beTrashy, 400);
 });
+
+document.getElementsByClassName('js-toggle')[0].addEventListener('click', function(e) {
+  document.getElementsByClassName('js-toggle')[0].remove();
+  e.preventDefault();
+  var els = document.getElementsByClassName('js-hidden');
+  for (var i = 0; i < els.length; i++) {
+    els[i].className = els[i].className.replace(/js-hidden/gi,'');
+  }
+});

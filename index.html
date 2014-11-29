@@ -12,8 +12,16 @@ title:
     </li>
   {% endfor %}
     <li class="listItem listItem--more">
-      <p class="listItem-title"><a href="/journal/">View more&hellip;</a></p>
+      <p class="listItem-title"><a class="js-toggle" href="/journal/">View more&hellip;</a></p>
     </li>
+  {% for post in site.posts %}
+    {% if forloop.index > 3 %}
+      <li class="listItem js-hidden">
+        <p class="listItem-title"><a href="{{ post.permalink}}">{{ post.title }}</a></p>
+        <p class="listItem-description"> {{ post.description }} &mdash; <span class="listItem-date">{{ post.date | date: "%B %-d, %Y" }}</span></p>
+      </li>
+    {% endif %}
+  {% endfor %}
   </ul>
 
   <h2 class="heading-2">Projects &amp; Work</h2>
