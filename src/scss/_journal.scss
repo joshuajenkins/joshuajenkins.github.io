@@ -1,17 +1,10 @@
-article {
+.article {
   p {
-    padding: 0 $page-padding;
+    padding: 0;
     max-width: $width-paragraph;
     margin: 0 auto;
     line-height: $baseline;
     margin-bottom: $baseline;
-  }
-
-  p.date {
-    margin: $baseline*4 auto 0 auto;
-    text-align: center;
-    color: #aaa;
-    font-size: $font-small;
   }
 
   .module {
@@ -127,6 +120,16 @@ article {
     font-size: $font-small;
     font-style: italic;
   }
+}
+.article-heading {
+  margin-bottom: $baseline*2;
+}
+.article-title {
+  margin-bottom: $baseline !important;
+}
+.article-date {
+  font-size: $fontSize-small;
+  color: $grey;
 }
 
 @media screen and (max-width: 500px) {

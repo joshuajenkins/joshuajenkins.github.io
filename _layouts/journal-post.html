@@ -1,9 +1,10 @@
 ---
 layout: journal-post-base
 ---
-<article>
-  <h2 class="page-title">{{ page.title }}</h2>
-  <span class="header-divider"></span>
+<div class="article">
+  <div class="article-heading">
+    <h2 class="heading-1 article-title">{{ page.title }}</h2>
+    <p class="article-date">{{ page.date | date: "%B, %Y" }}</p>
+  </div>
   {{ content }}
-  <p class="date">{{ page.date | date: "%B, %Y" }}</p>
-</article>
+</div>

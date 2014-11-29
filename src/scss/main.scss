@@ -2,19 +2,14 @@
 @import 'vars';
 @import 'utilities';
 @import 'helpers';
-@import 'typography';
 @import 'header';
 @import 'home';
 @import 'journal';
-@import 'section';
-
-* {
-	text-rendering: optimizeLegibility;
-}
 
 body {
 	font-family: $font-sans, sans-serif;
 	font-weight: 300;
+	text-rendering: optimizeLegibility;
 }
 
 body.gold {
@@ -27,8 +22,6 @@ a:visited {
 	text-decoration: none;
 	border-bottom: 1px solid rgb(230,230,230);
 }
-a:hover {
-}
 
 .siteWrapper {
   @include u-blockCenter();
@@ -37,20 +30,21 @@ a:hover {
   padding-bottom: $baseline*6;
 }
 
-.section {
-	@extend %inner;
-}
-
-h3 {
-	max-width: $width-paragraph;
-	line-height: $baseline;
-	font-size: $font-regular;
-	padding: 0;
-	color: $black;
-	font-weight: 500;
-	margin: 0 auto ($baseline/2) auto;
-}
-
 .inline {
 	max-width: 100%;
+}
+
+.heading-1 {
+	font-family: $font-text;
+	font-weight: 700;
+	font-size: $fontSize-large;
+	margin: 0;
+	margin-bottom: $baseline*2;
+}
+.heading-2 {
+  font-family: $font-text;
+  font-weight: 700;
+  font-size: $fontSize-medium;
+  margin: 0;
+  margin-bottom: $baseline*2;
 }
