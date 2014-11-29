@@ -17,13 +17,13 @@
 .list {
   list-style: none;
   padding: 0;
-  margin-bottom: $baseline*3;
+  margin-bottom: $baseline*6;
 }
 .listItem {
-  font-size: $fontSize-regular;
+  font-size: $fontSize-small;
   line-height: $baseline;
   margin: 0;
-  margin-bottom: $baseline;
+  margin-bottom: $baseline*2;
   padding: 0;
 }
 .listItem-title {
@@ -31,6 +31,7 @@
   font-style: italic;
   font-weight: 500;
   display: block;
+  margin: 0 0 $baseline/2 0;
 }
 .listItem-description {
   vertical-align: top;

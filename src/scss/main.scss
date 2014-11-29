@@ -21,12 +21,11 @@ body.gold {
 	background-color: $gold;
 }
 
-a { border: none; }
-
 a:link,
 a:visited {
 	color: $black;
 	text-decoration: none;
+	border-bottom: 1px solid rgb(230,230,230);
 }
 a:hover {
 }
