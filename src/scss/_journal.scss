@@ -1,6 +1,10 @@
 article {
   p {
     padding: 0 $page-padding;
+    max-width: $width-paragraph;
+    margin: 0 auto;
+    line-height: $baseline;
+    margin-bottom: $baseline;
   }
 
   p.date {
