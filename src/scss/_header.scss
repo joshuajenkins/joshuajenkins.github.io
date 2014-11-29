@@ -3,7 +3,7 @@
 
   max-width: $width-paragraph;
   padding: 0;
-  margin: $baseline*2 auto $baseline auto;
+  margin: $baseline*2 auto $baseline*4 auto;
 }
 .header-title {
   font-weight: 700;
@@ -12,10 +12,16 @@
   line-height: $baseline;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: $baseline*4;
   padding: 0;
 }
 .header-link:link,
 .header-link:visited {
   border: none;
+}
+.header-twitterLink {
+  font-size: $fontSize-small;
+}
+.header-link--twitter:link,
+.header-link--twitter:visited {
+  color: $grey;
 }
