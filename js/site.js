@@ -1,5 +1,5 @@
 function beTrashy() {
-  var el = document.getElementById('name');
+  var el = document.getElementsByClassName('js-name')[0];
   var text = el.innerText;
   var rando = Math.floor(Math.random() * text.length);
 

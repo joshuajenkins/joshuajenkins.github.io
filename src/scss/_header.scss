@@ -1,4 +1,4 @@
-header {
+.header {
   @extend %clearfix;
 
   max-width: $width-paragraph;
@@ -6,8 +6,7 @@ header {
   margin: $baseline*2 auto $baseline auto;
 }
 
-h1 {
-  box-sizing: border-box;
+.header-title {
   font-weight: 700;
   font-size: $font-regular;
   font-family: $font-text;
@@ -16,11 +15,11 @@ h1 {
   margin: 0;
   margin-bottom: $baseline*4;
   padding: 0 $page-padding;
+}
 
-  a:link,
-  a:visited {
-    color: rgb(0,0,0);
-  }
+.header-link:link,
+.header-link:visited {
+  border: none;
 }
 
 // Might as well put footer in here
