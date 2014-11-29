@@ -6,12 +6,8 @@
   font-family: $font-text;
   font-weight: 700;
   font-size: $fontSize-medium;
-}
-
-.siteWrapper {
-  @include u-blockCenter();
-  padding-left: $page-padding;
-  padding-right: $page-padding;
+  margin: 0;
+  margin-bottom: $baseline*2;
 }
 
 .list {

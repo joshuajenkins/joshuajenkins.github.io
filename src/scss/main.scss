@@ -30,12 +30,11 @@ a:visited {
 a:hover {
 }
 
-
-#wrapper,
-.wrapper {
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
+.siteWrapper {
+  @include u-blockCenter();
+  padding-left: $page-padding;
+  padding-right: $page-padding;
+  padding-bottom: $baseline*6;
 }
 
 .section {

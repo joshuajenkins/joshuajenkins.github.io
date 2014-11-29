@@ -5,7 +5,6 @@
   padding: 0;
   margin: $baseline*2 auto $baseline auto;
 }
-
 .header-title {
   font-weight: 700;
   font-size: $font-regular;
@@ -14,63 +13,9 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: $baseline*4;
-  padding: 0 $page-padding;
+  padding: 0;
 }
-
 .header-link:link,
 .header-link:visited {
   border: none;
-}
-
-// Might as well put footer in here
-
-.footer {
-  margin-top: $baseline*2;
-}
-
-.footer .inside {
-  border-top: 1px solid $lightgrey;
-  max-width: $width-paragraph;
-  margin: 0 auto;
-  padding: $baseline*2 $page-padding;
-  text-align: center;
-}
-
-.footer .twitter-container {
-  width: 30px;
-  margin: 0 auto;
-}
-
-.footer svg {
-  display: block;
-  width: 30px;
-
-  -webkit-transform: translateY(0) scale(1);
-          transform: translateY(0) scale(1);
-
-  -webkit-transition: -webkit-transform 0.2s linear;
-          transition: transform 0.2s linear;
-}
-
-.footer svg path {
-  fill: rgb(220,220,220);
-
-  transition: transform 0.2s linear;
-}
-
-.footer .twitter-container:hover svg {
-  -webkit-transform: translateY(-2px) scale(1.05);
-          transform: translateY(-2px) scale(1.05);
-}
-.footer .twitter-container:hover svg path {
-  fill: $gold;
-}
-
-.gold .footer .inside {
-  border-color: rgb(0,0,0);
-}
-
-.gold .footer svg path,
-.gold .footer .twitter-container:hover svg path {
-  fill: rgb(255,255,255);
 }
