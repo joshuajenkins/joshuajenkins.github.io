@@ -3,15 +3,60 @@ layout: default
 title:
 ---
 
-<section class="home">
-  <ul class="journal-list">
-  {% for post in site.posts limit:3 %}
-    <li>
-      <a href="{{ post.permalink }}/">
-        <p class="title">{{ post.title }}</p>
-        <p class="date">{{ post.date | date: "%B %-d, %Y" }}</p>
-      </a>
+<div class="siteWrapper">
+  <h2 class="heading-2">Journal</h2>
+  <section class="home">
+    <ul class="list">
+    {% for post in site.posts limit:3 %}
+      <li class="listItem">
+        <a class="listItem-title" href="{{ post.permalink}}">{{ post.title }}</a>
+        <p class="listItem-description"> {{ post.description }} &mdash; <span class="listItem-date">{{ post.date | date: "%B %-d, %Y" }}</span></p>
+      </li>
+    {% endfor %}
+      <li class="listItem listItem--more">
+        <p class="listItem-description"><a href="/journal/">View other things I did that were earlier than these things.</a></p>
+      </li>
+    </ul>
+  </section>
+
+  <h2 class="heading-2">Projects &amp; Work</h2>
+  <ul class="list">
+    <li class="listItem">
+      <a class="listItem-title" href="http://last.co">The Last Guide Company</a>
+      <p class="listItem-description">Exploring how to make it more fun to explore. All day.</p>
     </li>
-  {% endfor %}
+    <li class="listItem">
+      <a class="listItem-title" href="http://seculargiving.org">Secular Giving</a>
+      <p class="listItem-description">An ongoing project creating a definitive source of charities with no religious affiliation.</p>
+    </li>
+    <li class="listItem">
+      <a class="listItem-title" href="http://uncontext.com">Uncontext</a>
+      <p class="listItem-description">An ongoing project creating a definitive source of charities with no religious affiliation.</p>
+    </li>
+    <li class="listItem">
+      <a class="listItem-title" href="http://uncontext.com/literature/shape">Shape 01</a>
+      <p class="listItem-description">The first of hopefully many creative coding projects.</p>
+    </li>
+    <li class="listItem">
+      <a class="listItem-title" href="/physical/">Physical Goods</a>
+      <p class="listItem-description">The ocassional thing I make in real (meaty) life.</p>
+    </li>
+    <li class="listItem">
+      <a class="listItem-title" href="http://dropbox.com/platform">Dropbox</a>
+      <p class="listItem-description">I spent over two years working on making your stuff available no matter where you are, primarily on the Platform.</p>
+    </li>
+    <li class="listItem">
+      <a class="listItem-title" href="http://nativeformelements.com">Native Form Elements</a>
+      <p class="listItem-description">What every HTML5 form element looks like in your current operating system and browser.</p>
+    </li>
+    <li class="listItem">
+      <a class="listItem-title" href="http://nativeformelements.com">Hhhhold</a>
+      <p class="listItem-description">One of many collaborations with <a href="http://thisisjohnbrown.com">John Brown</a>. This serves up placeholder images from ffffound. I did the website.</p>
+    </li>
   </ul>
-</section>
+
+  <h2 class="heading-2">About</h2>
+  <img class="maxWidthPhoto" src="/img/photo-stunting.jpg">
+  <p class="descriptionText">I moved to San Francisco from Portland in 2011. Immediately before that I lived in eight other states and was born. I&rsquo;m working at <a href="http://last.co" title="The Last Guide Company">The Last Guide Co</a>. I spent over two years designing at Dropbox, where I helped launch a bunch of early <a href="http://dropbox.com/developers" title="Dropbox Platform">Dropbox Platform</a> products.</p>
+  <p class="descriptionText">This website exists because I want to have a place to keep things. It also challenges me to reflect and write.</p>
+</div>

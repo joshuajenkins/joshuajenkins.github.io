@@ -1,0 +1,50 @@
+@import 'utilities';
+
+// Home
+
+.heading-2 {
+  font-family: $font-text;
+  font-weight: 700;
+  font-size: $fontSize-medium;
+}
+
+.siteWrapper {
+  @include u-blockCenter();
+  padding-left: $page-padding;
+  padding-right: $page-padding;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: $baseline*3;
+}
+.listItem {
+  font-size: $fontSize-regular;
+  line-height: $baseline;
+  margin: 0;
+  margin-bottom: $baseline;
+  padding: 0;
+}
+.listItem-title {
+  font-family: $font-text;
+  font-style: italic;
+  font-weight: 500;
+  display: block;
+}
+.listItem-description {
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+  max-width: 26em;
+}
+.maxWidthPhoto {
+  display: block;
+  max-width: 100%;
+  margin-bottom: $baseline;
+}
+.descriptionText {
+  font-size: $fontSize-small;
+  line-height: $baseline;
+  max-width: 26em;
+}

@@ -1,11 +1,10 @@
-@import 'vars';
 @import 'normalize';
+@import 'vars';
+@import 'utilities';
 @import 'helpers';
 @import 'typography';
 @import 'header';
-@import 'journal-list';
-@import 'projects';
-@import 'about';
+@import 'home';
 @import 'journal';
 @import 'section';
 
@@ -52,15 +51,6 @@ h3 {
 	color: $black;
 	font-weight: 500;
 	margin: 0 auto ($baseline/2) auto;
-}
-
-p {
-	font-family: $font-text;
-	font-size: $font-regular;
-	color: $black;
-	line-height: $baseline;
-	max-width: $width-paragraph;
-	margin: 0 auto $baseline auto;
 }
 
 .inline {

@@ -1,10 +1,10 @@
 /* Colors */
-$black: #333;
-$accent: #2c8649;
-$gold: #f2c200;
-$blue: #3db5f3;
-$red: #d64128;
-$grey: #aaa;
+$black:     #333;
+$accent:    #2c8649;
+$gold:      #f2c200;
+$blue:      #3db5f3;
+$red:       #d64128;
+$grey:      #aaa;
 $lightgrey: #eee;
 
 /* Typography */
@@ -15,11 +15,17 @@ $font-medium: 24px;
 $font-large: 38px;
 $baseline: 24px;
 
+// New variable names
+$fontSize-small:    15px;
+$fontSize-regular:  16px;
+$fontSize-medium:   24px;
+$fontSize-large:    38px;
+
 /* Widths */
 $width-paragraph: 630px;
-$width-image: 780px;
-$page-padding: 16px;
+$width-image:     780px;
+$page-padding:    16px;
 
-$font-display: 'Surveyor SSm A', 'Surveyor SSm B';
-$font-sans: 'Ideal Sans SSm A', 'Ideal Sans SSm B';
-$font-text: 'Ideal Sans SSm A', 'Ideal Sans SSm B';
+$font-display:  'Surveyor SSm A', 'Surveyor SSm B';
+$font-sans:     'Ideal Sans SSm A', 'Ideal Sans SSm B';
+$font-text:     'Ideal Sans SSm A', 'Ideal Sans SSm B';

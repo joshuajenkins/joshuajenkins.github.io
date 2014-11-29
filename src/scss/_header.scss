@@ -7,57 +7,20 @@ header {
 }
 
 h1 {
-  font-weight: 200;
+  box-sizing: border-box;
+  font-weight: 700;
   font-size: $font-regular;
-  font-family: $font-display;
+  font-family: $font-text;
   line-height: $baseline;
+  text-transform: uppercase;
   margin: 0;
-  padding: 0;
-  float: left;
-  width: 30%;
+  margin-bottom: $baseline*4;
+  padding: 0 $page-padding;
 
   a:link,
   a:visited {
-    color: rgb(180,180,180);
+    color: rgb(0,0,0);
   }
-}
-
-#nav {
-  @extend %clearfix;
-  display: block;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: right;
-  float: left;
-  margin-left: 10%;
-  width: 60%;
-
-  li {
-    padding: 0;
-    display: block;
-    font-weight: 300;
-    font-size: $font-small;
-    line-height: $baseline;
-    margin: 0 0 0 1.614em;
-    display: inline-block;
-
-    a:link,
-    a:visited {
-      color: rgb(180,180,180);
-    }
-  }
-}
-
-// Overwrites for goldness
-.gold #nav li a:link,
-.gold #nav li a:visited,
-.gold h1 a {
-  color: rgb(255,255,255);
-}
-
-.gold #nav li a:hover {
-  border-color: rgb(255,255,255);
 }
 
 // Might as well put footer in here
@@ -120,16 +83,6 @@ h1 {
     width: 100%;
     text-align: center;
     margin-bottom: $baseline;
-  }
-
-  #nav {
-    width: 100%;
-    text-align: center;
-    margin: 0;
-  }
-
-  #nav li {
-    margin: 0 1em;
   }
 
 }
