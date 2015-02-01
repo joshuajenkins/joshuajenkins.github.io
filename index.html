@@ -5,17 +5,6 @@ title:
 
 <p class="humanDescription">Designer/Hacker based in San Francisco</p>
 
-<h2 class="heading-2">Journal</h2>
-<ul class="list">
-{% for post in site.posts %}
-  <li class="listItem">
-    <p class="listItem-title"><a href="{{ post.permalink}}">{{ post.title }}</a> <span class="listItem-date">{{ post.date | date: "%b %Y" }}</span></p>
-  </li>
-{% endfor %}
-</ul>
-
-
-
 <h2 class="heading-2">Projects &amp; Work</h2>
 <ul class="list">
   <li class="listItem">
@@ -42,4 +31,13 @@ title:
     <p class="listItem-title"><a href="http://nativeformelements.com">Native Form Elements</a></p>
     <p class="listItem-description">What every HTML5 form element looks like in your current operating system and browser.</p>
   </li>
+</ul>
+
+<h2 class="heading-2">Journal</h2>
+<ul class="list">
+{% for post in site.posts %}
+  <li class="listItem">
+    <p class="listItem-title"><a href="{{ post.permalink}}">{{ post.title }}</a> <span class="listItem-date">{{ post.date | date: "%b %Y" }}</span></p>
+  </li>
+{% endfor %}
 </ul>
