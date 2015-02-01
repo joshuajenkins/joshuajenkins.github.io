@@ -5,6 +5,8 @@
     margin: 0 auto;
     line-height: $baseline;
     margin-bottom: $baseline;
+    font-size: $fontSize-regular;
+    font-weight: 300;
   }
 
   .module {
@@ -24,7 +26,9 @@
     @extend %clearfix;
 
     & + .caption {
-      margin: -1em auto 3em auto;
+      font-size: $fontSize-small;
+      color: $midgrey;
+      margin: -2em auto 1em auto;
     }
   }
 
@@ -84,13 +88,13 @@
     max-width: $width-paragraph;
     margin: 0 auto;
     padding: 0 0 0 33px;
-    list-style: circle;
+    list-style: disc;
     
     li {
-      margin-left: 0px;
-      margin-bottom: $baseline/2;
+      margin-left: -2em;
+      margin-bottom: $baseline;
 
-      font-size: $font-small;
+      font-size: $fontSize-regular;
       line-height: $baseline;
     }
   }
@@ -125,11 +129,13 @@
   margin-bottom: $baseline*2;
 }
 .article-title {
-  margin-bottom: $baseline !important;
+  font-size: $fontSize-regular!important;
+  margin-bottom: 0!important;
+  font-weight: 700!important;
 }
 .article-date {
-  font-size: $fontSize-small;
-  color: $grey;
+  font-size: $fontSize-small!important;
+  color: $midgrey;
 }
 
 @media screen and (max-width: 500px) {

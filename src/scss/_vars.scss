@@ -13,13 +13,13 @@ $font-small:   15px;
 $font-regular: 16px;
 $font-medium:  24px;
 $font-large:   38px;
-$baseline:     23px;
 
 // New variable names
-$fontSize-small:    13px;
-$fontSize-regular:  15px;
+$fontSize-small:    15px;
+$fontSize-regular:  17px;
 $fontSize-medium:   24px;
 $fontSize-large:    38px;
+$baseline:          $fontSize-regular * 1.6;
 
 /* Widths */
 $width-paragraph: 630px;
