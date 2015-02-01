@@ -5,22 +5,10 @@ title:
 
 <h2 class="heading-2">Journal</h2>
   <ul class="list">
-  {% for post in site.posts limit:3 %}
-    <li class="listItem">
-      <p class="listItem-title"><a href="{{ post.permalink}}">{{ post.title }}</a></p>
-      <p class="listItem-description"> {{ post.description }} &mdash; <span class="listItem-date">{{ post.date | date: "%B %-d, %Y" }}</span></p>
-    </li>
-  {% endfor %}
-    <li class="listItem listItem--more">
-      <p class="listItem-title"><a class="js-toggle" href="/journal/">View more&hellip;</a></p>
-    </li>
   {% for post in site.posts %}
-    {% if forloop.index > 3 %}
-      <li class="listItem js-hidden">
-        <p class="listItem-title"><a href="{{ post.permalink}}">{{ post.title }}</a></p>
-        <p class="listItem-description"> {{ post.description }} &mdash; <span class="listItem-date">{{ post.date | date: "%B %-d, %Y" }}</span></p>
-      </li>
-    {% endif %}
+    <li class="listItem">
+      <p class="listItem-title"><a href="{{ post.permalink}}">{{ post.title }}</a> <span class="listItem-date">{{ post.date | date: "%b %Y" }}</span></p>
+    </li>
   {% endfor %}
   </ul>
 
