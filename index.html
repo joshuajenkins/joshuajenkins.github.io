@@ -3,33 +3,25 @@ layout: default
 title:
 ---
 
-<p class="humanDescription">Designer/Hacker based in San Francisco</p>
-
 <h2 class="heading-2">Projects &amp; Work</h2>
 <ul class="list">
   <li class="listItem">
-    <p class="listItem-title"><a href="http://jenkinswork.tumblr.com">Sketchbook / Jenkinswork</a></p>
-    <p class="listItem-description">Ongoing creative coding projects. A little design, a little art, a little engineering.</p>
+    <p class="listItem-title"><span class="listItem-date">2014 on </span><a href="http://jenkinswork.tumblr.com">Sketchbook / Jenkinswork</a></p>
   </li>
   <li class="listItem">
-    <p class="listItem-title"><a href="http://last.co">The Last Guide Company</a></p>
-    <p class="listItem-description">Product design and mild engineering in the service of inspiring you to look up.</p>
+    <p class="listItem-title"><span class="listItem-date">2014 &ndash; 2015</span><a href="http://last.co">The Last Guide Company</a></p>
   </li>
   <li class="listItem">
-    <p class="listItem-title"><a href="http://seculargiving.org">Secular Giving</a></p>
-    <p class="listItem-description">An ongoing project creating a definitive source of charities with no religious affiliation.</p>
+    <p class="listItem-title"><span class="listItem-date">2014 on </span><a href="http://seculargiving.org">Secular Giving</a></p>
   </li>
   <li class="listItem">
-    <p class="listItem-title"><a href="http://uncontext.com">Uncontext</a></p>
-    <p class="listItem-description">A community of artists creating art from a seemingly random stream of data. Lending a helping hand to creative mastermind <a href="http://thisisjohnbrown.com">John Brown</a>.</p>
+    <p class="listItem-title"><span class="listItem-date">2014 on </span><a href="http://uncontext.com">Uncontext</a></p>
   </li>
   <li class="listItem">
-    <p class="listItem-title"><a href="http://dropbox.com/developers">Dropbox</a></p>
-    <p class="listItem-description">2+ years working on various products. Primarily focused on the Dropbox Platform.</p>
+    <p class="listItem-title"><span class="listItem-date">2012 &ndash; 2014</span><a href="http://dropbox.com/developers">Dropbox</a></p>
   </li>
   <li class="listItem">
-    <p class="listItem-title"><a href="http://nativeformelements.com">Native Form Elements</a></p>
-    <p class="listItem-description">What every HTML5 form element looks like in your current operating system and browser.</p>
+    <p class="listItem-title"><span class="listItem-date">2011 on </span><a href="http://nativeformelements.com">Native Form Elements</a></p>
   </li>
 </ul>
 
@@ -37,7 +29,7 @@ title:
 <ul class="list">
 {% for post in site.posts %}
   <li class="listItem">
-    <p class="listItem-title"><a href="{{ post.permalink}}">{{ post.title }}</a> <span class="listItem-date">{{ post.date | date: "%b %Y" }}</span></p>
+    <p class="listItem-title"><span class="listItem-date">{{ post.date | date: "%b %Y" }}</span><a href="{{ post.permalink}}">{{ post.title }}</a></p>
   </li>
 {% endfor %}
 </ul>

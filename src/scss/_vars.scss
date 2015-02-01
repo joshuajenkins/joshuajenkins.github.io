@@ -4,20 +4,20 @@ $accent:    #2c8649;
 $gold:      #f2c200;
 $blue:      #3db5f3;
 $red:       #d64128;
+$midgrey:   rgb(100,100,100);
 $grey:      #aaa;
 $lightgrey: #eee;
 
 /* Typography */
-// http://modularscale.com/scale/?px1=16&px2=24&ra1=1.618&ra2=0
-$font-small:   15px; // Divergent from scale
+$font-small:   15px;
 $font-regular: 16px;
 $font-medium:  24px;
 $font-large:   38px;
-$baseline:     24px;
+$baseline:     23px;
 
 // New variable names
-$fontSize-small:    15px;
-$fontSize-regular:  16px;
+$fontSize-small:    13px;
+$fontSize-regular:  15px;
 $fontSize-medium:   24px;
 $fontSize-large:    38px;
 

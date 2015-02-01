@@ -4,35 +4,35 @@
 .list {
   list-style: none;
   padding: 0;
-  margin-bottom: $baseline*6;
+  margin-bottom: $baseline*3;
 }
 .listItem {
-  font-size: $fontSize-small;
+  font-size: $fontSize-regular;
   line-height: $baseline;
   margin: 0;
-  margin-bottom: $baseline*2;
+  margin-bottom: $baseline;
   padding: 0;
 }
 .listItem-title {
   font-family: $font-sans;
-  font-style: italic;
   font-weight: 500;
   display: block;
-  margin: 0 0 $baseline/2 0;
-}
-.listItem-description {
-  vertical-align: top;
-  padding: 0;
   margin: 0;
-  max-width: 26em;
 }
-.maxWidthPhoto {
-  display: block;
-  max-width: 100%;
-  margin-bottom: $baseline;
-}
-.descriptionText {
+.listItem-date {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 1em 0 0;
+  margin: 0 0 0 -8em;
+  font-weight: 500;
+  width: 8em;
+  color: $midgrey;
   font-size: $fontSize-small;
-  line-height: $baseline;
-  max-width: 26em;
+  text-align: right;
+}
+@media only screen and (max-width: 800px) {
+  .listItem-date {
+    margin: 0;
+    text-align: left;
+  }
 }
