@@ -32,6 +32,8 @@
 }
 @media only screen and (max-width: 800px) {
   .listItem-date {
+    display: block;
+    line-height: $baseline;
     margin: 0;
     text-align: left;
   }
