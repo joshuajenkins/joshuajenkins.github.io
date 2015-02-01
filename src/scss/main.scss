@@ -20,7 +20,7 @@ a:link,
 a:visited {
 	color: $black;
 	text-decoration: none;
-	border-bottom: 1px solid rgb(230,230,230);
+	// border-bottom: 1px solid rgb(230,230,230);
 }
 
 .siteWrapper {
@@ -42,9 +42,11 @@ a:visited {
 }
 .heading-2 {
   font-weight: 700;
-  font-size: $fontSize-medium;
+  font-size: $fontSize-regular;
   margin: 0;
-  margin-bottom: $baseline*2;
+  margin-bottom: $baseline;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .js-hidden {

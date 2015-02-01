@@ -3,14 +3,15 @@
 
   max-width: $width-paragraph;
   padding: 0;
-  margin: $baseline*2 auto $baseline*4 auto;
+  margin: $baseline*3 auto;
 }
 .header-title {
   font-weight: 700;
-  font-size: $font-regular;
+  font-size: $fontSize-small;
   font-family: $font-sans;
   line-height: $baseline;
   text-transform: uppercase;
+  color: $midgrey;
   margin: 0;
   padding: 0;
 }
@@ -20,8 +21,10 @@
 }
 .header-twitterLink {
   font-size: $fontSize-small;
+  margin: 0;
+  line-height: $baseline;
 }
 .header-link--twitter:link,
 .header-link--twitter:visited {
-  color: $grey;
+  color: $midgrey;
 }

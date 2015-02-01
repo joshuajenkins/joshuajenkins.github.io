@@ -4,26 +4,26 @@ $accent:    #2c8649;
 $gold:      #f2c200;
 $blue:      #3db5f3;
 $red:       #d64128;
+$midgrey:   rgb(100,100,100);
 $grey:      #aaa;
 $lightgrey: #eee;
 
 /* Typography */
-// http://modularscale.com/scale/?px1=16&px2=24&ra1=1.618&ra2=0
-$font-small: 15px; // Divergent from scale
+$font-small:   15px;
 $font-regular: 16px;
-$font-medium: 24px;
-$font-large: 38px;
-$baseline: 24px;
+$font-medium:  24px;
+$font-large:   38px;
 
 // New variable names
 $fontSize-small:    15px;
-$fontSize-regular:  16px;
+$fontSize-regular:  17px;
 $fontSize-medium:   24px;
 $fontSize-large:    38px;
+$baseline:          $fontSize-regular * 1.6;
 
 /* Widths */
 $width-paragraph: 630px;
 $width-image:     780px;
 $page-padding:    16px;
 
-$font-sans:     'Ideal Sans SSm A', 'Ideal Sans SSm B';
+$font-sans: 'jaf-facitweb-1', 'jaf-facitweb-2';
