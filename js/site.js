@@ -17,13 +17,6 @@ function beTrashy() {
 }
 
 // Works in not IE
-document.addEventListener("DOMContentLoaded", function() {
-  window.setInterval(beTrashy, 400);
-});
-
-var els = document.getElementsByClassName('js-hidden');
-document.getElementsByClassName('js-toggle')[0].addEventListener('click', function(e) {
-  document.getElementsByClassName('js-toggle')[0].remove();
-  e.preventDefault();
-  $('.js-hidden').removeClass('js-hidden');
+document.addEventListener('DOMContentLoaded', function() {
+  window.setInterval(beTrashy, 300);
 });
