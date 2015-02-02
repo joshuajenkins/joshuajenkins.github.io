@@ -10,7 +10,7 @@
   font-size: $fontSize-regular;
   line-height: $baseline;
   margin: 0;
-  margin-bottom: $baseline;
+  margin-bottom: $baseline/2;
   padding: 0;
 }
 .listItem-title {
@@ -27,7 +27,7 @@
   font-weight: 300;
   width: 8em;
   color: $midgrey;
-  font-size: $fontSize-small;
+  font-size: $fontSize-tiny;
   text-align: right;
 }
 @media only screen and (max-width: 800px) {
