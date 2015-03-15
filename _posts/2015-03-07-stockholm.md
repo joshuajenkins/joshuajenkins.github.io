@@ -49,7 +49,7 @@ You've got your cultural institutions sprinkled with family members:
 {: .big-image }
 
 <div class="images-2x2">
-  <img src="/img/2012-sweden/sweden-2012-18.jpg" alt="Old boot">
+  <img src="/img/2012-sweden/sweden-2012-28.jpg" alt="Old boot">
   <img src="/img/2012-sweden/sweden-2012-29.jpg" alt="Dangly bobs">
 </div>
 
