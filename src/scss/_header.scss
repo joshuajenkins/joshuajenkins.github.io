@@ -19,8 +19,10 @@
   border: none;
 }
 .header-twitterLink {
-  font-size: $fontSize-small;
   margin: 0;
+  font-family: $font-body;
+  font-size: $fontSize-small;
+  font-style: italic;
   line-height: $baseline;
 }
 .header-link--twitter:link,

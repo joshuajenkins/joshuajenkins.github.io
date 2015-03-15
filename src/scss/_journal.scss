@@ -1,12 +1,13 @@
 .article {
   p {
+    font-family: $font-body;
     padding: 0;
     max-width: $width-paragraph;
     margin: 0 auto;
     line-height: $baseline;
     margin-bottom: $baseline;
-    font-size: $fontSize-regular;
-    font-weight: 300;
+    font-size: $fontSize-body;
+    font-weight: 200;
   }
 
   .module {
@@ -27,8 +28,12 @@
 
     & + .caption {
       font-size: $fontSize-small;
+      font-style: italic;
+
       color: $midgrey;
       margin: -2em auto 1em auto;
+
+      padding-right: 10em;
     }
   }
 
@@ -88,14 +93,20 @@
     max-width: $width-paragraph;
     margin: 0 auto;
     padding: 0 0 0 33px;
-    list-style: disc;
+    list-style: none;
     
     li {
       margin-left: -2em;
       margin-bottom: $baseline;
 
-      font-size: $fontSize-regular;
+      font-family: $font-body;
+      font-size: $fontSize-body;
       line-height: $baseline;
+    }
+
+    li > strong {
+      font-family: $font-sans;
+      font-size: $fontSize-small;
     }
 
     @media only screen and (max-width: 800px) {
@@ -140,6 +151,7 @@
   font-weight: 700!important;
 }
 .article-date {
+  font-family: $font-sans!important;
   font-size: $fontSize-small!important;
   color: $midgrey;
 }

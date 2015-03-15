@@ -20,11 +20,13 @@
   margin: 0;
 }
 .listItem-date {
+  font-family: $font-body;
+  font-style: italic;
   display: inline-block;
   box-sizing: border-box;
   padding: 0 1em 0 0;
   margin: 0 0 0 -8em;
-  font-weight: 300;
+  font-weight: 200;
   width: 8em;
   color: $midgrey;
   font-size: $fontSize-tiny;
