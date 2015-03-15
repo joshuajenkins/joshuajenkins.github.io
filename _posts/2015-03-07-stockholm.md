@@ -4,7 +4,7 @@ title:  "Stockholm"
 date:   2015-03-07
 permalink: /journal/stockholm
 categories: journal, travel
-preview_image: /img/2014-prague/prague-2014-4.jpg
+preview_image: /img/2012-sweden/sweden-2012-24.jpg
 description: Faint memories from a trip to Sweden
 ---
 
