@@ -22,7 +22,7 @@
     width: 100%;
     max-width: 100%;
     padding: 0;
-    margin: 2em auto 2em auto;
+    margin: 0 auto $baseline auto;
 
     @extend %clearfix;
 
@@ -68,12 +68,17 @@
     margin-left: -25%;
   }
 
+  .images-2x2 {
+    width: 150%;
+    margin-left: -25%;
+  }
+
   .images-2x2 img {
     box-sizing: border-box;
-    padding: 2px;
+    padding: 0 $baseline/2;
     width: 50%;
     float: left;
-    margin: 0;
+    margin: 0 0 $baseline 0;
 
     &:nth-child(odd) { padding-left: 0; }
     &:nth-child(even) { padding-right: 0; }
@@ -161,9 +166,14 @@
   .article .caption {
     padding-right: 0!important;
   }
-  
+
   .article .image img {
     padding: 0;
+  }
+
+  .article .images-2x2 {
+    max-width: 100%;
+    margin: 0 auto;
   }
 
   .article .images-2x2 img,
@@ -175,6 +185,11 @@
 }
 
 @media screen and (max-width: 920px) {
+
+  .article .images-2x2 {
+    width: 100%;
+    margin: 0 auto;
+  }
 
   .article .image img {
     padding: 0;

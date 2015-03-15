@@ -33,99 +33,92 @@ You've got your beautiful old European stuff mixed with modern stuff generally c
 {: .image }
 
 ![Marie Laveau](/img/2012-sweden/sweden-2012-5.jpg "Marie Laveau")
-{: .image }
+{: .big-image }
 
-![Phone booth](/img/2012-sweden/sweden-2012-20.jpg "Phone booth")
-{: .image }
+<div class="images-2x2">
+  <img src="/img/2012-sweden/sweden-2012-20.jpg" alt="Phone booth">
+  <img src="/img/2012-sweden/sweden-2012-19.jpg" alt="Gamlastan">
+</div>
 
 ![Shiny](/img/2012-sweden/sweden-2012-26.jpg "Shiny")
-{: .image }
-
-![Gamlastan](/img/2012-sweden/sweden-2012-19.jpg "Gamlastan")
-{: .image }
+{: .big-image }
 
 You've got your cultural institutions sprinkled with family members:
 
 ![Salls](/img/2012-sweden/sweden-2012-21.jpg "Salls")
-{: .image }
+{: .big-image }
 
-![Old boot](/img/2012-sweden/sweden-2012-28.jpg "Old boot")
-{: .image }
-
-![Dangly bobs](/img/2012-sweden/sweden-2012-29.jpg "Dangly bobs")
-{: .image }
+<div class="images-2x2">
+  <img src="/img/2012-sweden/sweden-2012-18.jpg" alt="Old boot">
+  <img src="/img/2012-sweden/sweden-2012-29.jpg" alt="Dangly bobs">
+</div>
 
 You've got soul-enriching views of water at basically all times:
 
-![Water 1](/img/2012-sweden/sweden-2012-8.jpg "Water 1")
-{: .image }
-
 ![Water 2](/img/2012-sweden/sweden-2012-17.jpg "Water 2")
-{: .image }
+{: .big-image }
 
 ![Trees](/img/2012-sweden/sweden-2012-24.jpg "Trees")
-{: .image }
+{: .big-image }
 
 ![Water 3](/img/2012-sweden/sweden-2012-25.jpg "Water 3")
-{: .image }
+{: .big-image }
 
-![Boat](/img/2012-sweden/sweden-2012-27.jpg "Boat")
-{: .image }
+<div class="images-2x2">
+  <img src="/img/2012-sweden/sweden-2012-27.jpg" alt="Boat">
+  <img src="/img/2012-sweden/sweden-2012-8.jpg" alt="Water 1">
+</div>
 
 You have a surprisingly large number of food options in huts:
 
-![Gatukok](/img/2012-sweden/sweden-2012-6.jpg "Gatukok")
-{: .image }
-
-![Stromming](/img/2012-sweden/sweden-2012-7.jpg "Stromming")
-{: .image }
+<div class="images-2x2">
+  <img src="/img/2012-sweden/sweden-2012-6.jpg" alt="Gatukok">
+  <img src="/img/2012-sweden/sweden-2012-7.jpg" alt="Stromming">
+</div>
 
 ![Donuts](/img/2012-sweden/sweden-2012-12.jpg "Donuts")
-{: .image }
+{: .big-image }
 
 Also food indoors:
 
-![Tasty food 1](/img/2012-sweden/sweden-2012-9.jpg "Tasty food 1")
-{: .image }
-
-![Tasty food 2](/img/2012-sweden/sweden-2012-10.jpg "Tasty food 2")
-{: .image }
+<div class="images-2x2">
+  <img src="/img/2012-sweden/sweden-2012-9.jpg" alt="Fish breads">
+  <img src="/img/2012-sweden/sweden-2012-10.jpg" alt="Fish bread with beer">
+</div>
 
 ![Bread](/img/2012-sweden/sweden-2012-18.jpg "Bread")
-{: .image }
+{: .big-image }
 
 But best of all you have utter and complete darkness for the vast majority of each day which is enchantingly counteracted by ever-present lights hanging from streets, along bridges, and glowing from within countless shops and homes.
 
 ![Lights 1](/img/2012-sweden/sweden-2012-11.jpg "Lights 1")
-{: .image }
+{: .big-image }
 
 ![Megan](/img/2012-sweden/sweden-2012-13.jpg "Megan")
-{: .image }
+{: .big-image }
 
 ![Water Castle](/img/2012-sweden/sweden-2012-14.jpg "Water Castle")
-{: .image }
+{: .big-image }
 
-![Tracks](/img/2012-sweden/sweden-2012-15.jpg "Tracks")
-{: .image }
-
-![Night street](/img/2012-sweden/sweden-2012-16.jpg "Night street")
-{: .image }
+<div class="images-2x2">
+  <img src="/img/2012-sweden/sweden-2012-15.jpg" alt="Tracks">
+  <img src="/img/2012-sweden/sweden-2012-16.jpg" alt="Night street">
+</div>
 
 ![Tunnel Megan](/img/2012-sweden/sweden-2012-30.jpg "Tunnel Megan")
-{: .image }
+{: .big-image }
 
 Stockholm is a magical place where I want to spend much more time. Hop around islands with spectacular views from tastefully designed place to tastefully designed place. The food is amazing, the transportation is highly functional, and the weather is the envy of the tropics.
 
 In closing, these are some trains and birds:
 
-![Old train](/img/2012-sweden/sweden-2012-22.jpg "Old train")
-{: .image }
-
 ![New trains](/img/2012-sweden/sweden-2012-36.jpg "New trains")
-{: .image }
+{: .big-image }
 
-![In train](/img/2012-sweden/sweden-2012-31.jpg "New train")
-{: .image }
+<div class="images-2x2">
+  <img src="/img/2012-sweden/sweden-2012-22.jpg" alt="Old train">
+  <img src="/img/2012-sweden/sweden-2012-31.jpg" alt="In train">
+</div>
 
 ![Birds](/img/2012-sweden/sweden-2012-34.jpg "Birds")
-{: .image }
+{: .big-image }
