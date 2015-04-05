@@ -2,10 +2,18 @@
 
 // Home
 .chillVideo-video {
-  box-sizing: border-box;
-  max-width: 260px;
-  float: right;
-  margin-top: 4px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  opacity: 0.075;
+  z-index: 1;
+  transition: opacity 0.5s linear, -webkit-filter 0.3s linear;
+  -webkit-filter: blur(0);
+}
+.chillVideo-video:hover {
+  opacity: 1;
+  -webkit-filter: blur(5px);
 }
 .list {
   list-style: none;
@@ -40,9 +48,12 @@
 }
 @media only screen and (max-width: 800px) {
   .chillVideo-video {
+    position: relative;
+    height: auto;
     max-width: 100%;
-    float: none;
-    margin-bottom: $baseline*3;
+    max-height: 85.9%;
+    opacity: 1;
+    margin-bottom: $baseline*4;
   }
   .listItem-date {
     display: block;
