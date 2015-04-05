@@ -1,6 +1,12 @@
 @import 'utilities';
 
 // Home
+.chillVideo-video {
+  box-sizing: border-box;
+  max-width: 280px;
+  float: right;
+  border: 1px solid rgba(0,0,0,0.8);
+}
 .list {
   list-style: none;
   padding: 0;
@@ -33,6 +39,11 @@
   text-align: right;
 }
 @media only screen and (max-width: 800px) {
+  .chillVideo-video {
+    max-width: 100%;
+    float: none;
+    margin-bottom: $baseline*3;
+  }
   .listItem-date {
     display: block;
     line-height: $baseline;
