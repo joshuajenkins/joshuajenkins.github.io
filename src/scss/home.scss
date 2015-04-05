@@ -5,7 +5,9 @@
   box-sizing: border-box;
   max-width: 280px;
   float: right;
-  border-top: 20px solid $gold;
+  margin-top: 4px;
+  border-top: 2px solid $gold;
+  padding-top: $baseline/2;
 }
 .list {
   list-style: none;
