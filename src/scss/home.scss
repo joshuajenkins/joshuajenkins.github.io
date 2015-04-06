@@ -1,19 +1,17 @@
 @import 'utilities';
 
 // Home
-.chillVideo-video {
+.chillVideo {
+  border-radius: 50%;
   position: fixed;
-  right: 0;
-  top: 0;
-  height: 100vh;
-  opacity: 0.075;
-  z-index: 1;
-  transition: opacity 0.5s linear, -webkit-filter 0.3s linear;
-  -webkit-filter: blur(0);
+  left: 55vw;
+  top: 37.5vh;
+  width: 25vh;
+  height: 25vh;
+  overflow: hidden;
 }
-.chillVideo-video:hover {
-  opacity: 1;
-  -webkit-filter: blur(5px);
+.chillVideo-video {
+  width: 100%;
 }
 .list {
   list-style: none;
@@ -47,13 +45,11 @@
   text-align: right;
 }
 @media only screen and (max-width: 800px) {
-  .chillVideo-video {
+  .chillVideo {
     position: relative;
-    height: auto;
-    max-width: 100%;
-    max-height: 85.9%;
-    opacity: 1;
-    margin-bottom: $baseline*4;
+    top: auto;
+    left: auto;
+    float: right;
   }
   .listItem-date {
     display: block;
