@@ -1,18 +1,6 @@
 @import 'utilities';
 
 // Home
-.chillVideo {
-  border-radius: 50%;
-  position: fixed;
-  left: 55vw;
-  top: 37.5vh;
-  width: 25vh;
-  height: 25vh;
-  overflow: hidden;
-}
-.chillVideo-video {
-  width: 100%;
-}
 .list {
   list-style: none;
   padding: 0;
@@ -45,12 +33,6 @@
   text-align: right;
 }
 @media only screen and (max-width: 800px) {
-  .chillVideo {
-    position: relative;
-    top: auto;
-    left: auto;
-    float: right;
-  }
   .listItem-date {
     display: block;
     line-height: $baseline;
