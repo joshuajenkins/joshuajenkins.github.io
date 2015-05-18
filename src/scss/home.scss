@@ -1,6 +1,5 @@
 @import 'utilities';
 
-// Home
 .list {
   list-style: none;
   padding: 0;
@@ -13,31 +12,15 @@
   margin-bottom: $baseline/2;
   padding: 0;
 }
+.listItem-date {
+  display: block;
+  font-size: 12px;
+  line-height: $baseline/2;
+  color: $grey;
+}
 .listItem-title {
   font-family: $font-sans;
   font-weight: 300;
   display: block;
   margin: 0;
-}
-.listItem-date {
-  font-family: $font-body;
-  font-style: italic;
-  display: inline-block;
-  box-sizing: border-box;
-  padding: 0 1em 0 0;
-  margin: 0 0 0 -8em;
-  font-weight: 200;
-  width: 8em;
-  color: $midgrey;
-  font-size: $fontSize-tiny;
-  text-align: right;
-}
-@media only screen and (max-width: 800px) {
-  .listItem-date {
-    display: block;
-    line-height: $baseline;
-    margin: 0;
-    text-align: left;
-    padding-right: 0;
-  }
 }

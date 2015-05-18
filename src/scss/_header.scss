@@ -20,12 +20,11 @@
 }
 .header-twitterLink {
   margin: 0;
-  font-family: $font-body;
-  font-size: $fontSize-small;
-  font-style: italic;
-  line-height: $baseline;
+  font-family: $font-sans;
+  font-size: 12px;
+  line-height: $baseline/2;
 }
 .header-link--twitter:link,
 .header-link--twitter:visited {
-  color: $midgrey;
+  color: $grey;
 }
