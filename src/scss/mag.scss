@@ -7,7 +7,7 @@ body {
 .mag {
   position: relative;
   box-sizing: border-box;
-  max-width: 50%;
+  width: 600px;
   margin: 2.5% auto;
   padding: 60px 3%;
   background-color: rgb(251, 224, 225);
@@ -92,16 +92,16 @@ body {
   text-decoration: none;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 700px) {
 .mag {
   padding-top: 50px;
   padding-bottom: 50px;
-  max-width: 80%;
+  max-width: 400px;
 }
 .mag-logotype {
-  top: 32px;
-  font-size: 40px;
-  line-height: 40px;
+  top: 34px;
+  font-size: 36px;
+  line-height: 36px;
 }
 .mag-section {
   bottom: #{50 + 22}px;
