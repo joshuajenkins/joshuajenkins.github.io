@@ -9,7 +9,7 @@ body {
   box-sizing: border-box;
   max-width: 50%;
   margin: 2.5% auto;
-  padding: 5% 3%;
+  padding: 60px 3%;
   background-color: rgb(251, 224, 225);
 
   -webkit-box-shadow: 3px 5px 10px 0px rgba(0, 0, 0, 0.15);
@@ -32,7 +32,7 @@ body {
 }
 .mag-logotype {
   position: absolute;
-  top: 5%;
+  top: 40px;
   left: 0;
   width: 100%;
   margin: 0;
@@ -59,7 +59,7 @@ body {
 .mag-section {
   position: absolute;
   width: 100%;
-  bottom: 9%;
+  bottom: #{60 + 28}px;
   left: 0;
 }
 .mag-section-title {
@@ -74,7 +74,7 @@ body {
   color: rgba(255, 255, 255, 0.85);
 }
 .mag-section-text {
-  max-width: 20em;
+  max-width: 22em;
   margin: 0 auto;
 
   font-family: "kepler-std-extended-display";
@@ -84,6 +84,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: rgba(255, 255, 255, 1);
+  letter-spacing: 0.02em;
 }
 .mag-section-text a:link,
 .mag-section-text a:visited {
@@ -93,12 +94,17 @@ body {
 
 @media screen and (max-width: 950px) {
 .mag {
+  padding-top: 50px;
+  padding-bottom: 50px;
   max-width: 80%;
 }
 .mag-logotype {
-  top: 2.5%;
+  top: 32px;
   font-size: 40px;
   line-height: 40px;
+}
+.mag-section {
+  bottom: #{50 + 22}px;
 }
 .mag-section-title {
   font-size: 22px;
@@ -113,14 +119,19 @@ body {
 
 @media screen and (max-width: 450px) {
 .mag {
+  padding-top: 35px;
+  padding-bottom: 35px;
   margin-top: 10%;
   margin-bottom: 10%;
   max-width: 90%;
 }
 .mag-logotype {
-  top: 2.5%;
+  top: 25px;
   font-size: 24px;
   line-height: 24px;
+}
+.mag-section {
+  bottom: #{35 + 18}px;
 }
 .mag-section-title {
   font-size: 18px;
