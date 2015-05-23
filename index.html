@@ -1,38 +1,37 @@
----
-layout: default
-title:
----
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JENKINSFOLK</title>
+        <meta name="author" content="Joshua Jenkins">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="/css/mag.css">
+        <link rel="shortcut icon" href="/img/favicon.ico">
+        <script src="//use.typekit.net/xly3ujd.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+    </head>
+    <body>
 
-<h2 class="heading-2">Projects &amp; Work</h2>
-<ul class="list">
-  <li class="listItem">
-    <p class="listItem-title"><span class="listItem-date">2015 &ndash;</span><a href="http://fallingshape.com">Falling Shape</a></p>
-  </li>
-  <li class="listItem">
-    <p class="listItem-title"><span class="listItem-date">2014 &ndash;</span><a href="http://jenkinswork.tumblr.com">Sketchbook / Jenkinswork</a></p>
-  </li>
-  <li class="listItem">
-    <p class="listItem-title"><span class="listItem-date">2014 &ndash; 2015</span><a href="http://last.co">The Last Guide Company</a></p>
-  </li>
-  <li class="listItem">
-    <p class="listItem-title"><span class="listItem-date">2014 &ndash;</span><a href="http://seculargiving.org">Secular Giving</a></p>
-  </li>
-  <li class="listItem">
-    <p class="listItem-title"><span class="listItem-date">2014 &ndash;</span><a href="http://uncontext.com">Uncontext</a></p>
-  </li>
-  <li class="listItem">
-    <p class="listItem-title"><span class="listItem-date">2012 &ndash; 2014</span><a href="http://dropbox.com/developers">Dropbox</a></p>
-  </li>
-  <li class="listItem">
-    <p class="listItem-title"><span class="listItem-date">2011 &ndash;</span><a href="http://nativeformelements.com">Native Form Elements</a></p>
-  </li>
-</ul>
+        <div class="mag">
+            <h1 class="mag-logotype">Jenkinsfolk</h1>
+            <div class="mag-spine"></div>
+            <div class="mag-background"><img src="/img/mag.jpg" class="mag-background-image"></div>
 
-<h2 class="heading-2">Journal</h2>
-<ul class="list">
-{% for post in site.posts %}
-  <li class="listItem">
-    <p class="listItem-title"><span class="listItem-date">{{ post.date | date: "%b %Y" }}</span><a href="{{ post.permalink}}">{{ post.title }}</a></p>
-  </li>
-{% endfor %}
-</ul>
+            <div class="mag-section">
+                <h2 class="mag-section-title">Hand-stitched Dieter Rams</h2>
+                <p class="mag-section-text"><a href="http://twitter.com/joshuajenkins">LIVING MEMOIR</a>, <a href="http://fallingshape.com">VIDEO ARTIST</a>, <a href="/journal">INTERNATIONAL TRAVEL JOURNAL</a>, OLD DROPBOX DESIGN, &amp; MORE</p>
+            </div>
+        </div>
+
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-36732891-1', 'joshuajenkins.com');
+          ga('send', 'pageview');
+        </script>
+    </body>
+</html>
