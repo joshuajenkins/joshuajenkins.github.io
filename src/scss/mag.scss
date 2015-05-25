@@ -9,8 +9,8 @@ body {
   box-sizing: border-box;
   width: 600px;
   margin: 2.5% auto;
-  padding: 60px 3%;
-  background-color: rgb(251, 224, 225);
+  padding: 60px 0;
+  background-color: rgb(245, 245, 245);
 
   -webkit-box-shadow: 3px 5px 10px 0px rgba(0, 0, 0, 0.15);
      -moz-box-shadow: 3px 5px 10px 0px rgba(0, 0, 0, 0.15);
@@ -27,7 +27,7 @@ body {
   width: 2%;
   height: 100%;
 
-  background-color: lighten(rgb(251, 224, 225), 1%);
+  background-color: rgba(0, 0, 0, 0.02);
   border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 .mag-logotype {
@@ -47,14 +47,10 @@ body {
   line-height: 50px;
   color: rgba(57, 43, 48, 0.85);
 }
-.mag-background {
-  width: 100%;
-  height: auto;
-}
 .mag-background-image {
   display: block;
-  width: 100%;
-  height: auto;
+  max-width: 600px;
+  max-height: #{600 + (600/3)}px;
 }
 .mag-section {
   position: absolute;
@@ -94,9 +90,15 @@ body {
 
 @media screen and (max-width: 700px) {
 .mag {
+  margin-top: 10%;
+  margin-bottom: 10%;
   padding-top: 50px;
   padding-bottom: 50px;
   max-width: 400px;
+}
+.mag-background-image {
+  max-width: 400px;
+  max-height: #{400 + (400/3)}px;
 }
 .mag-logotype {
   top: 34px;
@@ -121,9 +123,13 @@ body {
 .mag {
   padding-top: 35px;
   padding-bottom: 35px;
-  margin-top: 10%;
-  margin-bottom: 10%;
   max-width: 90%;
+}
+.mag-background {
+  width: 100%;
+}
+.mag-background-image {
+  max-width: 100%;
 }
 .mag-logotype {
   top: 25px;
