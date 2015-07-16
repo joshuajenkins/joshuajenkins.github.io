@@ -162,8 +162,13 @@
   font-size: $fontSize-small!important;
   color: $midgrey;
 }
+.journal-footer {
+  border-top: 1px solid $lightgrey;
+  padding-top: $baseline*2;
+  margin-top: $baseline*2;
+}
 .tweet-button {
-  margin-top: $baseline*4;
+  margin-bottom: $baseline;
 }
 
 @media screen and (max-width: 500px) {
