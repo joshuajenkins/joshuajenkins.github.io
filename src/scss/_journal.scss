@@ -162,6 +162,9 @@
   font-size: $fontSize-small!important;
   color: $midgrey;
 }
+.tweet-button {
+  margin-top: $baseline*4;
+}
 
 @media screen and (max-width: 500px) {
   .article .caption {
