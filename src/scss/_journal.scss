@@ -1,13 +1,13 @@
 .article {
   p {
-    font-family: $font-body;
-    padding: 0;
     max-width: $width-paragraph;
-    margin: 0 auto;
-    line-height: $baseline;
-    margin-bottom: $baseline;
+    margin: 0 auto $baseline auto;
+    padding: 0;
+
+    font-family: $font-body;
     font-size: $fontSize-body;
     font-weight: 200;
+    line-height: $baseline;
   }
 
   .module {
