@@ -25,16 +25,16 @@
     margin: 0 auto $baseline auto;
 
     @extend %clearfix;
+  }
 
-    & + .caption {
-      font-size: $fontSize-small;
-      font-style: italic;
+  .caption {
+    font-size: $fontSize-small;
+    font-style: italic;
 
-      color: $midgrey;
-      margin: -2em auto 1em auto;
+    color: $midgrey;
+    margin: -1em auto 1em auto;
 
-      padding-right: 10em;
-    }
+    padding-right: 10em;
   }
 
   .video-16x9 {
