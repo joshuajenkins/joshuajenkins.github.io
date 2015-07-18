@@ -1,0 +1,48 @@
+@import 'basscss-custom';
+
+body {
+  background-color: rgb(251, 245, 233);
+}
+
+a:link,
+a:visited {
+  color: rgb(73,192,255);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.mbu {
+  margin-bottom: 10px;
+}
+
+.big-border {
+  border: 10px solid rgba(0,0,0,0.075);
+  padding: 10px;
+}
+
+.half-width {
+  width: 50%;
+}
+.third-width {
+  width: 33.3333%;
+}
+
+.map {
+  width: 100%;
+  height: 0;
+  padding-bottom: 33.3%;
+}
+
+.bg-wash {
+  background-color: #ddd;
+}
+
+.alpha-5 {
+  opacity: 0.5;
+}
+
+.about-text {
+  max-width: 28em;
+}

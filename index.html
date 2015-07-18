@@ -1,37 +1,51 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>JENKINSFOLK</title>
-        <meta name="author" content="Joshua Jenkins">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" href="/css/mag.css">
-        <link rel="shortcut icon" href="/img/favicon.ico">
-        <script src="//use.typekit.net/xly3ujd.js"></script>
-        <script>try{Typekit.load();}catch(e){}</script>
-    </head>
-    <body>
+---
 
-        <div class="mag">
-            <h1 class="mag-logotype">Jenkinsfolk</h1>
-            <div class="mag-spine"></div>
-            <div class="mag-background"><img src="https://s3.amazonaws.com/destructkins/master/v.jpg" class="mag-background-image"></div>
+layout: new
 
-            <div class="mag-section">
-                <h2 class="mag-section-title">Hand-stitched Dieter Rams</h2>
-                <p class="mag-section-text"><a href="http://twitter.com/joshuajenkins">AUTOMEMOIRIST</a>, <a href="http://fallingshape.com">VIDEO ARTIST</a>, <a href="/journal">INTERNATIONAL TRAVEL JOURNALIST</a>, OLD-DROPBOX DESIGNER, &amp; MORE</p>
-            </div>
+---
+
+<h1 class="center p0 m4">Joshua Jenkins</h1>
+
+<div class="flex">
+  <div class="flex-auto flex flex-center border-box big-border mr1 ml2 half-width">
+    <div class="mx-auto center py4">
+      <img src="/img/pc.svg">
+    </div>
+  </div>
+  <div class="flex-auto flex flex-center border-box big-border ml1 mr2 half-width">
+    <div class="mx-auto center py4">
+      <img src="/img/post-pc.svg">
+    </div>
+  </div>
+</div>
+
+<div class="flex flex-column border-box big-border m2 mb4">
+  <div class="flex-auto mbu px2">
+    <h2 class="center m3 p0">Travel Journal</h2>
+    <div class="flex mb3">
+      {% for post in site.posts limit:3 %}
+        <div class="flex-auto center third-width py2">
+          <span class="block alpha-5">{{ post.date | date: "%b %Y" }}</span>
+          <a href="{{ post.permalink}}">{{ post.title }}</a>
         </div>
+      {% endfor %}
+    </div>
+    <div class="flex mb3">
+      {% for post in site.posts offset:3 limit:2 %}
+        <div class="flex-auto center third-width py2">
+          <span class="block alpha-5">{{ post.date | date: "%b %Y" }}</span>
+          <a href="{{ post.permalink}}">{{ post.title }}</a>
+        </div>
+      {% endfor %}
+        <div class="flex-auto center third-width py2">
+          <span class="block alpha-5">More in the</span>
+          <a href="/journal/">Archive</a>
+        </div>
+    </div>
+  </div>
+</div>
 
-
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-36732891-1', 'joshuajenkins.com');
-          ga('send', 'pageview');
-        </script>
-    </body>
-</html>
+<div class="my4 px4 center">
+  <h2 class="mb2">In summary</h2>
+  <p class="mb4 mx-auto about-text alpha-5">I like to make things. I&rsquo;m from Idaho and live in San Francisco. I worked at Dropbox for a couple years, as well as some other places. I have a thing about shapes and I like art.</p>
+</div>
