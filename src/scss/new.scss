@@ -13,30 +13,38 @@ a:hover {
   text-decoration: underline;
 }
 
+.semibold {
+  font-family: 'work-semibold';
+  font-weight: normal;
+}
+
+.h4 {
+  font-size: 1.2rem;
+}
+
 .mbu {
   margin-bottom: 10px;
 }
 
 .big-border {
-  border: 10px solid rgba(0,0,0,0.075);
+  border: 10px solid rgba(0,0,0,0.06);
   padding: 10px;
 }
 
-.half-width {
-  width: 50%;
-}
-.third-width {
-  width: 33.3333%;
+.half-width   { width: 100%; }
+.third-width  { width: 100%; }
+
+.big-left {
+  float: none;
 }
 
-.map {
-  width: 100%;
-  height: 0;
-  padding-bottom: 33.3%;
-}
+@media (min-width: 750px) {
+  .half-width   { width: 50%; }
+  .third-width  { width: 33.3333%; }
 
-.bg-wash {
-  background-color: #ddd;
+  .big-left {
+    float: left;
+  }
 }
 
 .alpha-5 {

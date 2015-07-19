@@ -6,46 +6,50 @@ layout: new
 
 <h1 class="center p0 m4">Joshua Jenkins</h1>
 
-<div class="flex">
-  <div class="flex-auto flex flex-center border-box big-border mr1 ml2 half-width">
-    <div class="mx-auto center py4">
-      <img src="/img/pc.svg">
+<div class="clearfix px1">
+  <div class="border-box p1">
+    <div class="flex flex-center">
+      <div class="mx-auto center py4">
+        <img src="/img/pc.svg">
+      </div>
     </div>
   </div>
-  <div class="flex-auto flex flex-center border-box big-border ml1 mr2 half-width">
-    <div class="mx-auto center py4">
-      <img src="/img/post-pc.svg">
+  <div class="border-box p1">
+    <div class="flex flex-center">
+      <div class="mx-auto center py4">
+        <img src="/img/post-pc.svg">
+      </div>
     </div>
   </div>
 </div>
 
-<div class="flex flex-column border-box big-border m2 mb4">
-  <div class="flex-auto mbu px2">
-    <h2 class="center m3 p0">Travel Journal</h2>
-    <div class="flex mb3">
+<div class="flex flex-column border-box mt2 mb4">
+  <div class="flex-auto py4">
+    <h2 class="center m0 mb2">Travel Journal</h2>
+    <div class="clearfix mt2">
       {% for post in site.posts limit:3 %}
-        <div class="flex-auto center third-width py2">
+        <div class="center third-width big-left p2 border-box">
           <span class="block alpha-5">{{ post.date | date: "%b %Y" }}</span>
-          <a href="{{ post.permalink}}">{{ post.title }}</a>
+          <a class="semibold h4" href="{{ post.permalink}}">{{ post.title }}</a>
         </div>
       {% endfor %}
     </div>
-    <div class="flex mb3">
+    <div class="clearfix">
       {% for post in site.posts offset:3 limit:2 %}
-        <div class="flex-auto center third-width py2">
+        <div class="center third-width big-left p2 border-box">
           <span class="block alpha-5">{{ post.date | date: "%b %Y" }}</span>
-          <a href="{{ post.permalink}}">{{ post.title }}</a>
+          <a class="semibold h4" href="{{ post.permalink}}">{{ post.title }}</a>
         </div>
       {% endfor %}
-        <div class="flex-auto center third-width py2">
+        <div class="center third-width big-left p2 border-box">
           <span class="block alpha-5">More in the</span>
-          <a href="/journal/">Archive</a>
+          <a class="semibold h4" href="/journal/">Archive</a>
         </div>
     </div>
   </div>
 </div>
 
-<div class="my4 px4 center">
-  <h2 class="mb2">In summary</h2>
-  <p class="mb4 mx-auto about-text alpha-5">I like to make things. I&rsquo;m from Idaho and live in San Francisco. I worked at Dropbox for a couple years, as well as some other places. I have a thing about shapes and I like art.</p>
+<div class="mt4 mb4 px4 center">
+  <h2 class="mb2">Additionally</h2>
+  <p class="mx-auto about-text alpha-5">I like to make things. I&rsquo;m from Idaho and live in San Francisco. I worked at Dropbox for a couple years, as well as some other places. I have a thing about shapes and I like art.</p>
 </div>
