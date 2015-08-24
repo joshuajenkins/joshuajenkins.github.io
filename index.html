@@ -59,7 +59,7 @@ layout: new
     <div class="clearfix mt2">
       {% for post in site.posts limit:3 %}
         <div class="center third-width big-left p2 border-box">
-          <span class="block alpha-5">{{ post.date | date: "%b %Y" }}</span>
+          <span class="block">{{ post.date | date: "%b %Y" }}</span>
           <a class="semibold h4" href="{{ post.permalink}}">{{ post.title }}</a>
         </div>
       {% endfor %}
@@ -67,12 +67,12 @@ layout: new
     <div class="clearfix">
       {% for post in site.posts offset:3 limit:2 %}
         <div class="center third-width big-left p2 border-box">
-          <span class="block alpha-5">{{ post.date | date: "%b %Y" }}</span>
+          <span class="block">{{ post.date | date: "%b %Y" }}</span>
           <a class="semibold h4" href="{{ post.permalink}}">{{ post.title }}</a>
         </div>
       {% endfor %}
         <div class="center third-width big-left p2 border-box">
-          <span class="block alpha-5">More in the</span>
+          <span class="block">More in the</span>
           <a class="semibold h4" href="/journal/">Archive</a>
         </div>
     </div>
@@ -81,13 +81,5 @@ layout: new
 
 <div class="m0 p4 center">
   <h2 class="mb2">Additionally</h2>
-  <p class="mx-auto about-text alpha-5">I&rsquo;m a San Francisco-based designer. Designer is kind of a bullshit word. I like all the little parts that makes things what they are.</p>
-</div>
-
-<div class="mt0 mb4 p4 center">
-  <h2 class="mb3">Here&rsquo;s a tweet I like</h2>
-  <blockquote class="twitter-tweet tw-align-center" lang="en">
-    <p lang="en" dir="ltr">kanye at a mcdonald&#39;s drive thru in his lambo <a href="http://t.co/AS9X1h3QDK">pic.twitter.com/AS9X1h3QDK</a></p>&mdash; L.A.S (@SartoriallyInc) <a href="https://twitter.com/SartoriallyInc/status/603707638485000192">May 27, 2015</a>
-  </blockquote>
-  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <p class="mx-auto about-text">I&rsquo;m a San Francisco-based designer practicing design in San Francisco. I used to live in other places. Thanks!</p>
 </div>

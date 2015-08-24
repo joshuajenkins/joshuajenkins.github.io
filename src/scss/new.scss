@@ -2,6 +2,7 @@
 
 body {
   background-color: rgb(251, 245, 233);
+  color: rgb(82, 78, 71);
 }
 
 a:link,
@@ -11,6 +12,11 @@ a:visited {
 }
 a:hover {
   text-decoration: underline;
+}
+
+.link-black:link,
+.link-black:visited {
+  color: rgb(0,0,0);
 }
 
 .link-fade:hover {
@@ -35,6 +41,7 @@ a:hover {
   padding: 10px;
 }
 
+.full-width   { width: 100%; }
 .half-width   { width: 100%; }
 .third-width  { width: 100%; }
 
@@ -57,4 +64,8 @@ a:hover {
 
 .about-text {
   max-width: 28em;
+}
+
+.journal-archive {
+  width: 20rem;
 }
