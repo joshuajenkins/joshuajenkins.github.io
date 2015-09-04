@@ -2,7 +2,7 @@
 
 body {
   background-color: rgb(251, 245, 233);
-  color: rgb(82, 78, 71);
+  color: rgb(20, 20, 20);
 }
 
 a:link,
@@ -26,6 +26,10 @@ a:hover {
 .semibold {
   font-family: 'work-semibold';
   font-weight: normal;
+}
+.light {
+  font-family: 'work-light';
+  font-weight: 300;
 }
 
 .h4 {

@@ -23,6 +23,12 @@
           url(fonts/WorkSans-Regular.woff),
           url(fonts/WorkSans-Regular.ttf);
 }
+@font-face {
+    font-family: work-light;
+    src:  url(fonts/WorkSans-Light.woff2),
+          url(fonts/WorkSans-Light.woff),
+          url(fonts/WorkSans-Light.ttf);
+}
 
 body { margin: 0 }
 img { max-width: 100% }
