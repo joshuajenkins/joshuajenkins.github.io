@@ -89,6 +89,10 @@ h6 { font-size: .75rem }
 .nowrap { white-space: nowrap }
 .break-word { word-wrap: break-word }
 
+.light      { font-family: 'work-light' }
+.regular    { font-family: 'work-regular' }
+.semi-bold  { font-family: 'work-semibold' }
+
 .truncate {
   max-width: 100%;
   overflow: hidden;
