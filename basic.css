@@ -1,16 +1,7 @@
 @import '_basscss-custom';
 
 .header {
-  margin: 200px 0;
-}
-
-.blob {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 1rem;
-  border-size: 2px;
-  border-style: solid;
-  border-color: #F3C300;
+  margin: 20vh 0;
 }
 
 .list-link {
