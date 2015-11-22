@@ -15,6 +15,7 @@
 }
 .list-link:after {
   content: "\00a0→\00a0";
+  font-weight: 400;
   color: rgb(140, 140, 140);
 }
 
