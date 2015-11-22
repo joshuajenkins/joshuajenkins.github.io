@@ -7,7 +7,15 @@
 .list-link {
   text-decoration: none;
   color: black;
-  border-bottom: 1px solid #ddd;
+  background-color: transparent;
+  transition: background-color 0.15s linear;
+}
+.list-link:hover {
+  background-color: rgb(255, 255, 220);
+}
+.list-link:after {
+  content: "\00a0→\00a0";
+  color: rgb(140, 140, 140);
 }
 
 .gray {
