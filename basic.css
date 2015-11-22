@@ -13,3 +13,8 @@
 .gray {
   color: #666;
 }
+
+ul > li {
+  list-style: square;
+  color: rgb(200,200,200);
+}
