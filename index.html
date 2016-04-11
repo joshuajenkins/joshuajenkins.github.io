@@ -32,20 +32,20 @@
       var facts = ["Dropbox", "Last", "Subway", "Cove", "Parliament"]
 
       speakFacts = function() {
-        var str = "I "
+        var str = "I"
         if (Math.random() > 0.5) {
           var r = Math.random()
           if (r >= 0 && r < 0.25) {
-            str += "am working on something for ya"
+            str += " am working on something for ya"
           } else if (r >= 0.25 && r < 0.5) {
-            str += "got something in the kitchen"
+            str += " got something in the kitchen"
           } else if (r >= 0.5 && r < 0.75) {
-            str += "'m onta something"
+            str += "' m onta something"
           } else {
-            str += "'m here to help"
+            str += " 'm here to help"
           }
         } else {
-          str += "used to work at "
+          str += " used to work at "
           var i = Math.floor(Math.random() * facts.length)
           str += facts[i]
         }
