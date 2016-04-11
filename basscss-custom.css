@@ -8,22 +8,10 @@
 */
 
 @font-face {
-    font-family: work-semibold;
-    src:  url(css/fonts/WorkSans-SemiBold.woff2),
-          url(css/fonts/WorkSans-SemiBold.woff),
-          url(css/fonts/WorkSans-SemiBold.ttf);
-}
-@font-face {
     font-family: work-regular;
     src:  url(css/fonts/WorkSans-Regular.woff2),
           url(css/fonts/WorkSans-Regular.woff),
           url(css/fonts/WorkSans-Regular.ttf);
-}
-@font-face {
-    font-family: work-light;
-    src:  url(css/fonts/WorkSans-Light.woff2),
-          url(css/fonts/WorkSans-Light.woff),
-          url(css/fonts/WorkSans-Light.ttf);
 }
 
 body { margin: 0 }

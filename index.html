@@ -12,8 +12,8 @@
   </head>
   <body>
 
-    <div class="container px4">
-      :)
+    <div class="vp flex flex-center">
+      <span id="jenkins" class="mx-auto inline-block">:)</span>
     </div>
     
     <script>
@@ -24,6 +24,29 @@
 
       ga('create', 'UA-36732891-1', 'joshuajenkins.com');
       ga('send', 'pageview');
+
+      var jenkins = document.getElementById("jenkins")
+
+      var eyes = 1
+      var timeOut = 2000
+
+      liveLife = function() {
+        var face = ''
+        var e = (Math.random() * 100) > 94 ? ';' : ':'
+        var m = (Math.random() * 200 > 194) ? "(" : ")"
+        for (var i = 0; i < eyes; i++) {
+          face += e
+        }
+        face += m
+        jenkins.textContent = face
+        eyes += 1
+
+        var timer = setTimeout(liveLife, timeOut)
+        timeOut = Math.floor(Math.random() * 4000)
+      }
+
+      liveLife()
+
     </script>
     
   </body>

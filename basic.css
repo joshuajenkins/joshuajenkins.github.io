@@ -1,29 +1,14 @@
-@import '_basscss-custom';
-
-.header {
-  margin: 20vh 0;
+.vp {
+  width: 100vw;
+  height: 100vh;
 }
 
-.list-link {
-  text-decoration: none;
-  color: black;
-  background-color: transparent;
-  transition: background-color 0.15s linear;
-}
-.list-link:hover {
-  background-color: rgb(255, 255, 220);
-}
-.list-link:after {
-  content: "\00a0→\00a0";
-  font-weight: 400;
-  color: rgb(140, 140, 140);
+@keyframes spin {
+  0%   { transform: rotate(0deg) }
+  100% { transform: rotate(360deg) }
 }
 
-.gray {
-  color: #666;
-}
-
-ul > li {
-  list-style: square;
-  color: rgb(200,200,200);
+#jenkins {
+  font-size: 48px;
+  animation: spin 5s infinite linear;
 }
