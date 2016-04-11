@@ -29,23 +29,50 @@
 
       var eyes = 1
       var timeOut = 2000
+      var facts = ["Dropbox", "Last", "Subway", "Cove", "Parliament"]
+
+      speakFacts = function() {
+        var str = "I "
+        if (Math.random() > 0.5) {
+          var r = Math.random()
+          if (r >= 0 && r < 0.25) {
+            str += "am working on something for ya"
+          } else if (r >= 0.25 && r < 0.5) {
+            str += "got something in the kitchen"
+          } else if (r >= 0.5 && r < 0.75) {
+            str += "'m onta something"
+          } else {
+            str += "'m here to help"
+          }
+        } else {
+          str += "used to work at "
+          var i = Math.floor(Math.random() * facts.length)
+          str += facts[i]
+        }
+        jenkins.textContent = str
+        next()
+      }
 
       liveLife = function() {
         var face = ''
-        var e = (Math.random() * 100) > 94 ? ';' : ':'
-        var m = (Math.random() * 200 > 194) ? "(" : ")"
+        var e = (Math.random() > 0.9) ? ';' : ':'
+        var m = (Math.random() > 0.9) ? "(" : ")"
         for (var i = 0; i < eyes; i++) {
           face += e
         }
         face += m
         jenkins.textContent = face
         eyes += 1
+        next()
+      }
 
-        var timer = setTimeout(liveLife, timeOut)
+      var next = function() {
+        var thing = Math.random() > 0.8 ? speakFacts : liveLife
+        var timer = setTimeout(thing, timeOut)
         timeOut = Math.floor(Math.random() * 4000)
       }
 
-      liveLife()
+      next()
 
     </script>
     
