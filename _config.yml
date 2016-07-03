@@ -1,4 +1,0 @@
-name: Joshua Jenkins
-markdown: kramdown
-permalink: /:year/:title
-exclude: [src, node_modules, gulpfile.js, package.json, components]
