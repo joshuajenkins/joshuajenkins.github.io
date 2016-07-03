@@ -1,9 +1,33 @@
 body {
 	font-family: "Monaco", "Consolas", monospace;
 	margin: 0;
+	color: #222;
 }
-
+.img {
+	max-width: 100%;
+}
+.gray {
+	color: #9a9a9a;
+}
+.line-height-5 {
+	line-height: 2;
+}
+.max-size {
+	max-width: 100%;
+	max-height: 100%;
+}
+/* */
 .index-container {
 	max-width: 400px;
 	height: 100vh;
+}
+.post-title {
+	height: 85vh;
+}
+.main-col {
+	max-width: 720px;
+}
+.thumb-box {
+	width: 180px;
+	height: 180px;
 }
