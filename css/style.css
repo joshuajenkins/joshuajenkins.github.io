@@ -1,0 +1,9 @@
+body {
+	font-family: "Consolas";
+	margin: 0;
+}
+
+.index-container {
+	max-width: 400px;
+	height: 100vh;
+}
