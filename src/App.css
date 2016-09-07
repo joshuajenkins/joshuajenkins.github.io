@@ -1,0 +1,9 @@
+.text-block a:link,
+.text-block a:visited {
+  color: #222;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+}
+.text-block a:hover {
+  border-color: #aaa;
+}
