@@ -3,37 +3,36 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=5.0">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300i,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300i,400" rel="stylesheet">
 	<title>Joshua Jenkins</title>
 	<style>
 		body {
 			margin: 0;
+			padding: 4vh 4vw;
 			font-family: "Poppins", sans-serif;
 			background: rgb(255,230,230);
 		}
-		#wrapper {
-			width: 100vw;
-			height: 100vh;
-			padding: 8vh 4vw;
-			box-sizing: border-box;
-		}
 		h1 {
-			font-weight: 500;
+			font-weight: 400;
 			font-size: 3em;
 			line-height: 1;
-			margin: 0 0 1em 0;
-			padding: 0;
+			margin: 0 0 0.25em 0;
+			padding: 0.5em 0;
 		}
 		h2 {
-			font-weight: 500;
+			font-weight: 400;
 			font-size: 1.5em;
 			line-height: 1.5;
 			max-width: 16em;
 			margin: 0;
 			padding: 0;
 		}
+		h1:hover {
+			display: flex;
+			justify-content: space-around;
+		}
+		h1 > span:hover { color: white; }
 		h1:hover, h2:hover { cursor: default; }
-		h1:hover span::before,
 		h2:hover span::before {
 			content: "·";
 		}
@@ -50,9 +49,7 @@
 	</style>
 </head>
 <body>
-	<div id="wrapper">
-		<h1>Josh<span></span>u<span></span>a Jen<span></span>kins</h1>
-		<h2>Is de<span></span>sign<span></span>ing <a href="//numeracy.co">Nu<span></span>mer<span></span>a<span></span>cy</a>, does the oc<span></span>ca<span></span>sion<span></span>al <a href="/sketchbook">sketch</a>, &amp; in<span></span>ter<span></span>mit<span></span>tent<span></span>ly <a href="//twitter.com/joshuajenkins">tweets</a>.</span></h2>
-	</div>
+	<h1><span>Josh</span><span>u</span><span>a</span><span> </span><span>Jen</span><span>kins</span></h1>
+	<h2>Is de<span></span>sign<span></span>ing <a href="//numeracy.co">Nu<span></span>mer<span></span>a<span></span>cy</a>, does the oc<span></span>ca<span></span>sion<span></span>al <a href="/sketchbook">sketch</a>, &amp; in<span></span>ter<span></span>mit<span></span>tent<span></span>ly <a href="//twitter.com/joshuajenkins">tweets</a>.</span></h2>
 </body>
 </html>
