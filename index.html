@@ -33,15 +33,9 @@
 			padding: 0;
 		}
 		h1:hover, h2:hover { cursor: help; }
-		h1 > .hover,
-		h1:hover > .normal,
-		h2 > .hover,
-		h2:hover > .normal {
-			display: none;
-		}
-		h1:hover > .hover,
-		h2:hover > .hover {
-			display: inline;
+		h1:hover span::before,
+		h2:hover span::before {
+			content: "·";
 		}
 		a {
 			font-style: italic;
@@ -57,8 +51,8 @@
 </head>
 <body>
 	<div id="wrapper">
-		<h1><span class="normal">Joshua Jenkins</span><span class="hover">Josh·u·a Jen·kins</span></h1>
-		<h2><span class="normal">Is designing <a href="//numeracy.co">Numeracy</a>, does the occasional <a href="/sketchbook">sketch</a>, &amp; intermittently <a href="//twitter.com/joshuajenkins">tweets</a>.</span><span class="hover">Is de·sign·ing <a href="//numeracy.co">Nu·mer·a·cy</a>, does the oc·cas·ion·al <a href="/sketchbook">sketch</a>, and in·ter·mit·ten·tly <a href="//twitter.com/joshuajenkins">tweets</a>.</span></h2>
+		<h1>Josh<span></span>u<span></span>a Jen<span></span>kins</h1>
+		<h2>Is de<span></span>sign<span></span>ing <a href="//numeracy.co">Nu<span></span>mer<span></span>a<span></span>cy</a>, does the oc<span></span>ca<span></span>sion<span></span>al <a href="/sketchbook">sketch</a>, &amp; in<span></span>ter<span></span>mit<span></span>tent<span></span>ly <a href="//twitter.com/joshuajenkins">tweets</a>.</span></h2>
 	</div>
 </body>
 </html>
