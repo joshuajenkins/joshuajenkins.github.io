@@ -8,15 +8,23 @@
 	<style>
 		body {
 			margin: 0;
-			padding: 8vh 4vw;
 			font-family: "Poppins", sans-serif;
 			background: rgb(255,230,230);
+		}
+		.wrapper {
+			padding: 5%;
+			box-sizing: border-box;
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
 		}
 		h1 {
 			font-weight: 400;
 			font-size: 3em;
 			line-height: 1;
 			padding: 0;
+			margin: 0;
 			display: inline;
 		}
 		h2 {
@@ -30,13 +38,16 @@
 		h2 .alt {
 			display: none;
 		}
+		h1:hover {
+			color: white;
+		}
 		h1:hover + h2 .default {
 			display: none;
 		}
 		h1:hover + h2 .alt {
 			display: block;
 		}
-		h1 > span:hover { color: white; cursor: help; }
+		h1 > span:hover { color: black; cursor: help; }
 		h1:hover, h2:hover { cursor: default; }
 		h2:hover span:before {
 			content: "·";
@@ -54,12 +65,14 @@
 	</style>
 </head>
 <body>
-	<h1>
-		<span>Josh</span><span>u</span><span>a</span><span> </span><span>Jen</span><span>kins</span>
-	</h1>
-	<h2>
-			<div class="default">Is de<span></span>sign<span></span>ing <a href="//numeracy.co">Nu<span></span>mer<span></span>a<span></span>cy</a>, does the oc<span></span>ca<span></span>sion<span></span>al <a href="/sketchbook">sketch</a>, &amp; in<span></span>ter<span></span>mit<span></span>tent<span></span>ly <a href="//twitter.com/joshuajenkins">tweets</a>.</span></div>
-			<div class="alt">Is a four-sided gambrel-style hip roof characterized by two slopes on each of its sides with the lower slope, punctured by dormer windows, at a steeper angle than the upper.</div>
-	</h2>
+	<div class="wrapper">
+		<h1>
+			<span>Josh</span><span>u</span><span>a</span><span> </span><span>Jen</span><span>kins</span>
+		</h1>
+		<h2>
+				<div class="default">Is de<span></span>sign<span></span>ing <a href="//numeracy.co">Nu<span></span>mer<span></span>a<span></span>cy</a>, does the oc<span></span>ca<span></span>sion<span></span>al <a href="/sketchbook">sketch</a>, &amp; in<span></span>ter<span></span>mit<span></span>tent<span></span>ly <a href="//twitter.com/joshuajenkins">tweets</a>.</span></div>
+				<div class="alt">Is a four-sided gambrel-style hip roof characterized by two slopes on each of its sides with the lower slope, punctured by dormer windows, at a steeper angle than the upper.</div>
+		</h2>
+	</div>
 </body>
 </html>
