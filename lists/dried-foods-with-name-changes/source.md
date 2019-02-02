@@ -6,7 +6,7 @@ Qualifier: Single-ingredient foods that change names via dehydration. Items cure
 Things you'd likely come across in a U.S. grocery store
 
 - grape -> raisin
-- jalapeńo pepper -> chipotle (smoke-dried)
+- jalapeño pepper -> chipotle (smoke-dried)
 - poblano pepper -> (chile) ancho
 - plum -> prune
 - tomatoes -> sun-dried tomatoes
