@@ -10,7 +10,7 @@
 		}
 		.list-page {
 			font-family: system-ui;
-			max-width: 600px;
+			max-width: 500px;
 			padding: 0 40px;
 			box-sizing: border-box;
 			margin: 10vh auto;
@@ -18,21 +18,42 @@
 		.list-page h1 {
 			font-size: 1.75em;
 			font-weight: 800;
-			max-width: 300px;
 			text-align: center;
 			margin: 0 auto 2em auto;
 		}
 		.list-page p {
 			font-size: 1.125em;
 			line-height: 1.4;
+			text-align: center;
 		}
 		.list-page ul {
 			padding: 0;
+			margin-top: 2em;
 		}
 		.list-page ul > li {
 			font-size: 1.125em;
 			line-height: 1.4;
-			list-style: circle;
+			list-style: none;
+			display: flex;
+			justify-content: space-between;
+			align-items: baseline;
+			border-bottom: 1px solid black;
+			padding: 0.75em 0;
+			font-weight: 600;
+		}
+		.list-page ul > li > span {
+			text-transform: uppercase;
+			font-size: 0.8375em;
+			font-weight: normal;
+		}
+		@media (max-width: 500px) {
+			.list-page ul > li {
+				font-size: 1em;
+			}
+			.list-page ul > li > span {
+				font-size: 0.75em;
+				width: 50%;
+			}
 		}
 	</style>
 </head>
@@ -43,12 +64,12 @@
 		<p>Single-ingredient foods that change names via dehydration. Items cured using salt are excluded. Must have been exposed to in real life.</p>
 
 		<ul>
-			<li>grape → raisin</li>
-			<li>jalapeño pepper → chipotle (smoke-dried)</li>
-			<li>poblano pepper → (chile) ancho</li>
-			<li>plum → prune</li>
-			<li>tomatoes → sun-dried tomatoes</li>
-			<li>wolfberry → goji berry</li>
+			<li>grape → <span>raisin</span></li>
+			<li>jalapeño pepper → <span>chipotle (smoke-dried)</span></li>
+			<li>poblano pepper → <span>(chile) ancho</span></li>
+			<li>plum → <span>prune</span></li>
+			<li>tomatoes → <span>sun-dried tomatoes</span></li>
+			<li>wolfberry → <span>goji berry</span></li>
 		</ul>
 	</div>
 </body>
