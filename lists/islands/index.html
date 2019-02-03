@@ -10,23 +10,19 @@
 		}
 		.list-page {
 			font-family: system-ui;
-			max-width: 400px;
-			padding: 0 40px;
-			box-sizing: border-box;
-			margin: 10vh auto;
 		}
 		.list-page h1 {
-			font-size: 2.25em;
+			font-size: 1em;
+			line-height: 1;
 			font-weight: 800;
+			text-transform: uppercase;
 			text-align: center;
-			margin: 0 auto 2em auto;
-		}
-		.list-page p {
-			font-size: 1.125em;
-			line-height: 1.4;
+			margin: 0 auto;
+			padding: 4em 0;
 		}
 		.list-page ul {
 			padding: 0;
+			margin: 0 0 4em 0;
 			width: 100%;
 		}
 		.list-page ul > li {
@@ -34,16 +30,30 @@
 			line-height: 1.4;
 			list-style: none;
 			display: flex;
-			justify-content: space-between;
 			align-items: baseline;
-			border-bottom: 1px solid black;
-			padding: 0.75em 0;
+			justify-content: center;
+			padding: 0.75em 5vw;
 			font-weight: 600;
 		}
-		.list-page ul > li > span {
+		.list-page ul > li > .island {
+			width: 50%;
+			text-align: right;
+			padding-right: 1em;
+			box-sizing: border-box;
+		}
+		.list-page ul > li > .location {
+			width: 50%;
 			text-transform: uppercase;
 			font-size: 0.8375em;
 			font-weight: normal;
+			padding-left: 1em;
+			box-sizing: border-box;
+		}
+		@media (max-width: 500px) {
+			.list-page ul > li {
+				font-size: 1em;
+				justify-content: space-between;
+			}
 		}
 	</style>
 </head>
@@ -53,22 +63,70 @@
 		<h1>List of islands I’ve set foot on</h1>
 
 		<ul>
-			<li>Alameda<span>California</span></li>
-			<li>Bainbridge Island<span>Washington</span></li>
-			<li>Ios<span>Greece</span></li>
-			<li>Delos<span>Greece</span></li>
-			<li>Gamla Stan<span>Sweden</span></li>
-			<li>Kauai<span>Hawai'i</span></li>
-			<li>Key West<span>Florida</span></li>
-			<li>Long Island<span>New York</span></li>
-			<li>Maui<span>Hawai'i</span></li>
-			<li>Mikonos<span>Greece</span></li>
-			<li>Milos<span>Greece</span></li>
-			<li>Naxos<span>Greece</span></li>
-			<li>Sauvie Island<span>Oregon</span></li>
-			<li>Santorini<span>Greece</span></li>
-			<li>Södermalm<span>Sweden</span></li>
-			<li>Treasure Island<span>California</span></li>
+			<li>
+				<span class="island">Alameda</span>
+				<span class="location">California</span>
+			</li>
+			<li>
+				<span class="island">Bainbridge Island</span>
+				<span class="location">Washington</span>
+			</li>
+			<li>
+				<span class="island">Ios</span>
+				<span class="location">Greece</span>
+			</li>
+			<li>
+				<span class="island">Delos</span>
+				<span class="location">Greece</span>
+			</li>
+			<li>
+				<span class="island">Gamla Stan</span>
+				<span class="location">Sweden</span>
+			</li>
+			<li>
+				<span class="island">Kauai</span>
+				<span class="location">Hawai'i</span>
+			</li>
+			<li>
+				<span class="island">Key West</span>
+				<span class="location">Florida</span>
+			</li>
+			<li>
+				<span class="island">Long Island</span>
+				<span class="location">New York</span>
+			</li>
+			<li>
+				<span class="island">Maui</span>
+				<span class="location">Hawai'i</span>
+			</li>
+			<li>
+				<span class="island">Mikonos</span>
+				<span class="location">Greece</span>
+			</li>
+			<li>
+				<span class="island">Milos</span>
+				<span class="location">Greece</span>
+			</li>
+			<li>
+				<span class="island">Naxos</span>
+				<span class="location">Greece</span>
+			</li>
+			<li>
+				<span class="island">Sauvie Island</span>
+				<span class="location">Oregon</span>
+			</li>
+			<li>
+				<span class="island">Santorini</span>
+				<span class="location">Greece</span>
+			</li>
+			<li>
+				<span class="island">Södermalm</span>
+				<span class="location">Sweden</span>
+			</li>
+			<li>
+				<span class="island">Treasure Island</span>
+				<span class="location">California</span>
+			</li>
 		</ul>
 	</div>
 </body>
