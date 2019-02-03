@@ -10,20 +10,39 @@
 			font-family: system-ui;
 			width: 100vw;
 			height: 100vh;
+			padding: 40px;
+			box-sizing: border-box;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 		}
-		.list-page p {
+		.page p {
 			font-size: 1.125em;
 			line-height: 1.4;
+		}
+		.page ul {
+			padding: 0;
+		}
+		.page ul > li {
+			font-size: 1.125em;
+			line-height: 1.4;
+			list-style: circle;
+		}
+		.page a:link, .page a:visited, .page a:hover {
+			color: black;
 		}
 	</style>
 </head>
 
 <body>
 	<div class="page">
-		<p>Who do you think you are</p>
+		<div>
+			<p>List of</p>
+			<ul>
+				<li><a href="/lists/art-documentaries">art (and design) documentaries</a></li>
+				<li><a href="/lists/dried-foods-with-name-changes">foods that change names once they are dried</a></li>
+			</ul>
+		</div>
 	</div>
 </body>
 
