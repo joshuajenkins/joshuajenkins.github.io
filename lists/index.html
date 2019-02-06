@@ -8,28 +8,29 @@
 		body { margin: 0; }
 		.page {
 			font-family: system-ui;
-			width: 100vw;
-			height: 100vh;
-			padding: 40px;
-			box-sizing: border-box;
-			display: flex;
-			align-items: center;
-			justify-content: center;
+			padding: 10vh 0;
 		}
-		.page p {
-			font-size: 1.125em;
-			line-height: 1.4;
+		.page h1 {
+			font-size: 6em;
+			margin: 0;
+			padding: 0 10vw;
 		}
 		.page ul {
-			padding: 0;
+			padding: 0 10vw;
 		}
 		.page ul > li {
-			font-size: 1.125em;
-			line-height: 1.4;
-			list-style: circle;
+			font-size: 2em;
+			font-weight: 600;
+			list-style: none;
+			border-bottom: 4px solid red;
 		}
-		.page a:link, .page a:visited, .page a:hover {
+		.page a:link, .page a:visited {
+			display: block;
 			color: black;
+			padding: 2em 0;
+		}
+		.page a:hover {
+			color: red;
 		}
 	</style>
 </head>
@@ -37,7 +38,7 @@
 <body>
 	<div class="page">
 		<div>
-			<p>List of</p>
+			<h1>List of</h1>
 			<ul>
 				<li><a href="/lists/art-documentaries">art (and design) documentaries</a></li>
 				<li><a href="/lists/dried-foods-with-name-changes">foods that change names once they are dried</a></li>
