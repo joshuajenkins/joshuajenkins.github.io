@@ -109,7 +109,7 @@ function getRisoRandomColor() {
 }
 
 function getWhitelistRandomColor() {
-	const color = randArrEl([chroma('navy'), chroma('white'), chroma('black'), chroma('tomato'), chroma('#2F6165')])
+	const color = randArrEl([chroma('5EC8E5'), chroma('white'), chroma('black'), chroma('ffeccc'), chroma('#2F6165')])
 	if (Math.random() > 0.5) {
 		return color.darken(Math.random() / 6)
 	} else {
