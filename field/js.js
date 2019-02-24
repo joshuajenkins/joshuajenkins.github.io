@@ -1,5 +1,7 @@
 const canvas = document.getElementById("canvas")
 
+let screenCount = 0
+
 let config = {
 	width: null,
 	height: null,
@@ -30,7 +32,8 @@ const deepThoughts = [
 	"I cannot read another piece of advice on Twitter",
 	"This is just going to be what it is",
 	"If I had a more comfortable chair, a well placed lamp, and better bookcases I'd read the books I haven't gotten to",
-	"To everyone that offered to get me something while I've been sick — Thank you"
+	"To everyone that offered to get me something while I've been sick — thanks",
+	"If a lemon seed so much as touches your mouth you will die within 5 seconds"
 ]
 
 function newScreen() {
@@ -42,6 +45,7 @@ function newScreen() {
 	setCanvasBackground()
 	clearSomeCells()
 	renderCells()
+	screenCount++
 }
 
 function ascertainWindowDimensions() {
@@ -74,18 +78,42 @@ function deriveCellPositions() {
 }
 
 function setCanvasBackground() {
-	canvas.setAttribute("style", `background-color: ${getShittyRandomColor()};`)
+	canvas.setAttribute("style", `background-color: ${getRandomColor()};`)
 }
 
 function renderCells() {
 	cellPositions.map(cell => renderCell(cell.x, cell.y, cell.width, cell.height))
 }
 
+function getRandomColor() {
+	return getWhitelistRandomColor()
+}
+
 function getShittyRandomColor() {
 	if (Math.random() > 0.25) {
+		// this absolutely is not returning a truly random color in rgb space
+		// need to sample and figure out where the gaps are
+		// somehow things actually look better from here
 		return "#" + (Math.random().toString(16) + "000000").slice(2, 8)
 	} else {
 		return "transparent"
+	}
+}
+
+function getRisoRandomColor() {
+	// playing with 2 - 3 color riso idea
+	// http://stencil.wiki/colors
+	const color = randArrEl([chroma('#00A95C'), chroma('#FFAE3B'), chroma('#FFB511'), chroma('#5EC8E5'), chroma('#EE7F4B'), chroma('#F65058')])
+	const whiteBlend = randArrEl([0, 0.125, 0.25, 0.375, 0.5, 1])
+	return chroma.mix(color, 'white', whiteBlend, 'lrgb')
+}
+
+function getWhitelistRandomColor() {
+	const color = randArrEl([chroma('navy'), chroma('white'), chroma('black'), chroma('tomato'), chroma('#2F6165')])
+	if (Math.random() > 0.5) {
+		return color.darken(Math.random() / 6)
+	} else {
+		return color.brighten(Math.random() / 6)
 	}
 }
 
@@ -114,16 +142,16 @@ function renderCell(x, y, width, height) {
 }
 
 function getBgFillStyleForCell() {
-	return `background-color: ${getShittyRandomColor()};`
+	return `background-color: ${getRandomColor()};`
 }
 
 function getBgGradientStyleForCell() {
 	const angle = Math.floor(Math.random() * 360)
-	return `background: linear-gradient(${angle}deg, ${getShittyRandomColor()}, ${getShittyRandomColor()})`
+	return `background: linear-gradient(${angle}deg, ${getRandomColor()}, ${getRandomColor()})`
 }
 
 function getImgStyleForCell() {
-	const imgUrl = imgList[Math.floor(Math.random() * imgList.length)]
+	const imgUrl = randArrEl(imgList)
 	const size = Math.random() > 0.5 ? "cover" : "contain"
 	const bgColor = Math.random() > 0.5 ? getBgFillStyleForCell() : ""
 	const bgBlend = Math.random() > 0.5 ? "background-blend-mode: multiply;" : ""
@@ -131,7 +159,7 @@ function getImgStyleForCell() {
 }
 
 function renderTextContents() {
-	const txt = deepThoughts[Math.floor(Math.random() * deepThoughts.length)]
+	const txt = randArrEl(deepThoughts)
 	const textEl = document.createElement("span")
 	textEl.setAttribute("class", "thought")
 	textEl.textContent = txt
@@ -143,10 +171,12 @@ function clearSomeCells() {
 	const numCells = 1 + Math.floor(allCells.length * Math.random())
 	if (allCells.length > 0) {
 		for (let i = 0; i < numCells; i++) {
-			allCells[Math.floor(allCells.length * Math.random())].remove()
+			randArrEl(allCells).remove()
 		}
 	}
 }
+
+const randArrEl = arr => arr[Math.floor(Math.random() * arr.length)]
 
 newScreen()
 
