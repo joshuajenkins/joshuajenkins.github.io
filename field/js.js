@@ -181,6 +181,7 @@ const randArrEl = arr => arr[Math.floor(Math.random() * arr.length)]
 newScreen()
 
 window.addEventListener("click", newScreen)
+window.addEventListener("touchstart", newScreen)
 
 // window.setInterval(newScreen, 5000)
 
