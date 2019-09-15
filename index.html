@@ -3,69 +3,82 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=5.0">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600i" rel="stylesheet">
 	<title>Joshua Jenkins</title>
 	<style>
+		@font-face {
+		  font-family: "nostra sett";
+		  src: url("/fonts/Nostrav1.0-Sett.woff2") format("woff2"),
+		       url("/fonts/Nostrav1.0-Sett.woff") format("woff");
+		}
+		@font-face {
+		  font-family: "nostra stream";
+		  src: url("/fonts/Nostrav1.0-Stream.woff2") format("woff2"),
+		       url("/fonts/Nostrav1.0-Stream.woff") format("woff");
+		}
 		body {
 			margin: 0;
 			font-family: "Poppins", sans-serif;
 			background: linear-gradient(to bottom, white, white 40%, #ffc30f 60%, #ffc30f);
 		}
 		.wrapper {
-			min-height: 100vh;
+			min-height: 96vh;
+			margin: 2vh;
+			background: black;
 			display: flex;
 			flex-direction: column;
+			align-items: space-between;
 			justify-content: space-between;
 		}
 		h1 {
-			font-weight: 400;
-			font-size: 3em;
+			font-family: "nostra sett";
+			color: white;
+			font-size: calc(100vw / 9);
 			line-height: 1;
-			padding: 5%;
 			margin: 0;
 		}
-		h2 {
-			font-weight: 400;
-			font-size: 1.5em;
-			line-height: 1.5;
-			max-width: 16em;
-			margin: 1em 0 0 0;
-			padding: 5%;
+
+		h1 span:not(.group) {
+			font-size: calc(100vw / 18);
+			width: calc(100vw / 9);
+			height: calc(100vw / 9);
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
-		h2 .alt {
-			display: none;
+		.links {
+			font-family: "nostra stream";
+			width: 100%;
+			display: flex;
 		}
-		h1:hover + h2 .default {
-			display: none;
-		}
-		h1:hover + h2 .alt {
-			display: block;
-		}
-		h1:hover, h2:hover { cursor: default; }
-		h2:hover span:before {
-			content: "·";
-		}
-		a {
-			font-style: italic;
-			font-weight: 600;
-		}
-		a:link, a:visited {
-			color: black;
-		}
-		a:hover {
+		.links a:link,
+		.links a:visited {
+			display: flex;
+			color: white;
+			font-size: calc(100vw / 24);
 			text-decoration: none;
+		}
+		.links a:hover {
+			color: #ffc30f;
+			font-family: "nostra sett";
+		}
+		.links span {
+			display: flex;
+			width: calc(100vw / 17);
+			align-items: center;
+			justify-content: center;
 		}
 	</style>
 </head>
 <body>
 	<div class="wrapper">
 		<h1>
-			<span>Joshua Jenkins</span>
+			joshua jenkins
 		</h1>
-		<h2>
-				<div class="default">Is de<span></span>sign<span></span>ing <a href="//numeracy.co">Nu<span></span>mer<span></span>a<span></span>cy</a>, does the oc<span></span>ca<span></span>sion<span></span>al <a href="//instagram.com/joshuajenkins">sketch</a>, &amp; in<span></span>ter<span></span>mit<span></span>tent<span></span>ly <a href="//twitter.com/joshuajenkins">tweets</a>.</span></div>
-				<div class="alt">Is a four-sided gambrel-style hip roof characterized by two slopes on each of its sides with the lower slope, punctured by dormer windows, at a steeper angle than the upper.</div>
-		</h2>
+		<div class="links">
+			<a href="https://instagram.com/joshuajenkins"><span>i</span><span>n</span><span>s</span><span>t</span><span>a</span><span>g</span><span>r</span><span>a</span><span>m</span></a>
+			<span></span>
+			<a href="https://twitter.com/joshuajenkins"><span>t</span><span>w</span><span>i</span><span>t</span><span>t</span><span>e</span><span>r</span></a>
+		</div>
 	</div>
 </body>
 </html>
