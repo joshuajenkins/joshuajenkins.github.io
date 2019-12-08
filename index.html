@@ -200,8 +200,6 @@
 		}
 
 		const cells = document.getElementsByClassName("cell")
-		const numCells = cells.length
-
 		const rowColToIdx = (numRows, numCols, row, col) => numCols * row + col
 
 		let activeInterval
@@ -227,40 +225,34 @@
 					}
 				}
 
-				const maxDistFromCenter = numCols + numRows
 				const transitionDuration = 1250
-
-				const numRounds = maxDistFromCenter
+				const maxDist = numCols + numRows
+				const numRounds = maxDist
 
 				for (let n = 1; n < numRounds; n++) {
 					setTimeout(() => {
 
 						for (let i = 0; i < numRows; i++) {
 							for (let j = 0; j < numCols; j++) {
-
-								const inRange = (dist(i, j) <= maxDistFromCenter * n / numRounds) && (dist(i, j) >= maxDistFromCenter * (n-1) / numRounds)
-
+								const cellDist = dist(i, j)
+								const inRange = (cellDist <= maxDist * n / numRounds) && (cellDist >= maxDist * (n-1) / numRounds)
+								
 								if (inRange) {
 									const idx = rowColToIdx(numRows, numCols, i, j)
 									const cell = cells[idx]
-									if (newStates[idx] === (!flip)) {
+									if (newStates[idx] === flip) {
 										cell.classList.add("on")
 									} else {
 										cell.classList.remove("on")
 									}
 								}
-
 							}
 						}
-
 					}, (transitionDuration / numRows) * n)
 				}
-
 				flip = !flip
 			}
-
 			render()
-
 			activeInterval = setInterval(render, 3500)
 		}
 
