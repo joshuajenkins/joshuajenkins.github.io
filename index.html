@@ -159,8 +159,8 @@
 		const isPortrait = window.innerHeight > window.innerWidth
 		const width = isPortrait ? window.innerWidth : window.innerWidth / 2
 		const height = isPortrait ? window.innerHeight / 2 : window.innerHeight
-		const minSize = 18
-		const maxSize = 24
+		const minSize = isPortrait ? 10 : 18
+		const maxSize = isPortrait ? 14 : 24
 
 		/*
 			I don't actually know how to do figure this out mathematically,
@@ -266,14 +266,13 @@
 
 				const numRounds = maxDistFromCenter
 
-				// start on third iteration to reduce glitchy starts
-				for (let n = 3; n < numRounds; n++) {
+				for (let n = 1; n < numRounds; n++) {
 					setTimeout(() => {
 
 						for (let i = 0; i < numRows; i++) {
 							for (let j = 0; j < numCols; j++) {
 
-								const inRange = dist(i, j) <= maxDistFromCenter * n / numRounds
+								const inRange = (dist(i, j) <= maxDistFromCenter * n / numRounds) && (dist(i, j) >= maxDistFromCenter * (n-1) / numRounds)
 
 								if (inRange) {
 									const idx = rowColToIdx(numRows, numCols, i, j)
