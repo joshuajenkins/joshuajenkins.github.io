@@ -233,18 +233,9 @@
 
 		const routine2 = (cells, numRows, numCols) => {
 
-			// const startThresh = 1
-			// const threshStep = 0.001
-			// let currThresh = startThresh
-			// window.setInterval(() => {
-			// 	if (Math.random() > currThresh) {
-			// 		cells[Math.floor(Math.random() * numCells)].classList.toggle("on")
-			// 	}
-			// 	currThresh -= threshStep
-			// }, 20)
+			let flip = false
 
 			const render = () => {
-				// currThresh = startThresh
 				const cx = Math.round(Math.random() * numCols)
 				const cy = Math.round(Math.random() * numRows)
 				const stepDist = 0.5 + Math.random() * 5
@@ -277,7 +268,7 @@
 								if (inRange) {
 									const idx = rowColToIdx(numRows, numCols, i, j)
 									const cell = cells[idx]
-									if (newStates[idx] === true) {
+									if (newStates[idx] === (!flip)) {
 										cell.classList.add("on")
 									} else {
 										cell.classList.remove("on")
@@ -290,19 +281,7 @@
 					}, (transitionDuration / numRows) * n)
 				}
 
-				// for (let i = 0; i < numRows; i++) {
-				// 	setTimeout(() => {
-				// 		for (let j = 0; j < numCols; j++) {
-				// 			const idx = rowColToIdx(numRows, numCols, i, j)
-				// 			const cell = cells[idx]
-				// 			if (newStates[idx] === true) {
-				// 				cell.classList.add("on")
-				// 			} else {
-				// 				cell.classList.remove("on")
-				// 			}
-				// 		}
-				// 	}, (transitionDuration / numRows) * i)
-				// }
+				flip = !flip
 			}
 
 			render()
