@@ -264,11 +264,11 @@
 		// routine1(cells, numRows, numCols)
 		routine2(cells, numRows, numCols)
 
-		// window.setInterval(() => {
-		// 	if (Math.random() > 0.5) {
-		// 		cells[Math.floor(Math.random() * numCells)].classList.toggle("on")
-		// 	}
-		// }, 20)
+		window.setInterval(() => {
+			if (Math.random() > 0.975) {
+				cells[Math.floor(Math.random() * numCells)].classList.toggle("on")
+			}
+		}, 20)
 
 	</script>
 </body>
