@@ -213,7 +213,7 @@
 			const render = () => {
 				const cx = Math.round(Math.random() * numCols)
 				const cy = Math.round(Math.random() * numRows)
-				const stepDist = 0.5 + Math.random() * 4
+				const stepDist = 1.75 + Math.random() * 2
 				const thresh = Math.random() / 8
 
 				const dist = (row, col) => Math.sqrt(Math.pow(cx - col, 2) + Math.pow(cy - row, 2))
@@ -228,7 +228,7 @@
 				}
 
 				const maxDistFromCenter = numCols + numRows
-				const transitionDuration = 1500
+				const transitionDuration = 1250
 
 				const numRounds = maxDistFromCenter
 
