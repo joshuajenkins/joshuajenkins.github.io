@@ -47,7 +47,7 @@
 
 		.cell {
 			background-color: black;
-			transition: background-color 500ms ease;
+			transition: background-color 200ms linear;
 		}
 		.cell.on {
 			background-color: #D2C297;
@@ -58,6 +58,7 @@
 			margin-bottom: 48px;
 		}
 		h1 {
+			color: white;
 			font-size: 16px;
 			margin: 0;
 			padding: 0;
@@ -71,61 +72,71 @@
 			padding: 0;
 			margin: 0;
 		}
-		.recent {
+		.subsection {
 			font-size: 20px;
+			margin-bottom: 48px;
 		}
-		.recent h2 {
+		.subheading {
 			margin: 0;
 			padding: 0;
 			font-size: 16px;
 			line-height: 24px;
 			font-weight: normal;
 			font-style: italic;
-			color: #D2C297;
+			color: white;
 		}
-		.recent ol {
+		.linklist {
 			list-style: none;
 			padding: 0;
 			margin: 0;
 		}
-		.recent li {
+		.linklist li {
 			padding: 0;
 			margin: 0;
 			font-size: 14px;
 			line-height: 24px;
 		}
-		.recent a:link, .recent a:visited {
+		.linklist a:link, .linklist a:visited {
 			color: #D2C297;
 			text-decoration: underline;
 		}
-		.recent li .date {
-			display: inline-block;
-			width: 72px;
-			margin-left: -80px;
+		.linklist li .date {
 			font-size: 12px;
 			font-style: italic;
-			color: #aaa;
+			color: #D2C297;
 		}
 	</style>
 </head>
 <body>
-	<div class="grid"></div>
 	<div class="content">
 		<div class="intro">
 			<h1>Joshua Jenkins</h1>
 			<p> is the head of product design at Snowflake in the San Francisco Bay area and a practicing artist. Emphasis on practicing.</p>
 		</div>
 
-		<div class="recent">
-			<h2>Writing</h2>
-			<ol>
+		<div class="subsection">
+			<h2 class="subheading">Writing</h2>
+			<ol class="linklist">
 				<li>
 					<span class="date">Dec 2019</span>
 					<a href="https://reading.supply/@joshuajenkins/imitating-a-copier-evmvhD">Imitating a copier</a>
 				</li>
 			</ol>
 		</div>
+
+		<div class="subsection">
+			<h2 class="subheading">Links</h2>
+			<ol class="linklist">
+				<li>
+					<a href="https://twitter.com/joshuajenkins">Twitter</a>
+				</li>
+				<li>
+					<a href="https://instagram.com/joshuajenkins">Instagram</a>
+				</li>
+			</ol>
+		</div>
 	</div>
+	<div class="grid"></div>
 
 	<script>
 		/*
@@ -228,11 +239,11 @@
 					}
 				}
 
-				const transitionSpeed = 200
+				const transitionSpeed = 0
 
-				for (let j = 0; j < numCols; j++) {
+				for (let i = 0; i < numRows; i++) {
 					setTimeout(() => {
-						for (let i = 0; i < numRows; i++) {
+						for (let j = 0; j < numCols; j++) {
 							const idx = rowColToIdx(numRows, numCols, i, j)
 							const cell = cells[idx]
 							if (newStates[idx] === true) {
@@ -241,13 +252,13 @@
 								cell.classList.remove("on")
 							}
 						}
-					}, (transitionSpeed / numCols) * j)
+					}, (transitionSpeed / numRows) * i)
 				}
 			}
 
 			render()
 
-			activeInterval = setInterval(render, 5000)
+			activeInterval = setInterval(render, 3000)
 		}
 
 		// routine1(cells, numRows, numCols)
