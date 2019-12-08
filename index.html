@@ -47,7 +47,7 @@
 
 		.cell {
 			background-color: black;
-			transition: background-color 1s ease;
+			transition: background-color 500ms ease;
 		}
 		.cell.on {
 			background-color: #D2C297;
@@ -220,21 +220,34 @@
 				const dist = (row, col) => Math.sqrt(Math.pow(cx - col, 2) + Math.pow(cy - row, 2))
 				const isOn = (len) => ((len % stepDist <= thresh) || (len % stepDist >= (1 - thresh)))
 
+				const newStates = []
+
 				for (let i = 0; i < numRows; i++) {
 					for (let j = 0; j < numCols; j++) {
-						const cell = cells[rowColToIdx(numRows, numCols, i, j)]
-						if (isOn(dist(i, j))) {
-							cell.classList.add("on")
-						} else {
-							cell.classList.remove("on")
-						}
+						newStates.push(isOn(dist(i, j)))
 					}
+				}
+
+				const transitionSpeed = 200
+
+				for (let j = 0; j < numCols; j++) {
+					setTimeout(() => {
+						for (let i = 0; i < numRows; i++) {
+							const idx = rowColToIdx(numRows, numCols, i, j)
+							const cell = cells[idx]
+							if (newStates[idx] === true) {
+								cell.classList.add("on")
+							} else {
+								cell.classList.remove("on")
+							}
+						}
+					}, (transitionSpeed / numCols) * j)
 				}
 			}
 
 			render()
 
-			activeInterval = setInterval(render, 3000)
+			activeInterval = setInterval(render, 5000)
 		}
 
 		// routine1(cells, numRows, numCols)
