@@ -58,7 +58,7 @@
 
 		.cell {
 			background-color: black;
-			transition: background-color 200ms linear;
+			transition: background-color 100ms linear;
 		}
 		.cell.on {
 			background-color: #D2C297;
@@ -233,18 +233,18 @@
 
 		const routine2 = (cells, numRows, numCols) => {
 
-			const startThresh = 1
-			const threshStep = 0.001
-			let currThresh = startThresh
-			window.setInterval(() => {
-				if (Math.random() > currThresh) {
-					cells[Math.floor(Math.random() * numCells)].classList.toggle("on")
-				}
-				currThresh -= threshStep
-			}, 20)
+			// const startThresh = 1
+			// const threshStep = 0.001
+			// let currThresh = startThresh
+			// window.setInterval(() => {
+			// 	if (Math.random() > currThresh) {
+			// 		cells[Math.floor(Math.random() * numCells)].classList.toggle("on")
+			// 	}
+			// 	currThresh -= threshStep
+			// }, 20)
 
 			const render = () => {
-				currThresh = startThresh
+				// currThresh = startThresh
 				const cx = Math.round(Math.random() * numCols)
 				const cy = Math.round(Math.random() * numRows)
 				const stepDist = 0.5 + Math.random() * 5
@@ -261,21 +261,49 @@
 					}
 				}
 
-				const transitionSpeed = 0
+				const maxDistFromCenter = numCols + numRows
+				const transitionDuration = 2000
 
-				for (let i = 0; i < numRows; i++) {
+				const numRounds = maxDistFromCenter
+
+				// start on third iteration to reduce glitchy starts
+				for (let n = 3; n < numRounds; n++) {
 					setTimeout(() => {
-						for (let j = 0; j < numCols; j++) {
-							const idx = rowColToIdx(numRows, numCols, i, j)
-							const cell = cells[idx]
-							if (newStates[idx] === true) {
-								cell.classList.add("on")
-							} else {
-								cell.classList.remove("on")
+
+						for (let i = 0; i < numRows; i++) {
+							for (let j = 0; j < numCols; j++) {
+
+								const inRange = dist(i, j) <= maxDistFromCenter * n / numRounds
+
+								if (inRange) {
+									const idx = rowColToIdx(numRows, numCols, i, j)
+									const cell = cells[idx]
+									if (newStates[idx] === true) {
+										cell.classList.add("on")
+									} else {
+										cell.classList.remove("on")
+									}
+								}
+
 							}
 						}
-					}, (transitionSpeed / numRows) * i)
+
+					}, (transitionDuration / numRows) * n)
 				}
+
+				// for (let i = 0; i < numRows; i++) {
+				// 	setTimeout(() => {
+				// 		for (let j = 0; j < numCols; j++) {
+				// 			const idx = rowColToIdx(numRows, numCols, i, j)
+				// 			const cell = cells[idx]
+				// 			if (newStates[idx] === true) {
+				// 				cell.classList.add("on")
+				// 			} else {
+				// 				cell.classList.remove("on")
+				// 			}
+				// 		}
+				// 	}, (transitionDuration / numRows) * i)
+				// }
 			}
 
 			render()
