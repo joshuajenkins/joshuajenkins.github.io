@@ -208,37 +208,13 @@
 
 		const routine1 = (cells, numRows, numCols) => {
 
-			let currIdx = 0
-			let maxIdx = numRows + numCols
-
-			activeInterval = setInterval(() => {
-				for (let i = 0; i < numRows; i++) {
-					for (let j = 0; j < numCols; j++) {
-						const cell = cells[rowColToIdx(numRows, numCols, i, j)]
-						if ((i + j) == currIdx) {
-							cell.classList.add("on")
-						} else {
-							cell.classList.remove("on")
-						}
-					}
-				}
-				if (currIdx < maxIdx) {
-					currIdx += 1
-				} else {
-					currIdx = 0
-				}
-			}, 500)
-		}
-
-		const routine2 = (cells, numRows, numCols) => {
-
-			let flip = false
+			let flip = Math.random() > 0.5
 
 			const render = () => {
 				const cx = Math.round(Math.random() * numCols)
 				const cy = Math.round(Math.random() * numRows)
-				const stepDist = 0.5 + Math.random() * 5
-				const thresh = 0.1
+				const stepDist = 0.5 + Math.random() * 4
+				const thresh = Math.random() / 8
 
 				const dist = (row, col) => Math.sqrt(Math.pow(cx - col, 2) + Math.pow(cy - row, 2))
 				const isOn = (len) => ((len % stepDist <= thresh) || (len % stepDist >= (1 - thresh)))
@@ -288,8 +264,7 @@
 			activeInterval = setInterval(render, 3500)
 		}
 
-		// routine1(cells, numRows, numCols)
-		routine2(cells, numRows, numCols)
+		routine1(cells, numRows, numCols)
 
 	</script>
 </body>
