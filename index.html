@@ -1,8 +1,3 @@
-<!--
-the type on this page is Nostra Stream and Sett by Lucas Descroix
-it is very cool
-you can purchase it here: https://www.futurefonts.xyz/lucas-descroix/nostra
--->
 <!doctype html>
 <html>
 <head>
@@ -10,81 +5,217 @@ you can purchase it here: https://www.futurefonts.xyz/lucas-descroix/nostra
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=5.0">
 	<title>Joshua Jenkins</title>
 	<style>
-		@font-face {
-		  font-family: "nostra sett";
-		  src: url("/fonts/Nostrav1.0-Sett.woff2") format("woff2"),
-		       url("/fonts/Nostrav1.0-Sett.woff") format("woff");
-		}
-		@font-face {
-		  font-family: "nostra stream";
-		  src: url("/fonts/Nostrav1.0-Stream.woff2") format("woff2"),
-		       url("/fonts/Nostrav1.0-Stream.woff") format("woff");
-		}
 		body {
-			margin: 0;
-			font-family: "Poppins", sans-serif;
-			background: linear-gradient(to bottom, white, white 40%, #ffc30f 60%, #ffc30f);
-		}
-		.wrapper {
-			min-height: 96vh;
-			margin: 2vh;
 			background: black;
-			display: flex;
-			flex-direction: column;
-			align-items: space-between;
-			justify-content: space-between;
-		}
-		h1 {
-			font-family: "nostra sett";
-			color: white;
-			font-size: calc(100vw / 9);
-			line-height: 1;
 			margin: 0;
+			padding: 0;
+			font-family: "Arnold_v0.3";
+			/*font-style: italic;*/
 		}
 
-		h1 span:not(.group) {
-			font-size: calc(100vw / 18);
-			width: calc(100vw / 9);
-			height: calc(100vw / 9);
-			display: flex;
-			align-items: center;
-			justify-content: center;
+		.grid {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 50vw;
+			height: 100vh;
+			display: grid;
+			grid-gap: 0;
 		}
-		.links {
-			font-family: "nostra stream";
-			width: 100%;
-			display: flex;
-			justify-content: space-between;
+		.content {
+			position: absolute;
+			width: 50vw;
+			height: 100vh;
+			top: 0;
+			left: 50vw;
+			padding: 10%;
+			box-sizing: border-box;
 		}
-		.links a:link,
-		.links a:visited {
-			display: flex;
-			color: white;
-			font-size: calc(100vw / 28);
-			text-decoration: none;
+
+		@media (orientation: portrait) {
+			.grid {
+				width: 100vw;
+				height: 50vh;
+			}
+			.content {
+				width: 100vw;
+				height: 100vh;
+				left: 0;
+				padding: 60vh 20% 15vh 20%;
+				overflow: auto;
+			}
 		}
-		.links a:hover {
-			color: #ffc30f;
-			font-family: "nostra sett";
+
+		.cell {
+			background-color: black;
+			transition: background-color 500ms ease;
 		}
-		.links span {
-			display: flex;
-			width: calc(100vw / 17);
-			height: calc(100vw / 17);
-			align-items: center;
-			justify-content: center;
+		.cell.on {
+			background-color: #D2C297;
+		}
+		.intro {
+			color: #D2C297;
+			line-height: 24px;
+			margin-bottom: 48px;
+		}
+		h1 {
+			font-size: 16px;
+			margin: 0;
+			padding: 0;
+			display: inline;
+			font-weight: normal;
+			font-style: italic;
+		}
+		.intro p {
+			font-size: 16px;
+			display: inline;
+			padding: 0;
+			margin: 0;
+		}
+		.recent {
+			font-size: 20px;
+		}
+		.recent h2 {
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: normal;
+			font-style: italic;
+			color: #D2C297;
+		}
+		.recent ol {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		.recent li {
+			padding: 0;
+			margin: 0;
+			font-size: 14px;
+			line-height: 24px;
+		}
+		.recent a:link, .recent a:visited {
+			color: #D2C297;
+			text-decoration: underline;
+		}
+		.recent li .date {
+			display: inline-block;
+			width: 72px;
+			margin-left: -80px;
+			font-size: 12px;
+			font-style: italic;
+			color: #aaa;
 		}
 	</style>
 </head>
 <body>
-	<div class="wrapper">
-		<h1>
-			joshua jenkins
-		</h1>
-		<div class="links">
-			<a href="https://instagram.com/joshuajenkins"><span>i</span><span>n</span><span>s</span><span>t</span><span>a</span><span>g</span><span>r</span><span>a</span><span>m</span></a>
-			<a href="https://twitter.com/joshuajenkins"><span>t</span><span>w</span><span>i</span><span>t</span><span>t</span><span>e</span><span>r</span></a>
+	<div class="grid"></div>
+	<div class="content">
+		<div class="intro">
+			<h1>Joshua Jenkins</h1>
+			<p> is the head of product design at Snowflake in the San Francisco Bay area and a practicing artist. Emphasis on practicing.</p>
+		</div>
+
+		<div class="recent">
+			<h2>Writing</h2>
+			<ol>
+				<li>
+					<span class="date">Dec 2019</span>
+					<a href="https://reading.supply/@joshuajenkins/imitating-a-copier-evmvhD">Imitating a copier</a>
+				</li>
+			</ol>
 		</div>
 	</div>
+
+	<script>
+		/*
+			ok so what I'm going to do here is figure out the viewport size
+			and then make the squarest possible divisions within some size range
+			I'm not going to worry about window resizing
+		*/
+
+		const isPortrait = window.innerHeight > window.innerWidth
+		const width = isPortrait ? window.innerWidth : window.innerWidth / 2
+		const height = isPortrait ? window.innerHeight / 2 : window.innerHeight
+		const minSize = 18
+		const maxSize = 24
+
+		/*
+			I don't actually know how to do figure this out mathematically,
+			but one idea is to find the smallest possible remainder for each size
+		*/
+
+		let smallestRemainder = 2
+		let bestSize
+		for (let i = minSize; i < maxSize; i++) {
+			const currSize = minSize + i
+			const currRemainder = ((width / currSize) % 1) + ((height / currSize) % 1)
+			if (currRemainder < smallestRemainder) {
+				smallestRemainder = currRemainder
+				bestSize = currSize
+			}
+		}
+
+		/* now we need to convert the best size into number of divisions */
+
+		const numRows = Math.round(height / bestSize)
+		const numCols = Math.round(width / bestSize)
+
+		/*
+			now we construct the grid
+			I have no doubt there's a better way to do this
+			let me know if you think of one!
+		*/
+
+		const gridEl = document.getElementsByClassName("grid")[0]
+		gridEl.setAttribute("style", `grid-template-columns: repeat(${numCols}, 1fr); grid-template-rows: repeat(${numRows}, 1fr)`);
+
+		for (let i = 0; i < numRows; i++) {
+			for (let j = 0; j < numCols; j++) {
+				const cellEl = document.createElement("div")
+				cellEl.classList.add("cell")
+				gridEl.appendChild(cellEl)
+			}
+		}
+
+		const cells = document.getElementsByClassName("cell")
+		const numCells = cells.length
+
+		const rowColToIdx = (numRows, numCols, row, col) => numCols * row + col
+
+		const routine1 = (cells, numRows, numCols) => {
+
+			let currIdx = 0
+			let maxIdx = numRows + numCols
+
+			setInterval(() => {
+				for (let i = 0; i < numRows; i++) {
+					for (let j = 0; j < numCols; j++) {
+						const cell = cells[rowColToIdx(numRows, numCols, i, j)]
+						if ((i + j) == currIdx) {
+							cell.classList.add("on")
+						} else {
+							cell.classList.remove("on")
+						}
+					}
+				}
+				if (currIdx < maxIdx) {
+					currIdx += 1
+				} else {
+					currIdx = 0
+				}
+			}, 500)
+		}
+
+		routine1(cells, numRows, numCols)
+
+		// window.setInterval(() => {
+		// 	if (Math.random() > 0.5) {
+		// 		cells[Math.floor(Math.random() * numCells)].classList.toggle("on")
+		// 	}
+		// }, 20)
+
+	</script>
 </body>
 </html>
