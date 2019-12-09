@@ -40,6 +40,7 @@
 			left: 50vw;
 			padding: 10%;
 			box-sizing: border-box;
+			overflow: auto;
 		}
 
 		@media (orientation: portrait) {
@@ -115,6 +116,17 @@
 			font-style: italic;
 			color: #D2C297;
 		}
+		.img-wrapper {
+			max-width: 50%;
+			background-color: #D2C297;
+			margin: 0;
+			padding: 0;
+		}
+		.img {
+			display: block;
+			width: 100%;
+			mix-blend-mode: multiply;
+		}
 	</style>
 </head>
 <body>
@@ -144,6 +156,12 @@
 					<a href="https://instagram.com/joshuajenkins">Instagram</a>
 				</li>
 			</ol>
+		</div>
+
+		<div class="subsection">
+			<div class="img-wrapper">
+				<img class="img" src="/professional-portrait.jpg" />
+			</div>
 		</div>
 	</div>
 	<div class="grid"></div>
