@@ -25,28 +25,33 @@
 
 		.grid {
 			position: absolute;
-			top: 0;
-			left: 0;
-			width: 50vw;
-			height: 100vh;
+			top: 8vw;
+			left: 8vw;
+			width: 24vw;
+			height: 50vh;
 			display: grid;
 			grid-gap: 0;
 		}
 		.content {
 			position: absolute;
-			width: 50vw;
+			width: 66vw;
 			height: 100vh;
 			top: 0;
-			left: 50vw;
-			padding: 10%;
+			left: 34vw;
+			padding: 8vw;
 			box-sizing: border-box;
 			overflow: auto;
+		}
+		.content-inside {
+			max-width: 32em;
 		}
 
 		@media (orientation: portrait) {
 			.grid {
-				width: 100vw;
-				height: 50vh;
+				top: 12.5vh;
+				left: 25vw;
+				width: 50vw;
+				height: 25vh;
 			}
 			.content {
 				width: 100vw;
@@ -136,45 +141,50 @@
 	</style>
 </head>
 <body>
+	<div class="grid"></div>
 	<div class="content">
-		<div class="intro">
-			<p><span class="name">Joshua Jenkins</span></p>
-			<p>Head of design at Snowflake. Shape &amp; texture choreographer. San Francisco based. You&rsquo;re viewing a website I made.</p>
-		</div>
+		<div class="content-inside">
+			<div class="intro">
+				<p><span class="name">Joshua Jenkins</span></p>
+				<p>Head of design at Snowflake. Interests include shapes, perception, texture, processes, connections — and, hey, while we're talking — I like that you&rsquo;re here, reading this.</p>
+			</div>
 
-		<div class="subsection">
-			<h2 class="subheading">Writing</h2>
-			<ol class="linklist">
-				<li>
-					<a href="https://twitter.com/joshuajenkins/status/1227411521006784512">A balanced, rigorous analysis of data visualizations at a moment in time</a>
-					<span class="date">Feb&nbsp;2020</span>
-				</li>
-				<li>
-					<a href="https://reading.supply/@joshuajenkins/imitating-a-copier-evmvhD">Imitating a copier</a>
-					<span class="date">Dec&nbsp;2019</span>
-				</li>
-			</ol>
-		</div>
+			<div class="subsection">
+				<h2 class="subheading">Writing</h2>
+				<ol class="linklist">
+					<li>
+						<a href="https://twitter.com/joshuajenkins/status/1227411521006784512">A balanced, rigorous analysis of data visualizations at a moment in time</a>
+						<span class="date">Feb&nbsp;2020</span>
+					</li>
+					<li>
+						<a href="https://reading.supply/@joshuajenkins/imitating-a-copier-evmvhD">Imitating a copier</a>
+						<span class="date">Dec&nbsp;2019</span>
+					</li>
+				</ol>
+			</div>
 
-		<div class="subsection">
-			<h2 class="subheading">Links</h2>
-			<ol class="linklist">
-				<li>
-					<a href="https://twitter.com/joshuajenkins">Twitter</a>
-				</li>
-				<li>
-					<a href="https://instagram.com/joshuajenkins">Instagram</a>
-				</li>
-			</ol>
-		</div>
+			<div class="subsection">
+				<h2 class="subheading">Links</h2>
+				<ol class="linklist">
+					<li>
+						<a href="https://twitter.com/joshuajenkins">Twitter</a>
+					</li>
+					<li>
+						<a href="https://instagram.com/joshuajenkins">Instagram</a>
+					</li>
+					<li>
+						<a href="https://www.are.na/joshua-jenkins/the-library-of-joshua-jenkins">Books</a>
+					</li>
+				</ol>
+			</div>
 
-		<div class="subsection">
-			<div class="img-wrapper">
-				<img class="img" src="/professional-portrait.jpg" />
+			<div class="subsection">
+				<div class="img-wrapper">
+					<img class="img" src="/professional-portrait.jpg" />
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="grid"></div>
 
 	<script>
 		/*
