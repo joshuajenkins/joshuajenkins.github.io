@@ -36,21 +36,15 @@
 			padding: 0;
 			margin: 0;
 			color: blue;
-		}
-		.list-page h1 .title {
-			display: block;
-			text-transform: uppercase;
-			font-size: var(--f2);
-			font-weight: 700;
-			letter-spacing: 0.1em;
-			line-height: 1em;
-			margin-bottom: 0.5em;
-		}
-		.list-page h1 .text {
 			font-size: var(--f1);
 			font-weight: 500;
-			display: block;
-			line-height: 1em;
+		}
+		@media screen and (max-width: 600px) {
+			.list-page h1 {
+				font-size: var(--f2);
+				font-weight: 600;
+				line-height: 1.25;
+			}
 		}
 		.list-page h2 {
 			font-size: var(--f2);
@@ -64,6 +58,8 @@
 		@media screen and (max-width: 600px) {
 			.list-page h2 {
 				margin-left: 0;
+				font-weight: 600;
+				letter-spacing: 0.075em;
 			}
 		}
 		.list-page ul {
@@ -117,7 +113,7 @@
 <body>
 	<div class="list-page">
 		<div class="section-box">
-			<h1><span class="title">List of </span><span class="text">art and design documentaries</span></h1>
+			<h1>List of art and design documentaries</h1>
 		</div>
 
 		<div class="section-box">
