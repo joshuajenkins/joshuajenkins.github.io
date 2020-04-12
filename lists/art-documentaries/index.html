@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=5.0">
-	<title>List of art (and design) documentaries</title>
+	<title>List of art and design documentaries</title>
 	<style>
 		body {
 			margin: 0;
@@ -11,62 +11,116 @@
 		.list-page {
 			font-family: system-ui;
 			max-width: 600px;
-			padding: 0 40px;
+			padding: 0;
 			box-sizing: border-box;
-			margin: 10vh auto;
+			margin: 40px auto;
+		}
+		.section-box {
+			border: 4px solid blue;
+			padding: 40px 60px;
+			margin: 40px;
 		}
 		.list-page h1 {
-			font-size: 1.75em;
-			font-weight: 800;
-			max-width: 300px;
-			text-align: center;
-			margin: 0 auto 3em auto;
+			padding: 0;
+			margin: 0;
+			color: blue;
+			line-height: 1em;
+		}
+		.list-page h1 .title {
+			display: block;
+			text-transform: uppercase;
+			font-size: 0.5em;
+			font-weight: 700;
+			letter-spacing: 0.1em;
+		}
+		.list-page h1 .text {
+			font-size: 0.75em;
+			font-weight: 600;
+			display: block;
 		}
 		.list-page h2 {
-			font-size: 1.125em;
-			font-weight: 600;
-			margin-top: 4em;
-		}
-		.list-page p {
-			font-size: 1.125em;
-			line-height: 1.4;
+			font-size: 1em;
+			font-weight: 700;
+			margin: 0 0 2em 0;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			color: blue;
+			margin-left: 2.5em;
 		}
 		.list-page ul {
 			padding: 0;
+			margin: 0;
 		}
 		.list-page ul > li {
-			font-size: 1.125em;
+			font-size: 1em;
 			line-height: 1.4;
 			list-style: circle;
+			font-weight: 600;
+			display: flex;
+			align-items: baseline;
+		}
+		.list-page ul > li .year {
+			font-size: 0.875em;
+			width: 3em;
+			font-family: serif;
+			font-style: italic;
+			color: blue;
+			flex-shrink: 0;
+		}
+		.list-page p {
+			font-size: 1em;
+			line-height: 1.4;
+			font-weight: 600;
+			color: blue;
+		}
+		a:link, a:visited {
+			color: blue;
+		}
+		a:hover {
+			color: red;
 		}
 	</style>
 </head>
 
 <body>
 	<div class="list-page">
-		<h1>List of art (and design) documentaries</h1>
+		<div class="section-box">
+			<h1><span class="title">List of </span><span class="text">art and design documentaries</span></h1>
+		</div>
 
-		<h2>Have seen and would recommend</h2>
-		<ul>
-			<li>Leaning into the Wind [Andy Goldsworthy]</li>
-			<li>David Lynch: The Art Life</li>
-		</ul>
+		<div class="section-box">
+			<h2>Have seen and do recommend</h2>
+			<ul>
+				<li><span class="year">2016</span><span>Eva Hesse</span></li>
+				<li><span class="year">2014</span><span>Dior and I</span></li>
+				<li><span class="year">2019</span><span>Olafur Eliasson (episode of &ldquo;Abstract&rdquo;)</span></li>
+				<li><span class="year">2017</span><span>Leaning into the Wind [Andy Goldsworthy]</span></li>
+				<li><span class="year">2017</span><span>David Lynch: The Art Life</span></li>
+			</ul>
+		</div>
 
+		<div class="section-box">
 		<h2>To see</h2>
-		<ul>
-			<li>Gerhard Richter Painting</li>
-			<li>Agnes Martin: With My Back to the World</li>
-			<li>Chuck Close (2007)</li>
-			<li>Eva Hess (2016)</li>
-			<li>Kusama: Infinity</li>
-			<li>Boom for Real: The Late Teenage Years of Jean-Michel Basquiat</li>
-			<li>Exhibition on Screen: David Hockney at the Royal Academy of Arts</li>
-		</ul>
+			<ul>
+				<li><span class="year">2012</span><span>Gerhard Richter Painting</span></li>
+				<li><span class="year">2003</span><span>Agnes Martin: With My Back to the World</span></li>
+				<li><span class="year">2007</span><span>Chuck Close</span></li>
+				<li><span class="year">2016</span><span>Kusama: Infinity</span></li>
+				<li><span class="year">2018</span><span>Boom for Real: The Late Teenage Years of Jean-Michel Basquiat</span></li>
+				<li><span class="year">2017</span><span>Exhibition on Screen: David Hockney at the Royal Academy of Arts</span></li>
+			</ul>
+		</div>
 
-		<h2>Have seen and would not recommend</h2>
-		<ul>
-			<li>Rams (2018)</li>
-		</ul>
+		<div class="section-box">
+			<h2>Have seen and cannot recommend</h2>
+			<ul>
+				<li><span class="year">2018</span><span>Rams</span></li>
+			</ul>
+		</div>
+
+		<div class="section-box">
+			<p>An incomplete list that I (<a href="/">Joshua Jenkins</a>) update every few months when I recall its existence. Desperate for recommendations. Get in touch.</p>
+		</div>
 
 	</div>
 </body>
