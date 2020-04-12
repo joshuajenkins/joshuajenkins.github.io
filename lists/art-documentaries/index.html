@@ -8,7 +8,8 @@
 		:root {
 			--f1: 20px;
 			--f2: 16px;
-			--f3: 12px;
+			--f3: 14px;
+			--f4: 12px;
 		}
 		body {
 			margin: 0;
@@ -24,6 +25,7 @@
 			border: 4px solid blue;
 			padding: 40px 60px;
 			margin: 40px;
+			background: white;
 		}
 		@media screen and (max-width: 600px) {
 			.section-box {
@@ -72,7 +74,7 @@
 			align-items: baseline;
 		}
 		.list-page ul > li .year {
-			font-size: var(--f3);
+			font-size: var(--f4);
 			width: 3em;
 			font-family: serif;
 			font-style: italic;
@@ -85,6 +87,13 @@
 			line-height: 1.5;
 			font-weight: 600;
 			color: blue;
+			margin: 0;
+			padding: 0;
+		}
+		@media screen and (max-width: 600px) {
+			.list-page p {
+				font-size: var(--f3);
+			}
 		}
 		a:link, a:visited {
 			color: blue;
