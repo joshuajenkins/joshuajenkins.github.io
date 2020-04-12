@@ -5,6 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=5.0">
 	<title>List of art and design documentaries</title>
 	<style>
+		:root {
+			--f1: 20px;
+			--f2: 16px;
+			--f3: 12px;
+		}
+		@media screen and (max-width: 600px) {
+			:root {
+				--f1: 16px;
+			}
+		}
 		body {
 			margin: 0;
 		}
@@ -20,26 +30,33 @@
 			padding: 40px 60px;
 			margin: 40px;
 		}
+		@media screen and (max-width: 600px) {
+			.section-box {
+				padding: 40px;
+			}
+		}
 		.list-page h1 {
 			padding: 0;
 			margin: 0;
 			color: blue;
-			line-height: 1em;
 		}
 		.list-page h1 .title {
 			display: block;
 			text-transform: uppercase;
-			font-size: 0.5em;
+			font-size: var(--f2);
 			font-weight: 700;
 			letter-spacing: 0.1em;
+			line-height: 1em;
+			margin-bottom: 0.5em;
 		}
 		.list-page h1 .text {
-			font-size: 0.75em;
-			font-weight: 600;
+			font-size: var(--f1);
+			font-weight: 500;
 			display: block;
+			line-height: 1em;
 		}
 		.list-page h2 {
-			font-size: 1em;
+			font-size: var(--f2);
 			font-weight: 700;
 			margin: 0 0 2em 0;
 			text-transform: uppercase;
@@ -52,24 +69,25 @@
 			margin: 0;
 		}
 		.list-page ul > li {
-			font-size: 1em;
+			font-size: var(--f2);
 			line-height: 1.4;
 			list-style: circle;
-			font-weight: 600;
+			font-weight: 500;
 			display: flex;
 			align-items: baseline;
 		}
 		.list-page ul > li .year {
-			font-size: 0.875em;
+			font-size: var(--f3);
 			width: 3em;
 			font-family: serif;
 			font-style: italic;
 			color: blue;
+			font-weight: 600;
 			flex-shrink: 0;
 		}
 		.list-page p {
-			font-size: 1em;
-			line-height: 1.4;
+			font-size: var(--f2);
+			line-height: 1.5;
 			font-weight: 600;
 			color: blue;
 		}
