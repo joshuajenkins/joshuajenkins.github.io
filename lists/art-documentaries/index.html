@@ -61,6 +61,11 @@
 			color: blue;
 			margin-left: 2.5em;
 		}
+		@media screen and (max-width: 600px) {
+			.list-page h2 {
+				margin-left: 0;
+			}
+		}
 		.list-page ul {
 			padding: 0;
 			margin: 0;
@@ -72,6 +77,11 @@
 			font-weight: 500;
 			display: flex;
 			align-items: baseline;
+		}
+		@media screen and (max-width: 600px) {
+			.list-page ul > li {
+			font-size: var(--f3);
+			}
 		}
 		.list-page ul > li .year {
 			font-size: var(--f4);
