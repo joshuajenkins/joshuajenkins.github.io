@@ -16,8 +16,18 @@
 			url("/fonts/Arnold_v0.3-Italic.woff") format("woff");
 		font-style: italic;
 		}
+		:root {
+			--bg: white;
+			--fg: blue;
+		}
+		@media (prefers-color-scheme: dark) {
+			:root {
+				--bg: black;
+				--fg: cornflowerblue;
+			}
+		}
 		body {
-			background: black;
+			background: var(--bg);
 			margin: 0;
 			padding: 0;
 			font-family: "Arnold", "system ui", sans-serf;
@@ -63,14 +73,14 @@
 		}
 
 		.cell {
-			background-color: black;
+			background-color: var(--bg);
 			transition: background-color 100ms linear;
 		}
 		.cell.on {
-			background-color: #D2C297;
+			background-color: var(--fg);
 		}
 		.intro {
-			color: #D2C297;
+			color: var(--fg);
 			line-height: 24px;
 			margin-bottom: 48px;
 		}
@@ -100,7 +110,7 @@
 			margin-bottom: 8px;
 			font-weight: normal;
 			font-style: italic;
-			color: #D2C297;
+			color: var(--fg);
 		}
 		.linklist {
 			list-style: none;
@@ -115,7 +125,7 @@
 			margin-bottom: 8px;
 		}
 		.linklist a:link, .linklist a:visited {
-			color: #D2C297;
+			color: var(--fg);
 			text-decoration: none;
 		}
 		.linklist a:hover {
@@ -124,12 +134,12 @@
 		.linklist li .date {
 			font-size: 12px;
 			font-style: italic;
-			color: #D2C297;
+			color: var(--fg);
 			margin-left: 4px;
 		}
 		.img-wrapper {
 			max-width: 50%;
-			background-color: #D2C297;
+			background-color: var(--fg);
 			margin: 0;
 			padding: 0;
 		}
