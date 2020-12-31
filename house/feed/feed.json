@@ -1,7 +1,7 @@
 {
   "version": "https://jsonfeed.org/version/1",
   "title": "House",
-  "home_page_url": "https://joshuajenkins.com/house",
+  "home_page_url": "https://joshuajenkins.com/house/",
   "feed_url": "https://example.com/feed/feed.json",
   "description": "Watch as I bludgeon a house into a home",
   "author": {
@@ -9,8 +9,8 @@
     "url": ""
   },
   "items": [{
-      "id": "https://joshuajenkins.com/posts/2020-12-30/",
-      "url": "https://joshuajenkins.com/posts/2020-12-30/",
+      "id": "https://joshuajenkins.com/home/posts/2020-12-30/",
+      "url": "https://joshuajenkins.com/home/posts/2020-12-30/",
       "title": "Pre-closure",
       "content_html": "<p>Tomorrow I close on my first house. In future retrospect it may be obvious that the house, in fact, closed on me.</p>\n<p>I am confident of two things going into this. One, this house will be going through changes, baby. Two, probably I will too. At the onset it's not immediately obvious that either party is going to come out of this better than where they started, but I guarantee both of us have some dumb shit burried in our walls that will be entertaining to put on display.</p>\n<p>So think of this as the diary of a house in metamorphosis, but keep in mind that this is really about meeeeeeeeeeeee!</p>\n<p>Some initial thoughts I am writing down for the express purpose of generating feelings of personal embarassment in the future:</p>\n<ul>\n<li>I called the house &quot;special&quot; to multiple parties that have a financial interest in my believing this. The house may not be special.</li>\n<li>In fact, it is probably a good example of one of the less-special relatively intact Victorians in San Francisco. Plenty more on this in the future.</li>\n<li>The house was built in 1901! Before the 1906 earthquake and subsequent fires, and now that I think about it, it even predates my birth.</li>\n<li>Frustratingly, I'm closing on the house on the last day of 2020, so I have to awkwardly call it a one hundred nineteen year old house for part of a day before mercifully transitioning into calling it a one hundred twenty year old house for a blissful year.</li>\n<li>The house accumulated a series of structurally dubious, aesthetically really-dubious, and seemingly illegal modifications over the years (decades? centuries!!)</li>\n<li>This is a good moment to note that I feel nothing about Victorians other than an appreciation for their high ceilings. The prescriptive use of space with all its attendant opinions on how to live coupled with the obsession with artiface, no matter how half- to quarter-assed, are simply not my thing. A little taste of the battles to come.</li>\n<li>The house is need of upgrades, modern comforts, structural repairs, and a tickle or two.</li>\n<li>It has a big back yard. With lots of mature trees. I don't know what a single of of them is, but I have time to figure it out.</li>\n<li>Like, truly, a big back yard for San Francisco. This was one of the main selling points. The largeness is the produc of the lot being above average in dimmension and the house being a touch wee, relatively speaking.</li>\n<li>Certain windows, if scowled through, reveal a bit of a view of the taller structures in the Mission (e.g. the baroque domed tower of Mission High School) as well as a view of some of the recent widely-loathed additions to the downtown skyline.</li>\n<li>I will find a way to enhance these views.</li>\n<li>It's either on a really good block, a really bad block, or a block with positive and negative elements like any other.</li>\n<li>San Francisco has arcane, draconian, other-fun-words but mostly just hugely restrictive and crushingly beauracratic processes for modifying historic properties, which unforunately this house technically is, by a hair, and I very much intend on modifying this sucker.</li>\n</ul>\n<p>Let the battles ensue.</p>\n",
       "date_published": "2020-12-29T16:00:00-08:00"
