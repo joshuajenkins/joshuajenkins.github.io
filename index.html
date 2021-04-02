@@ -5,34 +5,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=5.0">
 	<title>Joshua Jenkins</title>
 	<style>
-		@font-face {
-		font-family: "Arnold";
-		src: url("/fonts/Arnold_v0.3-Regular.woff2") format("woff2"),
-			url("/fonts/Arnold_v0.3-Regular.woff") format("woff");
-		}
-		@font-face {
-		font-family: "Arnold";
-		src: url("/fonts/Arnold_v0.3-Italic.woff2") format("woff2"),
-			url("/fonts/Arnold_v0.3-Italic.woff") format("woff");
-		font-style: italic;
-		}
 		:root {
-			--bg: white;
-			--fg: blue;
+			--bg: #fffbf0;
+			--fg: black;
 		}
 		@media (prefers-color-scheme: dark) {
 			:root {
 				--bg: black;
-				--fg: cornflowerblue;
+				--fg: #fffbf0;
 			}
 		}
 		body {
 			background: var(--bg);
 			margin: 0;
 			padding: 0;
-			font-family: "Arnold", "system ui", sans-serf;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 		}
 
+		/**
 		.grid {
 			position: absolute;
 			top: 8vw;
@@ -41,35 +31,10 @@
 			height: 50vh;
 			display: grid;
 			grid-gap: 0;
-		}
-		.content {
-			position: absolute;
-			width: 66vw;
-			height: 100vh;
-			top: 0;
-			left: 34vw;
-			padding: 8vw;
-			box-sizing: border-box;
-			overflow: auto;
-		}
-		.content-inside {
-			max-width: 32em;
-		}
+		}**/
 
-		@media (orientation: portrait) {
-			.grid {
-				top: 12.5vh;
-				left: 25vw;
-				width: 50vw;
-				height: 25vh;
-			}
-			.content {
-				width: 100vw;
-				height: 100vh;
-				left: 0;
-				padding: 60vh 7.5% 15vh 7.5%;
-				overflow: auto;
-			}
+		.content {
+			padding: 28px;
 		}
 
 		.cell {
@@ -84,36 +49,29 @@
 			line-height: 24px;
 			margin-bottom: 48px;
 		}
-		.intro .intro-text {
-			display: block;
-			font-size: 16px;
-			margin: 0;
-			padding: 0;
-			margin-bottom: 12px;
-			font-weight: normal;
-		}
 		.intro h1 {
-			font-size: 36px;
-			font-style: italic;
-			margin: 0 0 48px 0;
+			font-size: 28px;
+			line-height: 36px;
+			font-weight: 700;
+			margin: 0;
 		}
-		.intro p {
-			font-size: 16px;
+		p {
+			font-size: 28px;
+			font-weight: 300;
+			line-height: 36px;
 			padding: 0;
 			margin: 0;
 		}
 		.subsection {
-			font-size: 20px;
-			margin-bottom: 48px;
+			margin-bottom: 36px;
 		}
 		.subheading {
 			margin: 0;
 			padding: 0;
-			font-size: 16px;
-			line-height: 24px;
-			margin-bottom: 8px;
+			font-size: 28px;
+			line-height: 36px;
 			font-weight: normal;
-			font-style: italic;
+			font-weight: 300;
 			color: var(--fg);
 		}
 		.linklist {
@@ -124,9 +82,9 @@
 		.linklist li {
 			padding: 0;
 			margin: 0;
-			font-size: 14px;
-			line-height: 24px;
-			margin-bottom: 8px;
+			font-size: 28px;
+			line-height: 36px;
+			font-weight: 500;
 		}
 		.linklist a:link, .linklist a:visited {
 			color: var(--fg);
@@ -134,12 +92,6 @@
 		}
 		.linklist a:hover {
 			text-decoration: underline;
-		}
-		.linklist li .date {
-			font-size: 12px;
-			font-style: italic;
-			color: var(--fg);
-			margin-left: 4px;
 		}
 		.img-wrapper {
 			max-width: 50%;
@@ -155,13 +107,17 @@
 	</style>
 </head>
 <body>
-	<div class="grid"></div>
+	<!--<div class="grid"></div>-->
 	<div class="content">
 		<div class="content-inside">
 			<div class="intro">
-				<p><span class="intro-text">No, not squash, it's</span></p>
 				<h1>Joshua Jenkins</h1>
-				<p>But my friends call me head of design at Snowflake. Eat your vegetables.</p>
+				<p>←↑Website↓→</p>
+			</div>
+
+			<div class="subsection">
+				<h2 class="subheading">Bio</h2>
+				<p>Well, you may be curious about my role regarding design at Snowflake, or perhaps you're curious about my creative output. Either way, there's no information here.</p>
 			</div>
 
 			<div class="subsection">
@@ -184,6 +140,7 @@
 		</div>
 	</div>
 
+	<!--
 	<script>
 		/*
 			ok so what I'm going to do here is figure out the viewport size
@@ -295,5 +252,6 @@
 		routine1(cells, numRows, numCols)
 
 	</script>
+	!-->
 </body>
 </html>
